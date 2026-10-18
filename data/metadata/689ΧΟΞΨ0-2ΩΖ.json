@@ -1,0 +1,52 @@
+{
+  "source": "diavgeia",
+  "ada": "689ΧΟΞΨ0-2ΩΖ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:44.955765+00:00",
+  "pdf_sha256": "7c7b57deaf395a21709ef6fe9a7d8debef6c4cfaacb2b97e1a9d59aa1f34bd49",
+  "pdf_size_bytes": 323803,
+  "page_count": 2,
+  "decision": {
+    "protocolNumber": "Φ2/1904",
+    "subject": "ΠΡΟΜΗΘΕΙΑ ΜΠΑΤΑΡΙΩΝ ΓΙΑ ΤΟ ΑΛΕΞΑΝΔΡΕΙΟ ΜΕΛΑΘΡΟ ΚΑΙ ΓΙΑ ΤΟ ΠΟΣΕΙΔΩΝΙΟ ΚΟΛΥΜΒΗΤΗΡΙΟ.",
+    "issueDate": 1780444800000,
+    "organizationId": "54586",
+    "signerIds": [
+      "100104050"
+    ],
+    "unitIds": [
+      "92807"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [],
+      "awardAmount": {
+        "amount": 650.16,
+        "currency": "EUR"
+      },
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "31440000-2"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "689ΧΟΞΨ0-2ΩΖ",
+    "publishTimestamp": 1780477804062,
+    "submissionTimestamp": 1791526784310,
+    "versionId": "bd2472a9-15be-434b-a548-04d29cab7727",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/689ΧΟΞΨ0-2ΩΖ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/689ΧΟΞΨ0-2ΩΖ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "dde3c2f6-f079-49b4-a7ed-fd63f8c745f1"
+  },
+  "collection_time_verified": false
+}

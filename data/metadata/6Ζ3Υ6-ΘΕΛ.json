@@ -1,0 +1,54 @@
+{
+  "source": "diavgeia",
+  "ada": "6Ζ3Υ6-ΘΕΛ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:42.090074+00:00",
+  "pdf_sha256": "effb996a59cf37b175ad54d68a5ba576b70263748155101a4e22ee835073f9f1",
+  "pdf_size_bytes": 330736,
+  "page_count": 9,
+  "decision": {
+    "protocolNumber": "6007",
+    "subject": "Αντικατάσταση – επισκευή στέγης μαγειρείων του Στρδου ΘΕΟΔΩΡΟΥ ΚΟΛΟΚΟΤΡΩΝΗ",
+    "issueDate": 1779408000000,
+    "organizationId": "6",
+    "signerIds": [
+      "100104148"
+    ],
+    "unitIds": [
+      "100088684"
+    ],
+    "decisionTypeId": "Δ.2.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "cpv": [
+        "44111000-1"
+      ],
+      "contestProgressType": "Κλειστός",
+      "manifestSelectionCriterion": "Συμφερότερη από οικονομικής άποψης",
+      "manifestContractType": "Προμήθειες",
+      "orgBudgetCode": "Τακτικός Προϋπολογισμός",
+      "estimatedAmount": {
+        "amount": 17616.2,
+        "currency": "EUR"
+      },
+      "textRelatedADA": "94Μ66-9ΥΞ",
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "6Ζ3Υ6-ΘΕΛ",
+    "publishTimestamp": 1785301431912,
+    "submissionTimestamp": 1785301431912,
+    "versionId": "d81842f5-4c0d-43ee-82a8-e9e5a53d2d7f",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/6Ζ3Υ6-ΘΕΛ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/6Ζ3Υ6-ΘΕΛ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

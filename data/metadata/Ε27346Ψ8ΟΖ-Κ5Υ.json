@@ -1,0 +1,50 @@
+{
+  "source": "diavgeia",
+  "ada": "Ε27346Ψ8ΟΖ-Κ5Υ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:58.075971+00:00",
+  "pdf_sha256": "a26bf9bb997481e32ad032012b8b854fc87f1b5fba39c8303eaa258a3fb4f933",
+  "pdf_size_bytes": 235742,
+  "page_count": 2,
+  "decision": {
+    "protocolNumber": "1489",
+    "subject": "Ανάθεση για «Παροχή υπηρεσιών σχεδιασμού, ανάπτυξης και εκσυγχρονισμού ιστοσελίδας, γραφιστικού και δημιουργικού σχεδιασμού του απολογισμού του Ε.Ο.ΑΝ., δημιουργία και επιμέλεια μέσων κοινωνικής δικτύωσης Ε.Ο.ΑΝ",
+    "issueDate": 1775433600000,
+    "organizationId": "99201051",
+    "signerIds": [
+      "100083336"
+    ],
+    "unitIds": [
+      "100000345"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "52"
+    ],
+    "extraFieldValues": {
+      "person": [],
+      "awardAmount": {
+        "amount": 20400.0,
+        "currency": "EUR"
+      },
+      "assignmentType": "Υπηρεσίες",
+      "cpv": null,
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "Ε27346Ψ8ΟΖ-Κ5Υ",
+    "publishTimestamp": 1775481921103,
+    "submissionTimestamp": 1791201308243,
+    "versionId": "8b0debb9-dbf6-46da-9f9f-4c989d6a9cb1",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ε27346Ψ8ΟΖ-Κ5Υ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ε27346Ψ8ΟΖ-Κ5Υ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "894020e4-55a6-44fc-9559-0b1d3d64303c"
+  },
+  "collection_time_verified": false
+}

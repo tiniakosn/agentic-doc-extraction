@@ -1,0 +1,48 @@
+{
+  "source": "diavgeia",
+  "ada": "Ψ68Δ6-Μ0Π",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:54.823910+00:00",
+  "pdf_sha256": "db979212aee7f0227e4afda2ad138616319c5647fc59a997d8d2ba15057e3d7f",
+  "pdf_size_bytes": 248252,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "Φ.071/594/1985/Σ.283",
+    "subject": "ΠΡΟΜΗΘΕΙΑ ΥΛΙΚΩΝ",
+    "issueDate": 1775865600000,
+    "organizationId": "6",
+    "signerIds": [
+      "100102120"
+    ],
+    "unitIds": [
+      "77437"
+    ],
+    "decisionTypeId": "Δ.2.2",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [],
+      "awardAmount": {
+        "amount": 50.0,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "Ψ68Δ6-Μ0Π",
+    "publishTimestamp": 1791270274832,
+    "submissionTimestamp": 1791270274832,
+    "versionId": "9e38e9e7-3a84-4022-911f-767ff05a6bd8",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ψ68Δ6-Μ0Π",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ψ68Δ6-Μ0Π",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

@@ -1,0 +1,54 @@
+{
+  "source": "diavgeia",
+  "ada": "9Δ7Τ469Β7Κ-ΟΔ9",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:33.346816+00:00",
+  "pdf_sha256": "bee48ca3501ce7bd99370b6c5d7360cbbd864ce55757c811b56204f4faa64a9b",
+  "pdf_size_bytes": 1292944,
+  "page_count": 14,
+  "decision": {
+    "protocolNumber": "6403",
+    "subject": "Πρόσκληση για κατάθεση οικονομικής προσφοράς για: εργασίες σιδηροκατασκευών για την πιστοποίηση ανελκυστήρων σε κτιριακές εγκαταστάσεις του Πανεπιστημίου Δυτικής Μακεδονίας, συνολικού προϋπολογισμού 4.526,00 €, συμπεριλαμβανομένου 24% Φ.Π.Α.",
+    "issueDate": 1781049600000,
+    "organizationId": "99206912",
+    "signerIds": [
+      "100082577"
+    ],
+    "unitIds": [
+      "100023306"
+    ],
+    "decisionTypeId": "Δ.2.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "cpv": [
+        "45223210-1"
+      ],
+      "contestProgressType": "Πρόχειρος",
+      "manifestSelectionCriterion": "Χαμηλότερη Τιμή",
+      "manifestContractType": "Υπηρεσίες",
+      "orgBudgetCode": "Τακτικός Προϋπολογισμός",
+      "estimatedAmount": {
+        "amount": 3650.0,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "9Δ7Τ469Β7Κ-ΟΔ9",
+    "publishTimestamp": 1781088281668,
+    "submissionTimestamp": 1789720838406,
+    "versionId": "0f0d5539-4aa3-4b6f-9508-4147dbf5a4c8",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/9Δ7Τ469Β7Κ-ΟΔ9",
+    "documentUrl": "https://diavgeia.gov.gr/doc/9Δ7Τ469Β7Κ-ΟΔ9",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

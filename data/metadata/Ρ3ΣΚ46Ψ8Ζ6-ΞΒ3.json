@@ -1,0 +1,56 @@
+{
+  "source": "diavgeia",
+  "ada": "Ρ3ΣΚ46Ψ8Ζ6-ΞΒ3",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:52:14.359826+00:00",
+  "pdf_sha256": "8127e819b9b7c3a74c0cca9207d16904a969c7f94012a26626aba0760140a965",
+  "pdf_size_bytes": 555642,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "3021/2026",
+    "subject": "Σύμβαση Πρόσθετης Απασχόλησης #17317 #77884",
+    "issueDate": 1769126400000,
+    "organizationId": "99202112",
+    "signerIds": [
+      "100078390"
+    ],
+    "unitIds": [
+      "73234"
+    ],
+    "decisionTypeId": "Γ.3.4",
+    "thematicCategoryIds": [
+      "44"
+    ],
+    "extraFieldValues": {
+      "contractType": "Σύμβαση Έργου",
+      "numberOfPeople": 1,
+      "financedProject": null,
+      "person": [
+        {
+          "afm": "",
+          "name": "ΚΑΛΟΓΗΡΟΥ ΣΤΕΦΑΝΟΣ"
+        }
+      ],
+      "contractAmount": {
+        "amount": 3037.27,
+        "currency": "EUR"
+      },
+      "duration": "01/09/2026 - 31/12/2026",
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": true,
+    "ada": "Ρ3ΣΚ46Ψ8Ζ6-ΞΒ3",
+    "publishTimestamp": 1791543466264,
+    "submissionTimestamp": 1791543466264,
+    "versionId": "f1f21e86-2c7d-4e49-96e1-a4befa6977ca",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ρ3ΣΚ46Ψ8Ζ6-ΞΒ3",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ρ3ΣΚ46Ψ8Ζ6-ΞΒ3",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

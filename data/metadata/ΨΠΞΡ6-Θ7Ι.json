@@ -1,0 +1,48 @@
+{
+  "source": "diavgeia",
+  "ada": "ΨΠΞΡ6-Θ7Ι",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:50.230249+00:00",
+  "pdf_sha256": "e8b72adc334e6280d7b67bab1d51bc309df0d280871b338aeabf47d7a05ee6c1",
+  "pdf_size_bytes": 247630,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "Φ.071/597/1988/Σ.986",
+    "subject": "ΠΡΟΜΗΘΕΙΑ ΕΙΔΩΝ",
+    "issueDate": 1775174400000,
+    "organizationId": "6",
+    "signerIds": [
+      "100102120"
+    ],
+    "unitIds": [
+      "77437"
+    ],
+    "decisionTypeId": "Δ.2.2",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [],
+      "awardAmount": {
+        "amount": 47.05,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "ΨΠΞΡ6-Θ7Ι",
+    "publishTimestamp": 1791437964384,
+    "submissionTimestamp": 1791437964384,
+    "versionId": "74bfcf46-3ca4-45ce-af86-b96ec3536ab9",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΨΠΞΡ6-Θ7Ι",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΨΠΞΡ6-Θ7Ι",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

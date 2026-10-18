@@ -1,0 +1,55 @@
+{
+  "source": "diavgeia",
+  "ada": "Ψ0ΙΘ4690Ω3-Θ92",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:47.845929+00:00",
+  "pdf_sha256": "729c2ed073631eca985c3f799cdfbac4eabb9a5a9f1d2a74e1dc41bdba8deeef",
+  "pdf_size_bytes": 368522,
+  "page_count": 7,
+  "decision": {
+    "protocolNumber": "251/2026",
+    "subject": "ΣΥΜΒΑΣΗ ΥΠ΄ΑΡΙΘ. 251/2026 Με αντικείμενο προμήθειας: «Ενδοαγγειακών υλικών για την πραγματοποίηση της χειρουργικής επέμβασης του ασθενούς της Παν. Αγγειοχειρουργικής κλινικής του Π.Γ.Ν.Α., κ. Μ.Σ. (1578902)»",
+    "issueDate": 1773187200000,
+    "organizationId": "99221985",
+    "signerIds": [
+      "100075218"
+    ],
+    "unitIds": [
+      "76285"
+    ],
+    "decisionTypeId": "Δ.2.2",
+    "thematicCategoryIds": [
+      "10007"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "998940383",
+          "name": "ΥΓΕΙΑΣΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ ΕΙΣΑΓΩΓΕΣ ΕΞΑΓΩΓΕΣ ΔΙΑΘΕΣΗ ΙΑΤΡΟΤΕΧΝΟΛΟΓΙΚΩΝ ΠΡΟΙΟΝΤΩΝ",
+          "enterName": false,
+          "afmType": "EL"
+        }
+      ],
+      "awardAmount": {
+        "amount": 21261.0,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "Ψ0ΙΘ4690Ω3-Θ92",
+    "publishTimestamp": 1791786613577,
+    "submissionTimestamp": 1791786613577,
+    "versionId": "05d0cd30-4860-470e-a08c-2a3e431e0706",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ψ0ΙΘ4690Ω3-Θ92",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ψ0ΙΘ4690Ω3-Θ92",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

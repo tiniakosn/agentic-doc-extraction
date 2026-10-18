@@ -1,0 +1,56 @@
+{
+  "source": "diavgeia",
+  "ada": "ΕΚΖΖ465274-ΝΘΛ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:52:08.525972+00:00",
+  "pdf_sha256": "6ae759aa09333afc1c632f064fc6a2bfa53b30e5a4026283565bb35abea3d24b",
+  "pdf_size_bytes": 555081,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "10062/2026",
+    "subject": "Σύμβαση Έργου #138636 #4329486",
+    "issueDate": 1775174400000,
+    "organizationId": "100018414",
+    "signerIds": [
+      "100070441"
+    ],
+    "unitIds": [
+      "100018807"
+    ],
+    "decisionTypeId": "Γ.3.4",
+    "thematicCategoryIds": [
+      "44"
+    ],
+    "extraFieldValues": {
+      "contractType": "Σύμβαση Έργου",
+      "numberOfPeople": 1,
+      "financedProject": null,
+      "person": [
+        {
+          "afm": "",
+          "name": "ΞΥΠΟΛΥΤΟΥ ΖΑΧΑΡΟΥΛΑ"
+        }
+      ],
+      "contractAmount": {
+        "amount": 8316.0,
+        "currency": "EUR"
+      },
+      "duration": "03/04/2026 - 31/12/2026",
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": true,
+    "ada": "ΕΚΖΖ465274-ΝΘΛ",
+    "publishTimestamp": 1777291860752,
+    "submissionTimestamp": 1791548160862,
+    "versionId": "d69f3db4-4ad9-44a7-a9c6-24783fe3384f",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΕΚΖΖ465274-ΝΘΛ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΕΚΖΖ465274-ΝΘΛ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "36f3a2c6-8728-4366-8e5a-b0a956ae3506"
+  },
+  "collection_time_verified": false
+}

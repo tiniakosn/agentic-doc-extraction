@@ -1,0 +1,57 @@
+{
+  "source": "diavgeia",
+  "ada": "Ψ882469Β7Γ-Φ0Κ",
+  "collected_at": "2026-10-12T14:38:11.515077+00:00",
+  "metadata_updated_at": "2026-10-12T14:46:12.724157+00:00",
+  "pdf_sha256": "3424eac9441dd588a59599aa5d3298fccb6dddb7480f0feee10c4dfca6ceb3ee",
+  "pdf_size_bytes": 565472,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "48197/2026",
+    "subject": "Απόφαση Απευθείας Ανάθεσης #2533991 #696806",
+    "issueDate": 1791763200000,
+    "organizationId": "99206917",
+    "signerIds": [
+      "100002709"
+    ],
+    "unitIds": [
+      "74024"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "64",
+      "36"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "802394829",
+          "afmType": "EL",
+          "afmCountry": null,
+          "name": "ΑΝΥΣΜΑ ΚΑΛΗΣΠΕΡΑΚΗΣ ΜΟΝΟΠΡΟΣΩΠΗ Ι Κ Ε",
+          "enterName": false
+        }
+      ],
+      "awardAmount": null,
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "30232000-4"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "Ψ882469Β7Γ-Φ0Κ",
+    "publishTimestamp": 1791815808570,
+    "submissionTimestamp": 1791815808570,
+    "versionId": "1b9df47b-1089-4aad-a716-0a3c539d2855",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ψ882469Β7Γ-Φ0Κ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ψ882469Β7Γ-Φ0Κ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  }
+}

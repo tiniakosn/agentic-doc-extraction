@@ -1,0 +1,58 @@
+{
+  "source": "diavgeia",
+  "ada": "9ΗΑΧ469Β7Γ-ΔΞΡ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:46:13.890504+00:00",
+  "pdf_sha256": "bb3a7010d3028d764f55e6c92fcf7f0c2ee6c52537518fddbb182fcd290246fa",
+  "pdf_size_bytes": 567827,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "48196/2026",
+    "subject": "Απόφαση Απευθείας Ανάθεσης #2538071 #696805",
+    "issueDate": 1791763200000,
+    "organizationId": "99206917",
+    "signerIds": [
+      "100002709"
+    ],
+    "unitIds": [
+      "74024"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "64",
+      "36"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "082170311",
+          "afmType": "EL",
+          "afmCountry": null,
+          "name": "ΘΕΣΙΣ GROUP ΙΚΕ",
+          "enterName": false
+        }
+      ],
+      "awardAmount": null,
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "39100000-3"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "9ΗΑΧ469Β7Γ-ΔΞΡ",
+    "publishTimestamp": 1791815802911,
+    "submissionTimestamp": 1791815802911,
+    "versionId": "07fb17c4-4085-44a4-8add-c3dc4229267b",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/9ΗΑΧ469Β7Γ-ΔΞΡ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/9ΗΑΧ469Β7Γ-ΔΞΡ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

@@ -1,0 +1,59 @@
+{
+  "source": "diavgeia",
+  "ada": "Ψ8ΞΛΩΛΘ-ΟΑΦ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:59.209681+00:00",
+  "pdf_sha256": "f6c1172af0c815c501183bf070636e1efddb7cecd09838bdd77e9345633065f6",
+  "pdf_size_bytes": 166934,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "6748/2026",
+    "subject": "Προμήθεια χλωριοτήρων για τη χλωρίωση του πόσιμου νερού",
+    "issueDate": 1779235200000,
+    "organizationId": "6174",
+    "signerIds": [
+      "100084253"
+    ],
+    "unitIds": [
+      "81216"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "999878790",
+          "name": "Η ΜΠΑΣΙΑΚΟΣ   Ε ΤΣΑΚΑΛΗ ΟΕ",
+          "enterName": false,
+          "afmType": "EL"
+        }
+      ],
+      "awardAmount": {
+        "amount": 900.06,
+        "currency": "EUR"
+      },
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "42993100-4"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "Ψ8ΞΛΩΛΘ-ΟΑΦ",
+    "publishTimestamp": 1780047804187,
+    "submissionTimestamp": 1791199108881,
+    "versionId": "65bae4ec-88d1-4066-8ee5-4cf6d1d96329",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ψ8ΞΛΩΛΘ-ΟΑΦ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ψ8ΞΛΩΛΘ-ΟΑΦ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "57031238-8320-4777-a4f1-ea17ed9142d8"
+  },
+  "collection_time_verified": false
+}

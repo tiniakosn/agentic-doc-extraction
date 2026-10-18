@@ -1,0 +1,58 @@
+{
+  "source": "diavgeia",
+  "ada": "9Ν8Λ469Β7Γ-Ε6Α",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:46:11.698301+00:00",
+  "pdf_sha256": "b27bef9725e8bce8ab08bc37053def4cc5c3a3c090af4a44e37b52de395d21dd",
+  "pdf_size_bytes": 565755,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "48322/2026",
+    "subject": "Απόφαση Απευθείας Ανάθεσης #2539635 #696807",
+    "issueDate": 1791763200000,
+    "organizationId": "99206917",
+    "signerIds": [
+      "100002709"
+    ],
+    "unitIds": [
+      "74024"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "64",
+      "36"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "094090314",
+          "afmType": "EL",
+          "afmCountry": null,
+          "name": "ΧΟΜΠΙΤΗΣ ΞΕΝΟΔΟΧΕΙΑΚΕΣ ΚΑΙ   ΤΟΥΡΙΣΤΙΚΕΣ  ΕΠΙΧΕΙΡΗΣΕΙΣ Α.Ε.",
+          "enterName": false
+        }
+      ],
+      "awardAmount": null,
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "55100000-1"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "9Ν8Λ469Β7Γ-Ε6Α",
+    "publishTimestamp": 1791815814267,
+    "submissionTimestamp": 1791815814267,
+    "versionId": "cd339c52-574b-486d-97a0-0f15753afd94",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/9Ν8Λ469Β7Γ-Ε6Α",
+    "documentUrl": "https://diavgeia.gov.gr/doc/9Ν8Λ469Β7Γ-Ε6Α",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

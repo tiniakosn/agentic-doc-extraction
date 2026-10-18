@@ -1,0 +1,54 @@
+{
+  "source": "diavgeia",
+  "ada": "ΕΚ0Η46ΝΙΦ6-Γ1Η",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:40.935619+00:00",
+  "pdf_sha256": "6cc9464e490763bb63ea843f87bd99e6fc82b088a6685afd071771323b8f31ce",
+  "pdf_size_bytes": 87950,
+  "page_count": 4,
+  "decision": {
+    "protocolNumber": "15/06/2026",
+    "subject": "ΠΡΟΣΚΛΗΣΗ ΓΙΑ ΤΗΝ ΠΑΡΟΧΗ ΤΕΧΝΙΚΗΣ,ΔΙΟΙΚΗΤΙΚΗΣ ΚΑΙ ΔΙΑΧΕΙΡΙΣΤΙΚΗΣ ΥΠΟΣΤΗΡΙΞΗΣ ΣΤΟ ΚΕΝΤΡΟ ΗΜΕΡΑΣ ΕΝΗΛΙΚΩΝ 11ου Το ΨΥ ΑΤΤΙΚΗΣ",
+    "issueDate": 1781481600000,
+    "organizationId": "100090566",
+    "signerIds": [
+      "100090668"
+    ],
+    "unitIds": [
+      "100090662"
+    ],
+    "decisionTypeId": "Δ.2.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "cpv": [
+        "79500000-9"
+      ],
+      "contestProgressType": "Πρόχειρος",
+      "manifestSelectionCriterion": "Χαμηλότερη Τιμή",
+      "manifestContractType": "Υπηρεσίες",
+      "orgBudgetCode": "Τακτικός Προϋπολογισμός",
+      "estimatedAmount": {
+        "amount": 5460.0,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "ΕΚ0Η46ΝΙΦ6-Γ1Η",
+    "publishTimestamp": 1785327623754,
+    "submissionTimestamp": 1785329364539,
+    "versionId": "5c06f09a-58c3-4cbd-96bf-277cf48998a1",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΕΚ0Η46ΝΙΦ6-Γ1Η",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΕΚ0Η46ΝΙΦ6-Γ1Η",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "69a536b1-aef7-4020-bd75-76aa083f15db"
+  },
+  "collection_time_verified": false
+}

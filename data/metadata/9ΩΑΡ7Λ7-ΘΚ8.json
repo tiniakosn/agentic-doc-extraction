@@ -1,0 +1,54 @@
+{
+  "source": "diavgeia",
+  "ada": "9ΩΑΡ7Λ7-ΘΚ8",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:37.462547+00:00",
+  "pdf_sha256": "d1a6c375cb3737d271b833d7a2d495f1a7ba398ca2182feea6df95fc5aa2584f",
+  "pdf_size_bytes": 1924796,
+  "page_count": 63,
+  "decision": {
+    "protocolNumber": "1009/2026",
+    "subject": "ΚΑΤΑΣΚΕΥΗ ΑΓΩΓΩΝ ΟΜΒΡΙΩΝ ΣΕ ΟΔΟΥΣ ΠΕΡΙΟΧΩΝ ΒΑΡΚΙΖΑΣ ΚΑΙ ΒΟΥΛΑΣ, ΑΧΙΛΕΩΣ – ΘΗΣΕΩΣ – ΒΑΣΙΛΕΩΣ ΓΕΩΡΓΙΟΥ ΚΑΙ ΡΟΔΟΥ ΛΕΙΨΩΝ",
+    "issueDate": 1782432000000,
+    "organizationId": "5002",
+    "signerIds": [
+      "100084262"
+    ],
+    "unitIds": [
+      "100088848"
+    ],
+    "decisionTypeId": "Δ.2.1",
+    "thematicCategoryIds": [
+      "52"
+    ],
+    "extraFieldValues": {
+      "cpv": [
+        "45246400-7"
+      ],
+      "contestProgressType": "Ανοικτός",
+      "manifestSelectionCriterion": "Χαμηλότερη Τιμή",
+      "manifestContractType": "Έργα",
+      "orgBudgetCode": "Τακτικός Προϋπολογισμός",
+      "estimatedAmount": {
+        "amount": 3387096.76,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "9ΩΑΡ7Λ7-ΘΚ8",
+    "publishTimestamp": 1786361883095,
+    "submissionTimestamp": 1786361883095,
+    "versionId": "25fcbc7a-05e8-4762-b423-5b464ce1c163",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/9ΩΑΡ7Λ7-ΘΚ8",
+    "documentUrl": "https://diavgeia.gov.gr/doc/9ΩΑΡ7Λ7-ΘΚ8",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

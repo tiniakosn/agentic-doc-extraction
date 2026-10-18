@@ -1,0 +1,56 @@
+{
+  "source": "diavgeia",
+  "ada": "910Ι46Ψ8Ζ6-ΙΣ5",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:52:13.211980+00:00",
+  "pdf_sha256": "6e9c12d01febb48b9670bf8d90b8612cfe76b0078e0db8a60b74f82e5b31df18",
+  "pdf_size_bytes": 555664,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "3027/2026",
+    "subject": "Σύμβαση Πρόσθετης Απασχόλησης #17318 #77885",
+    "issueDate": 1769126400000,
+    "organizationId": "99202112",
+    "signerIds": [
+      "100078390"
+    ],
+    "unitIds": [
+      "73234"
+    ],
+    "decisionTypeId": "Γ.3.4",
+    "thematicCategoryIds": [
+      "44"
+    ],
+    "extraFieldValues": {
+      "contractType": "Σύμβαση Έργου",
+      "numberOfPeople": 1,
+      "financedProject": null,
+      "person": [
+        {
+          "afm": "",
+          "name": "ΜΑΛΑΝΔΡΑΚΗΣ ΕΜΜΑΝΟΥΗΛ"
+        }
+      ],
+      "contractAmount": {
+        "amount": 2720.52,
+        "currency": "EUR"
+      },
+      "duration": "01/09/2026 - 30/12/2026",
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": true,
+    "ada": "910Ι46Ψ8Ζ6-ΙΣ5",
+    "publishTimestamp": 1791543473516,
+    "submissionTimestamp": 1791543473516,
+    "versionId": "f4ace783-3d19-45fc-9d66-f823724c462e",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/910Ι46Ψ8Ζ6-ΙΣ5",
+    "documentUrl": "https://diavgeia.gov.gr/doc/910Ι46Ψ8Ζ6-ΙΣ5",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

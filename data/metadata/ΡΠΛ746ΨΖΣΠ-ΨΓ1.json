@@ -1,0 +1,51 @@
+{
+  "source": "diavgeia",
+  "ada": "ΡΠΛ746ΨΖΣΠ-ΨΓ1",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:52:03.629602+00:00",
+  "pdf_sha256": "5be086ef61519732e6c84b79374ac379aa0e033afc81445aff39080f645880d9",
+  "pdf_size_bytes": 496938,
+  "page_count": 50,
+  "decision": {
+    "protocolNumber": "619/35/16-06-2026",
+    "subject": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΩΝ EΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ 2026Α ΜΑΖΙΚΗ ΑΝΑΡΤΗΣΗ ΤΠΥ",
+    "issueDate": 1771372800000,
+    "organizationId": "99203024",
+    "signerIds": [
+      "100082794"
+    ],
+    "unitIds": [
+      "100079086"
+    ],
+    "decisionTypeId": "Γ.3.4",
+    "thematicCategoryIds": [
+      "44"
+    ],
+    "extraFieldValues": {
+      "contractType": "Σύμβαση Έργου",
+      "numberOfPeople": null,
+      "financedProject": true,
+      "person": [],
+      "contractAmount": {
+        "amount": 15.0,
+        "currency": "EUR"
+      },
+      "duration": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "ΡΠΛ746ΨΖΣΠ-ΨΓ1",
+    "publishTimestamp": 1791812542306,
+    "submissionTimestamp": 1791812542306,
+    "versionId": "0ce36b24-e1f3-4b40-9306-41c88a8e7ead",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΡΠΛ746ΨΖΣΠ-ΨΓ1",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΡΠΛ746ΨΖΣΠ-ΨΓ1",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

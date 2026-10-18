@@ -1,0 +1,54 @@
+{
+  "source": "diavgeia",
+  "ada": "91ΤΣ46ΝΙΦ6-ΠΡΛ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:38.589194+00:00",
+  "pdf_sha256": "b491df7eb92bc159cbf361643ab03ab20bbca96bbbc3dc74fdd1500f5f431abd",
+  "pdf_size_bytes": 87106,
+  "page_count": 4,
+  "decision": {
+    "protocolNumber": "15/06/2026",
+    "subject": "ΠΡΟΣΚΛΗΣΗ  ΓΙΑ ΤΗΝ ΠΑΡΟΧΗ ΨΥΧ ΥΠΗΡΕΣΙΩΝ -ΚΑΛΥΨΗ ΕΞ. ΕΠΟΠΤΗ ΣΤΟ ΟΙΚΟΤΡΟΦΕΙΟ ΓΙΑ ΑΤΟΜΑ ΜΕ ΟΡΓΑΝΙΚΑ ΨΥΧΟΣΥΝΔΡΟΜΑ, ΝΟΣΟ ALZ KAI ΣΥΝΑΦΕΙΣ ΔΙΑΤΑΡΑΧΕΣ ΣΤΗΝ ΠΕΡΙΦ   ΒΟΡΕΙΟΥ  ΑΙΓΑΙΟΥ.",
+    "issueDate": 1781481600000,
+    "organizationId": "100090566",
+    "signerIds": [
+      "100090668"
+    ],
+    "unitIds": [
+      "100100947"
+    ],
+    "decisionTypeId": "Δ.2.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "cpv": [
+        "85121270-6"
+      ],
+      "contestProgressType": "Πρόχειρος",
+      "manifestSelectionCriterion": "Χαμηλότερη Τιμή",
+      "manifestContractType": "Υπηρεσίες",
+      "orgBudgetCode": "Τακτικός Προϋπολογισμός",
+      "estimatedAmount": {
+        "amount": 3000.0,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "91ΤΣ46ΝΙΦ6-ΠΡΛ",
+    "publishTimestamp": 1785847116111,
+    "submissionTimestamp": 1785847116111,
+    "versionId": "9d0b21d0-d1b2-48ce-a2e6-4c8d70842468",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/91ΤΣ46ΝΙΦ6-ΠΡΛ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/91ΤΣ46ΝΙΦ6-ΠΡΛ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

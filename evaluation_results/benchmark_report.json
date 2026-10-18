@@ -1,0 +1,154 @@
+[
+  {
+    "document": "doc_1_digital.pdf",
+    "track": "digital",
+    "ada": "Ψ00Γ46ΜΤΛΒ-3ΒΖ",
+    "text_length": 7421,
+    "is_valid": true,
+    "retries_count": 0,
+    "metrics": {
+      "extractor_time_sec": 1.25,
+      "validator_time_sec": 0.003,
+      "total_duration_sec": 1.26
+    },
+    "audit_trail": [
+      {
+        "node": "extractor",
+        "model_used": "openai/gpt-oss-120b",
+        "elapsed_sec": 1.25,
+        "extracted_summary": "ΚΛΕΙΘΡΟΠΟΙΟΣ ΜΠΟΥΛΙΟΣ ΧΡ. ΓΙΑΝΝΑΚΗΣ"
+      },
+      {
+        "node": "validator",
+        "is_valid": true,
+        "errors_count": 0,
+        "elapsed_sec": 0.003
+      }
+    ],
+    "extracted_data": {
+      "document_title": "Ανάθεση για την αμοιβή εργασίας επισκευής πόρτας αλεξίσφαιρου φυλακίου για τις ανάγκες του Α.Τ. ΠΑΛΑΙΟΥ ΦΑΛΗΡΟΥ",
+      "contractor_name": "ΚΛΕΙΘΡΟΠΟΙΟΣ ΜΠΟΥΛΙΟΣ ΧΡ. ΓΙΑΝΝΑΚΗΣ",
+      "tax_id": "079242023",
+      "financials": {
+        "net_amount": 322.5,
+        "vat_rate": 0.24,
+        "total_amount": 399.9
+      }
+    },
+    "errors": []
+  },
+  {
+    "document": "doc_2_digital.pdf",
+    "track": "digital",
+    "ada": "Ρ3ΩΞ4653ΠΩ-3Χ1",
+    "text_length": 16002,
+    "is_valid": true,
+    "retries_count": 0,
+    "metrics": {
+      "extractor_time_sec": 1.4,
+      "validator_time_sec": 0.002,
+      "total_duration_sec": 1.41
+    },
+    "audit_trail": [
+      {
+        "node": "extractor",
+        "model_used": "openai/gpt-oss-120b",
+        "elapsed_sec": 1.4,
+        "extracted_summary": "ΑΝΕΥ ΑΝΑΔΟΧΟΥ"
+      },
+      {
+        "node": "validator",
+        "is_valid": true,
+        "errors_count": 0,
+        "elapsed_sec": 0.002
+      }
+    ],
+    "extracted_data": {
+      "document_title": "Πρόσκληση για προκήρυξη επισόλης ενδιαφέροντος για Α.Α. ΚΑΣΑ στηνακίνηία ΣΟΤ ΟΙΝΟΤΑΙ ΙΙΙ",
+      "contractor_name": "ΑΝΕΥ ΑΝΑΔΟΧΟΥ",
+      "tax_id": null,
+      "financials": {
+        "net_amount": 1335.55,
+        "vat_rate": 0.24,
+        "total_amount": 1656.08
+      }
+    },
+    "errors": []
+  },
+  {
+    "document": "doc_3_digital.pdf",
+    "track": "digital",
+    "ada": "ΡΩ6Α46ΜΤΛΒ-ΚΗΓ",
+    "text_length": 3680,
+    "is_valid": true,
+    "retries_count": 0,
+    "metrics": {
+      "extractor_time_sec": 22.65,
+      "validator_time_sec": 0.001,
+      "total_duration_sec": 22.66
+    },
+    "audit_trail": [
+      {
+        "node": "extractor",
+        "model_used": "openai/gpt-oss-120b",
+        "elapsed_sec": 22.65,
+        "extracted_summary": "ΚΟΝΤΗΣ ΜΟΝΟΠΡΟΣΩΠΗ Ε.Π.Ε."
+      },
+      {
+        "node": "validator",
+        "is_valid": true,
+        "errors_count": 0,
+        "elapsed_sec": 0.001
+      }
+    ],
+    "extracted_data": {
+      "document_title": "Ανάθεση προμήθειας πέντε -05- σαρωτών εγγράφων, προς κάλυψη αναγκών του Τμήματος Αρχείου και Ταυτοτήτων/Υποδιεύθυνση Αναζητήσεων Αρχείου και Ταυτοτήτων/Διεύθυνση Δίωξης και Εξιχνίασης Εγκλημάτων Αττικής, προϋπολογισθείσας δαπάνης #2.200,00# ευρώ",
+      "contractor_name": "ΚΟΝΤΗΣ ΜΟΝΟΠΡΟΣΩΠΗ Ε.Π.Ε.",
+      "tax_id": "095367575",
+      "financials": {
+        "net_amount": 1624.19,
+        "vat_rate": 0.24,
+        "total_amount": 2015.0
+      }
+    },
+    "errors": []
+  },
+  {
+    "document": "doc_4_scanned.pdf",
+    "track": "scanned",
+    "ada": "ΨΕΗΣ4ΘΜΤΛΒ-ΖΟΨ",
+    "text_length": 7373,
+    "is_valid": true,
+    "retries_count": 0,
+    "metrics": {
+      "extractor_time_sec": 6.42,
+      "validator_time_sec": 0.002,
+      "total_duration_sec": 6.43
+    },
+    "audit_trail": [
+      {
+        "node": "extractor",
+        "model_used": "openai/gpt-oss-120b",
+        "elapsed_sec": 6.42,
+        "extracted_summary": "ΚΛΕΙΘΡΟΠΟΙΟΣ ΜΠΟΥΛΙΟΣ ΧΡ. ΠΑΝΝΑΚΗΣ"
+      },
+      {
+        "node": "validator",
+        "is_valid": true,
+        "errors_count": 0,
+        "elapsed_sec": 0.002
+      }
+    ],
+    "extracted_data": {
+      "document_title": "Ανάθεση για την αμοιβή εργασίας επισκευής πόρτας αλεξίσφαιρου φυλακίου για τις ανάγκες του Α.Τ. ΠΑΛΑΙΟΥ ΦΑΛΗΡΟΥ",
+      "contractor_name": "ΚΛΕΙΘΡΟΠΟΙΟΣ ΜΠΟΥΛΙΟΣ ΧΡ. ΠΑΝΝΑΚΗΣ",
+      "tax_id": "079242023",
+      "financials": {
+        "net_amount": 322.5,
+        "vat_rate": 0.24,
+        "total_amount": 399.9
+      }
+    },
+    "errors": []
+  }
+]

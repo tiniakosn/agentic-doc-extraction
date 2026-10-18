@@ -1,0 +1,58 @@
+{
+  "source": "diavgeia",
+  "ada": "Ε0ΘΩ469Β7Γ-ΡΟ4",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:46:16.187492+00:00",
+  "pdf_sha256": "a64473f52e3375d83bf74d020a1f20007a8a96fd026b9310331f127a1ac0572e",
+  "pdf_size_bytes": 567996,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "48192/2026",
+    "subject": "Απόφαση Απευθείας Ανάθεσης #2540576 #696803",
+    "issueDate": 1791763200000,
+    "organizationId": "99206917",
+    "signerIds": [
+      "100002709"
+    ],
+    "unitIds": [
+      "74024"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "64",
+      "36"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "094045367",
+          "afmType": "EL",
+          "afmCountry": null,
+          "name": "ΚΑΡΑΤΑΡΑΚΗΣ ΞΕΝΟΔΟΧΕΙΑ ΚΑΙ ΕΣΤΙΑΤΟΡΙΑ ΑΝΩΝΥΜΟΣ ΕΤΑΙΡΕΙΑ",
+          "enterName": false
+        }
+      ],
+      "awardAmount": null,
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "55110000-4"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "Ε0ΘΩ469Β7Γ-ΡΟ4",
+    "publishTimestamp": 1791815791163,
+    "submissionTimestamp": 1791815791163,
+    "versionId": "f657978e-9c72-4127-aefd-9be6eac81a4a",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ε0ΘΩ469Β7Γ-ΡΟ4",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ε0ΘΩ469Β7Γ-ΡΟ4",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

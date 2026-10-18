@@ -1,0 +1,63 @@
+{
+  "source": "diavgeia",
+  "ada": "ΨΓΥΖ4ΧΡ-3Θ3",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:56.913472+00:00",
+  "pdf_sha256": "b2a7f92c33d13013e943e214fa01ab0937671d6b48fb149b68da9994b5c9ca42",
+  "pdf_size_bytes": 217970,
+  "page_count": 2,
+  "decision": {
+    "protocolNumber": "199",
+    "subject": "ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ ΜΙΑΣ (1) ΚΛΙΜΑΤΙΣΤΙΚΗΣ ΜΟΝΑΔΑΣ ΣΤΗΝ ΠΕΡΙΦΕΡΕΙΑΚΗ ΕΔΡΑ ΣΙΚΥΩΝΟΣ ΤΟΥ ΠΡΩΤΟΔΙΚΕΙΟΥ ΚΟΡΙΝΘΟΥ",
+    "issueDate": 1781568000000,
+    "organizationId": "3375",
+    "signerIds": [
+      "100100437"
+    ],
+    "unitIds": [
+      "87898"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "046786661",
+          "name": "ΙΩΑΚΕΙΜΑΡΟΣ,,ΔΗΜΗΤΡΙΟΣ,ΝΙΚΟΛΑΟΣ",
+          "enterName": false,
+          "afmType": "EL"
+        }
+      ],
+      "awardAmount": {
+        "amount": 3500.0,
+        "currency": "EUR"
+      },
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "42512000-8"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": [
+        {
+          "relatedDecisionsADA": "9Ο7Β46ΨΧΥΙ-Β6Φ"
+        }
+      ],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "ΨΓΥΖ4ΧΡ-3Θ3",
+    "publishTimestamp": 1791262450885,
+    "submissionTimestamp": 1791262450885,
+    "versionId": "e1193a5d-98b8-422c-a77e-6a8a451e10d0",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΨΓΥΖ4ΧΡ-3Θ3",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΨΓΥΖ4ΧΡ-3Θ3",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

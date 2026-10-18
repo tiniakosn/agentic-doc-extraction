@@ -1,0 +1,44 @@
+{
+  "document_id": "doc_001",
+  "document_type": null,
+
+  "contractor": {
+    "name": {
+      "value": "ΚΛΕΙΘΡΟΠΟΙΟΣ ΜΠΟΥΛΙΟΣ ΧΡ. ΓΙΑΝΝΑΚΗΣ",
+      "status": "present",
+      "evidence": {
+        "page": null,
+        "text": "Την απευθείας ανάθεση στον οικονομικό φορέα με την επωνυμία «ΚΛΕΙΘΡΟΠΟΙΟΣ ΜΠΟΥΛΙΟΣ ΧΡ. ΓΙΑΝΝΑΚΗΣ»"
+      }
+    },
+    "tax_id": {
+      "value": "079242023",
+      "status": "present",
+      "evidence": {
+        "page": null,
+        "text": "Την απευθείας ανάθεση στον οικονομικό φορέα με την επωνυμία «ΚΛΕΙΘΡΟΠΟΙΟΣ ΜΠΟΥΛΙΟΣ ΧΡ. ΓΙΑΝΝΑΚΗΣ», Α.Φ.Μ. 079242023 Δ.Ο.Υ. ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ"
+      }
+    }
+  },
+
+  "financials": {
+    "net_amount": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    },
+    "vat_rate": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    },
+    "total_amount": {
+      "value": 399.90,
+      "status": "present",
+      "evidence": {
+        "page": null,
+        "text": "στη συνολική τιμή των τριακοσίων ενενήντα εννέα ευρώ και ενενήντα λεπτών (399,90€)"
+      }
+    }
+  }
+}

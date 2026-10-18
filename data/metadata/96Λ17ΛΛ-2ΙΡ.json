@@ -1,0 +1,54 @@
+{
+  "source": "diavgeia",
+  "ada": "96Λ17ΛΛ-2ΙΡ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:32.095872+00:00",
+  "pdf_sha256": "6c811d341b9acea1656b9c937d3022d9710f4411a04d05e644c85e62102402a9",
+  "pdf_size_bytes": 670894,
+  "page_count": 4,
+  "decision": {
+    "protocolNumber": "Οικ208252(2829)",
+    "subject": "«Πρόσκληση εκδήλωσης ενδιαφέροντος για την ανάθεση του υποέργου 2 με τίτλο: «ΠΑΡΟΧΗ ΥΠΗΡΕΣΙΑΣ ΕΜΠΕΙΡΟΓΝΩΜΟΣΥΝΗΣ ΕΚΘΕΣΗΣ ΚΛΙΜΑΤΙΚΗΣ ΑΝΘΕΚΤΙΚΟΤΗΤΑΣ», για την πράξη με τίτλο: «Τεχνική Υποστήριξη Διεύθυνσης Τεχνικών Έργων Π.Κ.Μ», στα πλαίσια της πρόσκλησης: «Τεχνική Βοήθεια ΕΤΠΑ για την υποστήριξη της Περιφέρειας Κεντρικής Μακεδονίας ως δικαιούχος του Προγράμματος»",
+    "issueDate": 1773792000000,
+    "organizationId": "5009",
+    "signerIds": [
+      "100050306"
+    ],
+    "unitIds": [
+      "100004861"
+    ],
+    "decisionTypeId": "Δ.2.1",
+    "thematicCategoryIds": [
+      "10004"
+    ],
+    "extraFieldValues": {
+      "cpv": [
+        "71313000-5"
+      ],
+      "contestProgressType": "Κλειστός",
+      "manifestSelectionCriterion": "Χαμηλότερη Τιμή",
+      "manifestContractType": "Υπηρεσίες",
+      "orgBudgetCode": "Συγχρηματοδοτούμενο Έργο",
+      "estimatedAmount": {
+        "amount": 10000.0,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "96Λ17ΛΛ-2ΙΡ",
+    "publishTimestamp": 1790839426852,
+    "submissionTimestamp": 1790839426852,
+    "versionId": "13af3e53-579f-4a3a-83ac-538e46242855",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/96Λ17ΛΛ-2ΙΡ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/96Λ17ΛΛ-2ΙΡ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

@@ -1,0 +1,60 @@
+{
+  "source": "diavgeia",
+  "ada": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:40.317793+00:00",
+  "pdf_sha256": "bb7250a3c73b5e7f0e0fd4b2a27953cf219dc80403e6ec103425acb6532f820f",
+  "pdf_size_bytes": 518494,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "57",
+    "subject": "ΑΜΟΙΒΗ ΔΗΜΟΣΙΟΓΡΑΦΙΚΩΝ ΥΠΗΡΕΣΙΩΝ, ΛΟΓΙΣΤΙΚΩΝ ΥΠΗΡΕΣΙΩΝ, ΥΠΕΥΘΥΝΟΥ DPO, ΕΚΠΑΙΔΕΥΤΩΝ ΣΕΜΙΝΑΡΙΩΝ ΕΦΕΤ κα",
+    "issueDate": 1767916800000,
+    "organizationId": "99220962",
+    "signerIds": [
+      "100095776"
+    ],
+    "unitIds": [
+      "74292"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "24"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "105014125",
+          "afmType": "EL",
+          "afmCountry": "EL",
+          "name": "ΜΠΙΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+          "noVATOrg": ""
+        }
+      ],
+      "awardAmount": {
+        "amount": 4452.0,
+        "currency": "EUR"
+      },
+      "assignmentType": "Υπηρεσίες",
+      "cpv": [
+        "79211000-6"
+      ],
+      "textRelatedADA": "",
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+    "publishTimestamp": 1791784137013,
+    "submissionTimestamp": 1791784137013,
+    "versionId": "a1d68894-2ec1-4c56-b22e-7df7991d9726",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

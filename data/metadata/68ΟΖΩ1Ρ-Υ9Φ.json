@@ -1,0 +1,49 @@
+{
+  "source": "diavgeia",
+  "ada": "68ΟΖΩ1Ρ-Υ9Φ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:46.156642+00:00",
+  "pdf_sha256": "044d1aa8bb2371b361d313b36ad6d7f0b937d13433904a18932252925c3b2187",
+  "pdf_size_bytes": 404574,
+  "page_count": 3,
+  "decision": {
+    "protocolNumber": "541/2026",
+    "subject": "Τροποποίηση της σύμβασης τεχνικής υποστήριξης ήσσονος σημασίας.",
+    "issueDate": 1782691200000,
+    "organizationId": "6265",
+    "signerIds": [
+      "100084073"
+    ],
+    "unitIds": [
+      "100086486"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "24"
+    ],
+    "extraFieldValues": {
+      "person": [],
+      "awardAmount": {
+        "currency": "EUR"
+      },
+      "assignmentType": "Υπηρεσίες",
+      "cpv": null,
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "68ΟΖΩ1Ρ-Υ9Φ",
+    "publishTimestamp": 1782725466861,
+    "submissionTimestamp": 1791458379084,
+    "versionId": "0a96e96f-eda2-4bb5-a9bd-ec49deb9346e",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/68ΟΖΩ1Ρ-Υ9Φ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/68ΟΖΩ1Ρ-Υ9Φ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "24d7d84c-2579-445c-8cbb-6c9e9e87f64b"
+  },
+  "collection_time_verified": false
+}

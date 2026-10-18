@@ -1,0 +1,58 @@
+{
+  "source": "diavgeia",
+  "ada": "Ρ9Σ5469Β7Γ-ΓΕΩ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:46:15.035267+00:00",
+  "pdf_sha256": "275ccc16ec2c4381ceedf6ced3fe738e65b148be17351ca97bd16519f8b5da5f",
+  "pdf_size_bytes": 565534,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "48195/2026",
+    "subject": "Απόφαση Απευθείας Ανάθεσης #2539769 #696804",
+    "issueDate": 1791763200000,
+    "organizationId": "99206917",
+    "signerIds": [
+      "100002709"
+    ],
+    "unitIds": [
+      "74024"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "64",
+      "36"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "997000397",
+          "afmType": "EL",
+          "afmCountry": null,
+          "name": "ΕΘΝΙΚΟ ΣΥΣΤΗΜΑ ΔΙΑΠΙΣΤΕΥΣΗΣ",
+          "enterName": false
+        }
+      ],
+      "awardAmount": null,
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "79132000-8"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "Ρ9Σ5469Β7Γ-ΓΕΩ",
+    "publishTimestamp": 1791815797059,
+    "submissionTimestamp": 1791815797059,
+    "versionId": "d2bc6507-759c-46cb-8aa8-7ba0b5407c61",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ρ9Σ5469Β7Γ-ΓΕΩ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ρ9Σ5469Β7Γ-ΓΕΩ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

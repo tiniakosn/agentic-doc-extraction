@@ -1,0 +1,69 @@
+{
+  "source": "diavgeia",
+  "ada": "6Δ7Υ469Β4Μ-Ν0Ο",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:46:04.752173+00:00",
+  "pdf_sha256": "b19b2ba46fecea3b230a1942d5f27c33374f41c3efc1fed708842e11e985a1a2",
+  "pdf_size_bytes": 1785386,
+  "page_count": 31,
+  "decision": {
+    "protocolNumber": "17351",
+    "subject": "ΣΥΜΒΑΣΗ ΓΙΑ ΤΗΝ «Παροχή υπηρεσιών καθαριότητας των κτιρίων του ΟΠΑ και του περιβάλλοντος χώρου αυτών από 12-10-2026 έως και 02-11-2026»",
+    "issueDate": 1791763200000,
+    "organizationId": "99206861",
+    "signerIds": [
+      "100093276"
+    ],
+    "unitIds": [
+      "75270"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "090015218",
+          "name": "ΟΙΚΟΝΟΜΙΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ",
+          "enterName": false,
+          "afmType": "EL"
+        },
+        {
+          "afm": "094510036",
+          "name": "ΓΕΝ ΚΑ ΕΤΑΙΡΕΙΑ ΟΛΟΚΛΗΡΩΜΕΝΗΣ ΔΙΑΧΕΙΡΙΣΗΣ ΚΤΗΡΙΑΚΩΝ  ΕΓΚΑΤΑΣΤΑΣΕΩΝ  ΑΝΩΝΥΜΟΣ  ΕΤΑΙΡΕΙΑ",
+          "enterName": false,
+          "afmType": "EL"
+        }
+      ],
+      "awardAmount": {
+        "amount": 36663.64,
+        "currency": "EUR"
+      },
+      "assignmentType": "Υπηρεσίες",
+      "cpv": [
+        "90911200-8"
+      ],
+      "textRelatedADA": "9ΘΛΡ469Β4Μ-Χ7Χ",
+      "relatedDecisions": [
+        {
+          "relatedDecisionsADA": "98ΧΥ469Β4Μ-ΨΣΟ"
+        }
+      ],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "6Δ7Υ469Β4Μ-Ν0Ο",
+    "publishTimestamp": 1791811749200,
+    "submissionTimestamp": 1791811749200,
+    "versionId": "140ff27e-f27f-4b31-9952-1a85e577a69b",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/6Δ7Υ469Β4Μ-Ν0Ο",
+    "documentUrl": "https://diavgeia.gov.gr/doc/6Δ7Υ469Β4Μ-Ν0Ο",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

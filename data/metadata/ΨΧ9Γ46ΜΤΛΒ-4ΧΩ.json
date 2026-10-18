@@ -1,0 +1,59 @@
+{
+  "source": "diavgeia",
+  "ada": "ΨΧ9Γ46ΜΤΛΒ-4ΧΩ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:41.466956+00:00",
+  "pdf_sha256": "2a4bdb97876f06cf2a5fdaf8e92ccb259d0f1270fcdb194e592b45813a9f3327",
+  "pdf_size_bytes": 114479,
+  "page_count": 2,
+  "decision": {
+    "protocolNumber": "8053/28006/38-δ",
+    "subject": "Απευθείας ανάθεση για την προμήθεια δύο (02) ακτοπλοϊκών εισιτηρίων για την μεταφορά του υπ’ αρίθ. Ε.Α. 28006 υπηρεσιακού αυτοκινήτου για τις ανάγκες του Α.Τ. Αγίου Κηρύκου",
+    "issueDate": 1778025600000,
+    "organizationId": "100054489",
+    "signerIds": [
+      "100096582"
+    ],
+    "unitIds": [
+      "100001807"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "065872138",
+          "name": "ΑΜΟΡΓΙΑΝΟΥ,,ΣΕΒΑΣΤΗ,ΦΙΛΙΠΠΟΣ",
+          "enterName": false,
+          "afmType": "EL"
+        }
+      ],
+      "awardAmount": {
+        "amount": 64.0,
+        "currency": "EUR"
+      },
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "22459000-2"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "ΨΧ9Γ46ΜΤΛΒ-4ΧΩ",
+    "publishTimestamp": 1791624407190,
+    "submissionTimestamp": 1791624407190,
+    "versionId": "980d72d7-ab12-4fb1-ad73-8982f52239a9",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΨΧ9Γ46ΜΤΛΒ-4ΧΩ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΨΧ9Γ46ΜΤΛΒ-4ΧΩ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

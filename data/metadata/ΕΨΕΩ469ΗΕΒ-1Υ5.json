@@ -1,0 +1,48 @@
+{
+  "source": "diavgeia",
+  "ada": "ΕΨΕΩ469ΗΕΒ-1Υ5",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:52:12.063672+00:00",
+  "pdf_sha256": "0626458c51329a5da7c817f7681e8e6c6cd5c836dbe39ff6068fe29e85fb9c37",
+  "pdf_size_bytes": 568596,
+  "page_count": 2,
+  "decision": {
+    "protocolNumber": "7289/2026",
+    "subject": "Σύμβαση Εργασίας #45083 #273180",
+    "issueDate": 1772668800000,
+    "organizationId": "99220979",
+    "signerIds": [
+      "100100819"
+    ],
+    "unitIds": [
+      "100091363"
+    ],
+    "decisionTypeId": "Γ.3.4",
+    "thematicCategoryIds": [
+      "44"
+    ],
+    "extraFieldValues": {
+      "contractType": "Σύμβαση Ιδιωτικού Δικαίου Ορισμένου Χρόνου",
+      "numberOfPeople": null,
+      "financedProject": null,
+      "person": null,
+      "contractAmount": null,
+      "duration": null,
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": true,
+    "ada": "ΕΨΕΩ469ΗΕΒ-1Υ5",
+    "publishTimestamp": 1772717342192,
+    "submissionTimestamp": 1791543591542,
+    "versionId": "1af9dff0-6770-4a93-b958-6809b73351b8",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΕΨΕΩ469ΗΕΒ-1Υ5",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΕΨΕΩ469ΗΕΒ-1Υ5",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "0d39d4aa-76fb-4dfc-985b-b41857272db1"
+  },
+  "collection_time_verified": false
+}

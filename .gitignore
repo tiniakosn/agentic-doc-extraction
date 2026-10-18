@@ -1,0 +1,17 @@
+.venv/
+.venv-ocr/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+.env
+.env.*
+!.env.example
+
+*.db
+*.sqlite
+*.sqlite3
+
+*.zip
+
+.DS_Store

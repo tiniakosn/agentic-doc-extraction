@@ -1,0 +1,56 @@
+{
+  "source": "diavgeia",
+  "ada": "9ΓΛΜ465274-Υ41",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:49.968182+00:00",
+  "pdf_sha256": "3cb58186a60fc6ab370df261d3fb0536c1b7ecbea06715728b58d42910839597",
+  "pdf_size_bytes": 559362,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "13982/2026",
+    "subject": "Απόφαση Απευθείας Ανάθεσης #2939241 #4327480",
+    "issueDate": 1778803200000,
+    "organizationId": "100018414",
+    "signerIds": [
+      "100070441"
+    ],
+    "unitIds": [
+      "100018807"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "64",
+      "36"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "-",
+          "afmType": "O",
+          "afmCountry": null
+        }
+      ],
+      "awardAmount": null,
+      "assignmentType": "Προμήθειες",
+      "cpv": [
+        "79950000-8"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "9ΓΛΜ465274-Υ41",
+    "publishTimestamp": 1779102952477,
+    "submissionTimestamp": 1791439143658,
+    "versionId": "6da70d62-f9c4-4a6c-80d6-d0b8e605c703",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/9ΓΛΜ465274-Υ41",
+    "documentUrl": "https://diavgeia.gov.gr/doc/9ΓΛΜ465274-Υ41",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "b8470405-80f1-45cd-a9c3-f92afe1e9a2f"
+  },
+  "collection_time_verified": false
+}

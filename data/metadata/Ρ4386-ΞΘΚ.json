@@ -1,0 +1,48 @@
+{
+  "source": "diavgeia",
+  "ada": "Ρ4386-ΞΘΚ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:52.517574+00:00",
+  "pdf_sha256": "3aaa3cdbcad9fb687b798fd92e3d0cd71bf4bd1abc7b71eac1436866a14a23e8",
+  "pdf_size_bytes": 248863,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "Φ.071/596/1987/Σ.285",
+    "subject": "ΠΡΟΜΗΘΕΙΑ ΥΛΙΚΩΝ",
+    "issueDate": 1782432000000,
+    "organizationId": "6",
+    "signerIds": [
+      "100102120"
+    ],
+    "unitIds": [
+      "77437"
+    ],
+    "decisionTypeId": "Δ.2.2",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [],
+      "awardAmount": {
+        "amount": 45.2,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "Ρ4386-ΞΘΚ",
+    "publishTimestamp": 1791270584212,
+    "submissionTimestamp": 1791270584212,
+    "versionId": "88e7e01f-5321-4f07-b170-a71cdd835ac3",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ρ4386-ΞΘΚ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ρ4386-ΞΘΚ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

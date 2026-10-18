@@ -1,0 +1,43 @@
+{
+  "document_id": "doc_002",
+  "document_type": null,
+
+  "contractor": {
+    "name": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    },
+    "tax_id": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    }
+  },
+
+  "financials": {
+    "net_amount": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    },
+    "vat_rate": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    },
+    "total_amount": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    } 
+  },
+
+  "notes": [
+    "The document is an invitation and no contractor has yet been selected.",
+    "The document states €1,656.08 excluding VAT per complete route; this is a per-route compensation and not the total net contract value represented by the current schema.",
+    "The document also states €1,059.89 as a performance guarantee, which is a different financial semantic role.",
+    "The extracted text contains substantial Greek character/encoding corruption and should be retained as a document-quality observation."
+   ]
+  
+}

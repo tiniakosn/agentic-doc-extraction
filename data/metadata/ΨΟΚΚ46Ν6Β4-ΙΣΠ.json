@@ -1,0 +1,51 @@
+{
+  "source": "diavgeia",
+  "ada": "ΨΟΚΚ46Ν6Β4-ΙΣΠ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:52:05.893022+00:00",
+  "pdf_sha256": "0afcddb6e9a6aa89888d6b3e8bc403a596e76c3770bedd497b7c77d9e2d398f7",
+  "pdf_size_bytes": 396697,
+  "page_count": 20,
+  "decision": {
+    "protocolNumber": "96",
+    "subject": "ΣΥΜΒΑΣΗ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ",
+    "issueDate": 1775433600000,
+    "organizationId": "100075024",
+    "signerIds": [
+      "100048847"
+    ],
+    "unitIds": [
+      "100049066"
+    ],
+    "decisionTypeId": "Γ.3.4",
+    "thematicCategoryIds": [
+      "64"
+    ],
+    "extraFieldValues": {
+      "contractType": "Σύμβαση Έργου",
+      "numberOfPeople": null,
+      "financedProject": true,
+      "person": [],
+      "contractAmount": {
+        "amount": 48000.0,
+        "currency": "EUR"
+      },
+      "duration": "31/12/2026",
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": true,
+    "ada": "ΨΟΚΚ46Ν6Β4-ΙΣΠ",
+    "publishTimestamp": 1775463373916,
+    "submissionTimestamp": 1791806693823,
+    "versionId": "788c6845-a66f-41af-a0bc-26d18772c9e9",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΨΟΚΚ46Ν6Β4-ΙΣΠ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΨΟΚΚ46Ν6Β4-ΙΣΠ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "a16201cc-6601-42f0-ab49-67f530c9d4ee"
+  },
+  "collection_time_verified": false
+}

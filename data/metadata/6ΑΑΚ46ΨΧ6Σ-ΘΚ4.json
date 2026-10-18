@@ -1,0 +1,58 @@
+{
+  "source": "diavgeia",
+  "ada": "6ΑΑΚ46ΨΧ6Σ-ΘΚ4",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:54:10.205767+00:00",
+  "pdf_sha256": "34160a27c7860c48e5dd6ddcef6d5030b6777fb8cbf2967de178ab5121f83abf",
+  "pdf_size_bytes": 270773,
+  "page_count": 2,
+  "decision": {
+    "protocolNumber": "6139/26",
+    "subject": "Aνάθεση στην εταιρεία με την επωνυμία «SAS VERSANT EVENT»,  με έδρα,  12 RUE DES FRERES LUMIERE 77290, Mitry-Mory FRANCE, VAT: FR 96922659081, του έργου που αφορά την παροχή υπηρεσιών για τη μελέτη, τη συναρμολόγηση, την τοποθέτηση και την αποσυναρμολόγηση της υποδομής (μεταλλικές τρέσες οροφής) για την κρέμαση των banner οροφής στο πλαίσιο της κατασκευής του Εθνικού περιπτέρου , [CPV: [45223800-4]-Συναρμολόγηση και ανέγερση κατασκευών από προκατασκευασμένα στοιχεία], στο πλαίσιο της συμμετοχής της «Ελληνική Εταιρεία Επενδύσεων και Εξωτερικού Εμπορίου» στην Δ.Ε. SIAL PARIS 2026, που θα διεξαχθεί στο Παρίσι, Γαλλία από τις  17 έως τις 21 Οκτωβρίου 2026, έναντι του συνολικού ποσού των δεκατεσσάρων χιλιάδων διακοσίων ενενήντα ευρώ (€ 14.290,00), η δαπάνη δεν υπόκειται σε φόρους.",
+    "issueDate": 1791763200000,
+    "organizationId": "99200058",
+    "signerIds": [
+      "100075158"
+    ],
+    "unitIds": [
+      "75615"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "96922659081",
+          "name": "SAS VERSANT EVENT",
+          "afmType": "EU",
+          "afmCountry": "FR",
+          "enterName": false
+        }
+      ],
+      "awardAmount": {
+        "currency": "EUR",
+        "amount": 14290.0
+      },
+      "assignmentType": "Υπηρεσίες",
+      "cpv": null,
+      "textRelatedADA": "ΨΑΥΧ46ΨΧ6Σ-ΠΛΝ",
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "6ΑΑΚ46ΨΧ6Σ-ΘΚ4",
+    "publishTimestamp": 1791812475289,
+    "submissionTimestamp": 1791812475289,
+    "versionId": "9421c841-9cbc-46fd-ae65-f483fb501817",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/6ΑΑΚ46ΨΧ6Σ-ΘΚ4",
+    "documentUrl": "https://diavgeia.gov.gr/doc/6ΑΑΚ46ΨΧ6Σ-ΘΚ4",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

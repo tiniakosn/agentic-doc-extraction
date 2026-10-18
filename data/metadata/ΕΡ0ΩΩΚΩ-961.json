@@ -1,0 +1,49 @@
+{
+  "source": "diavgeia",
+  "ada": "ΕΡ0ΩΩΚΩ-961",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:47.489710+00:00",
+  "pdf_sha256": "4f28ce5335a31969830784ea2b2086b6c03b992e290a1428e4ae46cd1fcaa70d",
+  "pdf_size_bytes": 1169217,
+  "page_count": 2,
+  "decision": {
+    "protocolNumber": "4115",
+    "subject": "ΔΗΜΟΣΙΕΥΣΗ ΠΕΡΙΛΗΨΗΣ ΔΙΑΚΗΡΥΞΗΣ ΔΗΜΟΠΡΑΣΙΑΣ ΑΥΤΟΜΑΤΩΝ ΠΩΛΗΤΩΝ",
+    "issueDate": 1780617600000,
+    "organizationId": "6193",
+    "signerIds": [
+      "100048577"
+    ],
+    "unitIds": [
+      "94767"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "24"
+    ],
+    "extraFieldValues": {
+      "person": [],
+      "awardAmount": {
+        "currency": "EUR"
+      },
+      "assignmentType": "Υπηρεσίες",
+      "cpv": null,
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "ΕΡ0ΩΩΚΩ-961",
+    "publishTimestamp": 1780660086590,
+    "submissionTimestamp": 1791448034170,
+    "versionId": "2a769114-f6ef-4655-bd26-0a568a39fadb",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΕΡ0ΩΩΚΩ-961",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΕΡ0ΩΩΚΩ-961",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "f8aca09a-6ee8-4a3d-b420-2fd90a1e9b5b"
+  },
+  "collection_time_verified": false
+}

@@ -1,0 +1,52 @@
+{
+  "source": "diavgeia",
+  "ada": "9ΒΖΘΩΛΘ-ΧΧΟ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:50:53.464006+00:00",
+  "pdf_sha256": "1353336823f424d267c64562c38b8efcbe63c31dd34972cd14318fcffbfd86f3",
+  "pdf_size_bytes": 242971,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "6833",
+    "subject": "Απόφαση Δημάρχου απευθείας ανάθεσης παροχής υπηρεσίας",
+    "issueDate": 1779321600000,
+    "organizationId": "6174",
+    "signerIds": [
+      "100084253"
+    ],
+    "unitIds": [
+      "81216"
+    ],
+    "decisionTypeId": "Δ.1",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [],
+      "awardAmount": {
+        "amount": 1785.6,
+        "currency": "EUR"
+      },
+      "assignmentType": "Υπηρεσίες",
+      "cpv": [
+        "92312130-1"
+      ],
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "9ΒΖΘΩΛΘ-ΧΧΟ",
+    "publishTimestamp": 1791284554225,
+    "submissionTimestamp": 1791284554225,
+    "versionId": "a52cdd63-086a-474e-8408-f7e616160804",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/9ΒΖΘΩΛΘ-ΧΧΟ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/9ΒΖΘΩΛΘ-ΧΧΟ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

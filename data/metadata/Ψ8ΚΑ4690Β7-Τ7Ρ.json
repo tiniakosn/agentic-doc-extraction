@@ -1,0 +1,59 @@
+{
+  "source": "diavgeia",
+  "ada": "Ψ8ΚΑ4690Β7-Τ7Ρ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:49.058299+00:00",
+  "pdf_sha256": "eefb1b32fc0bdd1606169edd2ab02484ca7fa9ea2b7427909333da02e7c41a34",
+  "pdf_size_bytes": 638280,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "3793",
+    "subject": "ΑΠΟΦΑΣΗ 561η  «Έγκριση- κατακύρωση προμήθειας απολυμαντικών». (ΑΠΟΛΥΜΑΝTIKA ΔΙΣΚΙΑ- ΤΑΜΠΛΕΤΕΣ ΧΛΩΡΙΟΥ)\r\n",
+    "issueDate": 1772582400000,
+    "organizationId": "99221898",
+    "signerIds": [
+      "100056495"
+    ],
+    "unitIds": [
+      "72430"
+    ],
+    "decisionTypeId": "Δ.2.2",
+    "thematicCategoryIds": [
+      "20"
+    ],
+    "extraFieldValues": {
+      "person": [
+        {
+          "afm": "999685389",
+          "name": "Π. ΚΟΣΜΙΔΗΣ & ΣΙΑ Ε.Ε ΙΑΤΡΙΚΑ-ΧΗΜΙΚΑ ΚΑΙ ΦΑΡΜΑΚΕΥΤΙΚΑ ΠΡΟΙΟΝΤΑ",
+          "enterName": false,
+          "afmType": "EL"
+        }
+      ],
+      "awardAmount": {
+        "amount": 1259.28,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [
+        {
+          "relatedDecisionsADA": "Ψ8ΚΑ4690Β7-Τ7Ρ"
+        }
+      ],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "Ψ8ΚΑ4690Β7-Τ7Ρ",
+    "publishTimestamp": 1772616924494,
+    "submissionTimestamp": 1791451278660,
+    "versionId": "7e6fd1dd-8052-4a97-94c8-c21365cfc6b2",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/Ψ8ΚΑ4690Β7-Τ7Ρ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/Ψ8ΚΑ4690Β7-Τ7Ρ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "98ad1b31-c50c-462b-88f4-cd9feea4e327"
+  },
+  "collection_time_verified": false
+}

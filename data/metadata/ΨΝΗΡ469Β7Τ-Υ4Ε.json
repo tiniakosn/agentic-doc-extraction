@@ -1,0 +1,56 @@
+{
+  "source": "diavgeia",
+  "ada": "ΨΝΗΡ469Β7Τ-Υ4Ε",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:52:09.688823+00:00",
+  "pdf_sha256": "20d938c6e4f7c6c9723407f91ace4c3f9c344760af5a248e32bc2e1dd51e7269",
+  "pdf_size_bytes": 525610,
+  "page_count": 1,
+  "decision": {
+    "protocolNumber": "4688/2026",
+    "subject": "Σύμβαση Έργου #12828 #60175",
+    "issueDate": 1770076800000,
+    "organizationId": "99206922",
+    "signerIds": [
+      "100069826"
+    ],
+    "unitIds": [
+      "74304"
+    ],
+    "decisionTypeId": "Γ.3.4",
+    "thematicCategoryIds": [
+      "44"
+    ],
+    "extraFieldValues": {
+      "contractType": "Σύμβαση Έργου",
+      "numberOfPeople": 1,
+      "financedProject": null,
+      "person": [
+        {
+          "afm": "",
+          "name": "ΣΑΒΒΙΔΗΣ ΧΡΗΣΤΟΣ"
+        }
+      ],
+      "contractAmount": {
+        "amount": 1695.0,
+        "currency": "EUR"
+      },
+      "duration": "20/02/2026 - 15/06/2026",
+      "relatedDecisions": null,
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": true,
+    "ada": "ΨΝΗΡ469Β7Τ-Υ4Ε",
+    "publishTimestamp": 1791546382225,
+    "submissionTimestamp": 1791546382225,
+    "versionId": "963fab04-cd58-4e28-a562-2a6f9a3cf3b8",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΨΝΗΡ469Β7Τ-Υ4Ε",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΨΝΗΡ469Β7Τ-Υ4Ε",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": null
+  },
+  "collection_time_verified": false
+}

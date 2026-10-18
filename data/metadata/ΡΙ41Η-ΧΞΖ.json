@@ -1,0 +1,54 @@
+{
+  "source": "diavgeia",
+  "ada": "ΡΙ41Η-ΧΞΖ",
+  "collected_at": null,
+  "metadata_updated_at": "2026-10-12T14:51:34.707636+00:00",
+  "pdf_sha256": "cfd93a527bdca1a635373ec9521aaf878942e16eab244b230dcb9a858105274a",
+  "pdf_size_bytes": 1504215,
+  "page_count": 17,
+  "decision": {
+    "protocolNumber": "71156",
+    "subject": "Πρόσκληση εκδήλωσης ενδιαφέροντος και υποβολής προσφοράς για την\nανάθεση του έργου «Παροχή υπηρεσιών καθαριότητας των χώρων γραφείων της\nΔιεύθυνσης Στρατηγικού Σχεδιασμού & Συντονισμού Χρηματοδότησης της Ειδικής\nΥπηρεσίας Δίκαιης Αναπτυξιακής Μετάβασης του Προγράμματος «Δίκαιη Αναπτυξιακή\nΜετάβαση» 2021-2027»",
+    "issueDate": 1778112000000,
+    "organizationId": "15",
+    "signerIds": [
+      "100081894"
+    ],
+    "unitIds": [
+      "100101042"
+    ],
+    "decisionTypeId": "Δ.2.1",
+    "thematicCategoryIds": [
+      "24"
+    ],
+    "extraFieldValues": {
+      "cpv": [
+        "90919200-4"
+      ],
+      "contestProgressType": "Πρόχειρος",
+      "manifestSelectionCriterion": "Χαμηλότερη Τιμή",
+      "manifestContractType": "Υπηρεσίες",
+      "orgBudgetCode": "Πρόγραμμα Δημοσίων Επενδύσεων",
+      "estimatedAmount": {
+        "amount": 5500.0,
+        "currency": "EUR"
+      },
+      "textRelatedADA": null,
+      "relatedDecisions": [],
+      "documentType": "ΠΡΑΞΗ"
+    },
+    "privateData": false,
+    "ada": "ΡΙ41Η-ΧΞΖ",
+    "publishTimestamp": 1778147805816,
+    "submissionTimestamp": 1789556325275,
+    "versionId": "7b69dd3f-b8f1-40e1-b3f0-28fdc642b2a5",
+    "status": "PUBLISHED",
+    "url": "https://diavgeia.gov.gr/luminapi/api/decisions/ΡΙ41Η-ΧΞΖ",
+    "documentUrl": "https://diavgeia.gov.gr/doc/ΡΙ41Η-ΧΞΖ",
+    "documentChecksum": null,
+    "attachments": [],
+    "warnings": null,
+    "correctedVersionId": "7cfc5caa-ae23-4036-841f-c09ac5e15ebf"
+  },
+  "collection_time_verified": false
+}
