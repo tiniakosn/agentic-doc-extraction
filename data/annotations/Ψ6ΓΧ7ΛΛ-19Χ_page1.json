@@ -1,0 +1,33 @@
+
+{
+  "document_id": "Ψ6ΓΧ7ΛΛ-19Χ",
+  "page_number": 1,
+  "annotation_scope": "page",
+  "fields": {
+    "document_type": {
+      "value": "invitation",
+      "status": "present",
+      "evidence": "Πρόσκληση εκδήλωσης ενδιαφέροντος"
+    },
+    "issuing_authority": {
+      "value": "Περιφέρεια Κεντρικής Μακεδονίας",
+      "status": "present",
+      "evidence": "ΠΕΡΙΦΕΡΕΙΑ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ"
+    },
+    "recipient": {
+      "value": "ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑ Ε.Ε.",
+      "status": "present",
+      "evidence": "ΠΡΟΣ: ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑ Ε.Ε."
+    },
+    "contractor": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    },
+    "contractor_tax_id": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    }
+  }
+}

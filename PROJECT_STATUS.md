@@ -141,3 +141,96 @@ Act as Co-Supervisor, Senior AI Architect and technical mentor.
 - Keep responses natural, concise and cohesive.
 - Update this file after meaningful milestones.
 - Do not restart the project from scratch.
+
+
+## Multimodal Pipeline v1 — Implementation Progress
+
+- Created `src/schemas/document.py`.
+- Introduced `DocumentRecord`, `DocumentPage`, `TextLayer`.
+- Created `src/ingestion/pdf_loader.py`.
+- Created `src/ingestion/ocr_backend.py`.
+- Successfully loaded real Diavgeia PDF into page-level representation.
+- Successfully attached Tesseract OCR output as a second text layer.
+
+Test document: Ψ6ΓΧ7ΛΛ-19Χ, page 4.
+
+Results:
+- Digital text: 164 characters.
+- Tesseract OCR: 2,983 characters.
+- Tesseract processing time: 13.036 seconds.
+
+Next:
+1. Define common processing backend interface.
+2. Integrate PaddleOCR through isolated Python environment.
+3. Add VLM processing backend.
+4. Introduce quality-aware routing.
+5. Integrate processing strategies into LangGraph.
+
+### Processing Backends — Milestone Completed
+
+- Defined common `PageProcessor` protocol.
+- Implemented `TesseractProcessor` (Python 3.14).
+- Implemented `PaddleOCRProcessor` (isolated Python 3.12 worker).
+- Added subprocess-based integration with timeout and temporary files.
+- Both processors return the common `TextLayer` schema.
+
+Integration test: Ψ6ΓΧ7ΛΛ-19Χ, page 4.
+
+- Tesseract: 2,983 characters, 11.233 sec, 300 DPI.
+- PaddleOCR: 2,992 characters, 36.437 sec, 150 DPI.
+
+Both backends are operational. Latencies are preliminary and not directly comparable.
+
+Next milestone: VLM backend and evidence-aware multimodal extraction.
+
+
+## Multimodal Extraction Pilot — 2026-10-18
+
+Document: Ψ6ΓΧ7ΛΛ-19Χ, page 1.
+Task: Extract document type, issuing authority, recipient, contractor and contractor tax ID.
+
+Pipeline A: PaddleOCR (150 DPI) → Qwen3.8-27B
+- OCR: 2,799 characters, 38.851 sec.
+- LLM: 1.01 sec.
+- Five fields semantically consistent with page-level reference.
+
+Pipeline B: Image (150 DPI) → Qwen3.8-27B
+- VLM latency: 1.32 sec.
+- Five fields semantically consistent with page-level reference.
+- Structured output initially failed; succeeded after explicit schema instructions.
+
+Findings:
+- Both pipelines distinguished recipient from contractor.
+- OCR reading order was imperfect.
+- Evidence fidelity requires independent verification.
+- Full-page VLM transcription was incomplete in an earlier experiment.
+
+Limitations:
+- Single page, exploratory comparison.
+- No automated field-level evaluation yet.
+- No repeated end-to-end latency measurements.
+- Different compute backends; timings not directly comparable.
+
+Next:
+1. Implement deterministic evidence verification.
+2. Build reproducible field-level evaluator.
+3. Integrate processing and extraction into LangGraph.
+4. Expand evaluation across multiple document types.
+
+Value grounding succeeded for all three present fields, while recipient evidence matching failed due to OCR reading-order distortion. Visual inspection confirmed the recipient relationship, motivating spatially grounded verification.
+
+
+### Layout-Aware Verification — Milestone
+
+- Implemented initial spatial relation checker.
+- Tested on real PaddleOCR bounding boxes.
+- Document: Ψ6ΓΧ7ΛΛ-19Χ, page 1.
+- Label: ΠΡΟΣ:
+- Value: ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑ Ε.Ε.
+- Horizontal gap: 14 px.
+- Vertical gap: 2 px.
+- Spatial relation: nearby, right-of.
+- Visual inspection supports recipient interpretation.
+- Spatial proximity alone is not proof of semantic role.
+
+Next: Preserve OCR spatial elements in document schema and integrate processing/extraction/verification into LangGraph.

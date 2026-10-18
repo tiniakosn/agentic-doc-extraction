@@ -1,0 +1,27 @@
+{
+  "document_type": {
+    "value": "Πρόσκληση εκδήλωσης ενδιαφέροντος",
+    "status": "present",
+    "evidence": "ΘΕΜΑ: Πρόσκληση εκδήλωσης ενδιαφέροντος για την ανάθεση του υποέργου 3..."
+  },
+  "issuing_authority": {
+    "value": "ΠΕΡΙΦΕΡΕΙΑ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ",
+    "status": "present",
+    "evidence": "ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ ΠΕΡΙΦΕΡΕΙΑ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Γενική Διεύθυνση Προγραμματισμού & Υποδομών"
+  },
+  "recipient": {
+    "value": "ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑ Ε.Ε.",
+    "status": "present",
+    "evidence": "ΠΡΟΣ: ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑ Ε.Ε. (Δ.T.: CONSORIS)"
+  },
+  "contractor": {
+    "value": null,
+    "status": "not_present",
+    "evidence": null
+  },
+  "contractor_tax_id": {
+    "value": null,
+    "status": "not_present",
+    "evidence": null
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_type": {
+    "value": "Πρόσκληση εκδήλωσης ενδιαφέροντος",
+    "status": "present",
+    "evidence": "ΘΕΜΑ: «Πρόσκληση εκδήλωσης ενδιαφέροντος για την ανάθεση του υποέργου 3 με τίτλο: «ΠΑΡΟΧΗ ΥΠΗΡΕΣΙΩΝ ΑΝΕΞΑΡΤΗΤΟΥ ΕΚΤΙΜΗΤΗ»..."
+  },
+  "issuing_authority": {
+    "value": "Περιφέρεια Κεντρικής Μακεδονίας",
+    "status": "present",
+    "evidence": "ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ\nΠΕΡΙΦΕΡΕΙΑ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ\nΓενική Διεύθυνση\nΠρογραμματισμού & Υποδομών"
+  },
+  "recipient": {
+    "value": "ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑ Ε.Ε. (Δ.Τ.: CONSORTIS)",
+    "status": "present",
+    "evidence": "ΠΡΟΣ: ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑ Ε.Ε.\n(Δ.Τ.: CONSORTIS)"
+  },
+  "contractor": {
+    "value": null,
+    "status": "not_present",
+    "evidence": null
+  },
+  "contractor_tax_id": {
+    "value": null,
+    "status": "not_present",
+    "evidence": null
+  }
+}
