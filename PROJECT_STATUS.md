@@ -573,3 +573,39 @@ Prefer small tests using saved artifacts over repeated
 OCR or paid API calls.
 Keep PROJECT_STATUS.md updated frequently.
 Maintain scientific rigor and reproducibility.
+
+## Adaptive Routing Integration — 2026-10-20
+
+Implemented:
+- Page quality assessment with visual ink and Greek ratio.
+- Experimental rule-based Routing Policy v2.
+- assess_and_route_node.
+- Routing metadata in WorkflowState.
+- Digital fast path in process_page_node.
+- Adaptive routing node in multimodal_graph.py.
+
+Validated:
+- Digital route:
+  Document Ψ882469Β7Γ-Φ0Κ, page 1.
+  2744 characters.
+  Processing duration: approximately 0 seconds.
+
+- OCR route:
+  Document Ψ6ΓΧ7ΛΛ-19Χ, page 1.
+  2799 characters.
+  Tesseract processing duration: 12.048 seconds.
+
+- Three-node adaptive integration test: PASS.
+
+Important limitations:
+- Routing thresholds are experimental.
+- Routing accuracy has not been established independently.
+- Review currently maps to Tesseract fallback.
+- Full five-node adaptive graph has not been tested end-to-end.
+- Verification-driven correction is not implemented.
+
+Next:
+1. Test full adaptive LangGraph with extraction and verification.
+2. Define verification-driven fallback criteria.
+3. Add bounded targeted correction.
+4. Evaluate accuracy, latency and API cost.
