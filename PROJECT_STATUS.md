@@ -234,3 +234,342 @@ Value grounding succeeded for all three present fields, while recipient evidence
 - Spatial proximity alone is not proof of semantic role.
 
 Next: Preserve OCR spatial elements in document schema and integrate processing/extraction/verification into LangGraph.
+
+### LangGraph Integration — October 2026
+
+Implemented:
+- WorkflowState
+- load_document_node
+- process_page_node
+- extract_information_node
+- verify_extraction_node
+- Reusable LLM extractor
+
+Validated:
+- Load → Process → Extract end-to-end with Tesseract + Qwen.
+- PaddleOCR integration with 69 spatial text regions.
+- Verification node independently tested with saved OCR/LLM results.
+
+Evidence verification pilot:
+- document_type: needs_review (0.959)
+- issuing_authority: supported (1.0)
+- recipient: unsupported (0.702)
+- contractor: not_applicable
+- contractor_tax_id: not_applicable
+
+Important:
+- Evidence matching is not equivalent to factual correctness.
+- OCR reading-order distortion affects textual grounding.
+- Spatial evidence may help verify entity roles.
+- Full four-node graph execution remains to be tested.
+
+Next:
+1. Test full four-node LangGraph workflow.
+2. Integrate value and spatial grounding.
+3. Add explicit verification outcomes.
+4. Design adaptive routing and targeted correction.
+## Research Checkpoint — 2026-10-18
+
+### LangGraph v1
+- Implemented and tested Load → Process → Extract → Verify.
+- Real end-to-end run completed with Tesseract + Qwen.
+- Document: Ψ6ΓΧ7ΛΛ-19Χ, page 1.
+- Total execution time: 13.371 seconds.
+- Output: evaluation_results/langgraph_v1_page1.json.
+
+### Verification Layer v2
+- Integrated textual value grounding.
+- Integrated evidence matching.
+- Integrated OCR region matching and spatial relation checks.
+- Tested with saved PaddleOCR and LLM outputs.
+
+Results:
+- document_type: value supported; evidence needs_review (0.959).
+- issuing_authority: value and evidence supported.
+- recipient: value supported; evidence unsupported (0.702).
+- recipient value region: 30.
+- recipient label region: 32.
+- horizontal gap: 14 px; vertical gap: 2 px.
+- contractor and contractor_tax_id: absence not independently verified.
+
+### Important Research Finding
+LLM-generated evidence is not necessarily an exact source quotation.
+
+In the recipient case:
+- OCR reading order placed the company before the label ΠΡΟΣ.
+- The LLM reconstructed the logical relationship.
+- The evidence string differed from the OCR text.
+- Spatial OCR regions supported the label-value association.
+
+Value grounding, evidence fidelity and semantic role
+verification must be evaluated separately.
+
+### Current Limitations
+- Verification is still heuristic and experimental.
+- Spatial proximity alone does not prove entity roles.
+- No general multi-region evidence linking yet.
+- No reliable absence verification.
+- Adaptive routing and targeted correction are not implemented.
+- Evaluation dataset is still too small for general conclusions.
+
+### Next Steps
+1. Stabilize Verification v2 and its output semantics.
+2. Integrate source-anchored region references into verification.
+3. Implement quality assessment and adaptive routing.
+4. Implement bounded, targeted correction.
+5. Expand human annotations and benchmark evaluation.
+6. Compare accuracy, grounding, latency and cost.
+
+### Handoff Note
+The original Gemini prototype remains in the repository.
+The new multimodal architecture is being developed separately.
+Reuse existing components rather than duplicating business logic.
+Explain architectural decisions and theory during implementation.
+Keep PROJECT_STATUS.md updated after significant milestones.
+
+---
+
+# PROJECT HANDOFF CHECKPOINT — 2026-10-20
+
+## 1. Thesis Context
+
+Title: Multimodal Agentic Workflows for Information Extraction
+from Unstructured Documents.
+
+University: Technical University of Crete.
+Domain: Greek public procurement and administrative documents.
+Primary source: Diavgeia.
+
+Research objective:
+Develop and evaluate an adaptive, evidence-grounded,
+multimodal document information extraction workflow.
+
+Core framework: LangGraph.
+Development environment: GitHub Codespaces.
+
+## 2. Current Architecture
+
+New architecture:
+PDF -> Load -> Process -> Extract -> Verify
+
+Implemented components:
+
+- src/multimodal_graph.py
+- src/schemas/workflow_state.py
+- src/schemas/document.py
+- src/schemas/page_extraction.py
+- src/schemas/evidence.py
+- src/nodes/load_document.py
+- src/nodes/process_page.py
+- src/nodes/extract_information.py
+- src/nodes/verify_extraction.py
+- src/ingestion/pdf_loader.py
+- src/ingestion/ocr_backend.py
+- src/ingestion/paddle_backend.py
+- src/ingestion/page_quality.py
+- src/ingestion/routing.py
+- src/extraction/llm_extractor.py
+- src/evaluation/evidence_verifier.py
+- src/evaluation/spatial_verifier.py
+- src/evaluation/region_grounding.py
+- src/evaluation/source_anchor.py
+
+The original Gemini prototype remains in src/graph.py.
+Prefer the newer architecture for continued development.
+
+## 3. Processing Backends
+
+Digital: PyMuPDF.
+OCR: Tesseract (Greek + English).
+OCR: PaddleOCR PP-OCRv5 Greek recognition.
+LLM: Qwen via Groq API.
+
+Two Python environments:
+- .venv: main application.
+- .venv-ocr: PaddleOCR dependencies.
+
+PaddleOCR uses a separate subprocess worker.
+
+## 4. Completed Integration
+
+Real end-to-end LangGraph execution succeeded:
+
+Load -> Tesseract -> Qwen -> Verification.
+
+Document: Ψ6ΓΧ7ΛΛ-19Χ.
+Page: 1.
+Execution time: 13.371 seconds.
+
+Output:
+evaluation_results/langgraph_v1_page1.json
+
+Note:
+Verification status "verified" currently means verification
+executed, NOT that all fields are factually correct.
+
+## 5. Source-Anchored Evidence v1
+
+Implemented and independently tested:
+- Value grounding
+- Evidence string matching
+- OCR region matching
+- Spatial relation checks
+- SourceReference generation
+
+Real example:
+Document: Ψ6ΓΧ7ΛΛ-19Χ, page 1.
+Recipient: ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑ Ε.Ε.
+Value region: 30.
+Label ΠΡΟΣ region: 32.
+Horizontal gap: 14 pixels.
+Vertical gap: 2 pixels.
+
+Value grounding: supported (1.0).
+LLM evidence matching: unsupported (0.702).
+Spatial relation: nearby and right-of.
+
+Source anchoring integration test: PASS.
+
+Important:
+Source references establish provenance of matched text,
+not automatically factual correctness or semantic role.
+
+The full production graph with source anchoring has not
+yet been rerun end-to-end.
+
+## 6. Corpus
+
+Initial corpus:
+57 PDFs, 379 pages.
+
+Important artifacts:
+- evaluation_results/corpus_profile.csv
+- evaluation_results/page_profile.csv
+- evaluation_results/routing_analysis.csv
+- evaluation_results/routing_audit.pdf
+- evaluation_results/routing_audit_labels.csv
+
+The routing audit contains 15 sampled pages.
+
+Labels are provisional visual assessments, NOT
+independently validated ground truth.
+
+## 7. Adaptive Routing v1
+
+Initial rule-based routing:
+- digital
+- tesseract
+- review
+
+Corpus distribution:
+- Digital: 358 / 379
+- Tesseract: 12 / 379
+- Review: 9 / 379
+
+This is decision distribution, NOT accuracy.
+
+## 8. Adaptive Routing v2
+
+Implemented experimental function:
+choose_processing_route_v2()
+
+Location:
+src/ingestion/routing.py
+
+Page quality features:
+- text_chars
+- image_count
+- image_coverage
+- suspicious_text_ratio
+- visual_ink_ratio
+- greek_letter_ratio
+
+Visual ink uses grayscale rendering at 72 DPI,
+with pixel threshold 220.
+
+Experimental routing thresholds are not calibrated.
+
+Audit comparison:
+- 15 development pages
+- 6 decisions changed from v1 to v2
+- 4 Tesseract -> Review
+- 2 Review -> Tesseract
+- 9 decisions unchanged
+
+Known document Ψ6ΓΧ7ΛΛ-19Χ:
+Page 1: v1 Review -> v2 Tesseract.
+Page 4: Tesseract in both versions.
+
+Results suggest improvements on the development sample,
+but do NOT establish generalization.
+
+## 9. Important Methodological Decisions
+
+- Validation != grounding != factual verification != evaluation.
+- Ground truth must be human-verified.
+- Do not use ground truth inside the production pipeline.
+- LLM-generated evidence may differ from OCR source text.
+- OCR reading order can distort semantic relationships.
+- Preserve source provenance and bounding boxes.
+- Spatial proximity alone does not prove entity roles.
+- Low-information pages must not be automatically discarded.
+- Separate content relevance from processing requirements.
+- Do not tune and evaluate thresholds on the same dataset.
+- Measure extraction quality, latency, and cost.
+- Keep business logic separate from LangGraph orchestration.
+
+## 10. CURRENT POSITION — NEXT ACTION
+
+We have completed offline Adaptive Routing v1/v2
+development and a preliminary 15-page audit.
+
+NEXT TASK:
+Integrate Adaptive Routing v2 into the new LangGraph.
+
+Proposed workflow:
+Load Document
+-> Assess and Route
+-> Process Page
+-> Extract Information
+-> Verify Extraction
+-> END
+
+Implementation plan:
+1. Add assess_and_route_node.
+2. Read page quality features using page_quality.py.
+3. Call choose_processing_route_v2().
+4. Store routing decision and explanation in WorkflowState.
+5. Support the "digital" route in process_page_node.
+6. Temporarily map "review" to Tesseract fallback,
+   while preserving uncertainty metadata.
+7. Test routing decisions without OCR/API calls.
+8. Test end-to-end graph.
+9. Save metrics and results.
+10. Update PROJECT_STATUS.md and create Git checkpoint.
+
+Do not implement VLM routing or correction loops yet.
+
+## 11. Pending Research Work
+
+- Evaluate routing on independent documents.
+- Improve digital text quality detection.
+- Develop robust multi-region evidence linking.
+- Add OCR/VLM fallback based on quality signals.
+- Implement bounded targeted correction.
+- Expand human-annotated benchmark.
+- Run baseline comparisons and ablation studies.
+
+## 12. Instructions for a Future AI Assistant
+
+Act as a senior AI architect and MSc thesis co-supervisor.
+
+Explain concepts and architectural decisions before coding.
+Proceed step by step, avoiding unnecessary complexity.
+Reuse existing modules instead of duplicating logic.
+Clearly distinguish implemented, tested, and planned work.
+Never assume an unseen file's contents.
+Ask to inspect existing code before modifying it.
+Prefer small tests using saved artifacts over repeated
+OCR or paid API calls.
+Keep PROJECT_STATUS.md updated frequently.
+Maintain scientific rigor and reproducibility.
