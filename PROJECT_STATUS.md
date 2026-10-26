@@ -609,3 +609,75 @@ Next:
 2. Define verification-driven fallback criteria.
 3. Add bounded targeted correction.
 4. Evaluate accuracy, latency and API cost.
+
+---
+
+## Checkpoint — 2026-10-26: Evidence Verification v3
+
+### Implemented
+- src/schemas/verification.py
+  - EvidenceCandidate
+  - ClaimVerification
+- src/evaluation/evidence_retriever.py
+  - Fuzzy token-based evidence retrieval
+  - SourceReference preservation
+- src/evaluation/claim_verifier.py
+  - LLM-based semantic claim verification
+  - Structured verdicts and supporting source references
+
+### Validated
+Document: Ψ882469Β7Γ-Φ0Κ, page 1.
+Field: issuing_authority.
+Extracted value: Πανεπιστήμιο Κρήτης - Επιτροπή Ερευνών.
+
+Previous textual verifier:
+- unsupported, score 0.684
+
+Evidence Retrieval v1:
+- Region 8: retrieval score 1.0
+- Region 39: retrieval score 1.0
+- Regions 24 and 27: retrieval score 0.5
+
+Semantic Claim Verification:
+- Verdict: supported
+- Supporting regions: [8, 39]
+- No additional OCR required
+
+### Research Finding
+Exact or fuzzy string matching alone may reject valid
+claims involving Greek morphological variations.
+
+Separating evidence retrieval from semantic claim
+verification can address such cases.
+
+Retrieval scores indicate relevance, not factual correctness.
+LLM verification is not independent ground truth.
+
+### Current Limitations
+- Verification v3 is tested independently but is not yet
+  integrated into the production LangGraph.
+- Semantic verification has been tested on one positive case.
+- Contradiction and uncertainty handling require evaluation.
+- LLM explanations may be insufficiently informative.
+- No automatic evidence repair or correction loop yet.
+- No independent benchmark proving improvement.
+
+### Next Milestone
+Integrate Verification v3 into the existing workflow,
+preserving Verification v2 as a baseline.
+
+Then implement:
+1. Bounded verification-driven correction.
+2. Multimodal VLM processing and fallback.
+3. Benchmark evaluation and ablation studies.
+4. Real-world document intelligence demonstrator.
+
+### Engineering Principles
+- Reuse existing components.
+- Avoid document-specific hardcoded rules.
+- Keep retrieval, verification and correction separate.
+- Prefer targeted fixes over unnecessary reprocessing.
+- Maintain provenance and auditability.
+- Prioritize meaningful research outcomes.
+- Update PROJECT_STATUS.md after milestones.
+- Commit and push tested milestones to GitHub.

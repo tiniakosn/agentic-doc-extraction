@@ -37,7 +37,10 @@ def process_page_node(state: WorkflowState) -> dict:
                 "page_number": page_number,
                 "method": "digital",
                 "text": digital_layer.text,
-                "regions": [],
+                "regions": [
+                    region.model_dump(mode="json")
+                    for region in digital_layer.regions
+                ],
             },
             "metrics": metrics,
             "status": "processed",

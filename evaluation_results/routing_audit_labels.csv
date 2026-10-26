@@ -1,0 +1,16 @@
+﻿ada,page,router_prediction,human_label,confidence,notes
+Ψ882469Β7Γ-Φ0Κ,1,digital,digital_sufficient,high,Readable digital text with contractor and amount
+6Δ7Υ469Β4Μ-Ν0Ο,30,digital,digital_sufficient,medium,Readable table but layout fidelity needs checking
+68Ι4469045-ΘΘΟ,5,digital,digital_sufficient,medium,Dense readable Greek text
+9Δ7Τ469Β7Κ-ΟΔ9,2,digital,digital_sufficient,high,Readable invitation with financial information
+6Ζ9Λ7ΛΩ-ΝΔΗ,59,digital,digital_sufficient,medium,Approval and signature page
+ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ,2,tesseract,low_information,medium,Signature page with limited content
+9ΦΡ6465274-2ΑΠ,2,tesseract,low_information,high,Nearly blank page
+9Δ7Τ469Β7Κ-ΟΔ9,14,tesseract,low_information,medium,Certified copy information only
+ΡΠΛ746ΨΖΣΠ-ΨΓ1,35,tesseract,low_information,medium,Signature page with limited content
+Ψ6ΓΧ7ΛΛ-19Χ,2,tesseract,ocr_required,high,Visible Greek content missing from digital text layer
+ΡΠΛ746ΨΖΣΠ-ΨΓ1,48,review,low_information,medium,Short payment clause and signatures
+6Δ7Υ469Β4Μ-Ν0Ο,15,review,digital_sufficient,medium,Short contract signature page
+Ψ6ΓΧ7ΛΛ-19Χ,1,review,ocr_required,high,Digital text layer incomplete compared with visible content
+ΨΡ6Ξ469ΗΡΘ-7ΝΗ,1,review,ocr_required,medium,Visible decision content exceeds extracted digital text
+6Ζ9Λ7ΛΩ-ΝΔΗ,1,review,uncertain,low,Title page requires digital text completeness check

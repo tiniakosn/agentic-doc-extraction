@@ -21,3 +21,5 @@ class WorkflowState(TypedDict, total=False):
     status: str
 
     routing: dict[str, Any]
+
+    field_decisions: dict[str, Any]

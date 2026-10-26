@@ -1,8 +1,56 @@
+
 from pathlib import Path
 
 import pymupdf
 
-from src.schemas.document import DocumentRecord, DocumentPage, TextLayer
+from src.schemas.document import (
+    DocumentRecord,
+    DocumentPage,
+    TextLayer,
+    TextRegion,
+)
+
+
+def extract_digital_regions(page: pymupdf.Page) -> list[TextRegion]:
+    """Extract digital text lines with PDF-space coordinates."""
+
+    regions = []
+
+    page_width = page.rect.width
+    page_height = page.rect.height
+
+    data = page.get_text("dict")
+
+    for block in data["blocks"]:
+        if block.get("type") != 0:
+            continue
+
+        for line in block.get("lines", []):
+            text = "".join(
+                span["text"]
+                for span in line.get("spans", [])
+            ).strip()
+
+            if not text:
+                continue
+
+            x1, y1, x2, y2 = line["bbox"]
+
+            regions.append(
+                TextRegion(
+                    text=text,
+                    bbox=(x1, y1, x2, y2),
+                    normalized_bbox=(
+                        x1 / page_width,
+                        y1 / page_height,
+                        x2 / page_width,
+                        y2 / page_height,
+                    ),
+                    confidence=None,
+                )
+            )
+
+    return regions
 
 
 def load_document(pdf_path: str | Path) -> DocumentRecord:
@@ -15,6 +63,8 @@ def load_document(pdf_path: str | Path) -> DocumentRecord:
 
     with pymupdf.open(pdf_path) as pdf:
         for index, page in enumerate(pdf):
+            digital_regions = extract_digital_regions(page)
+
             pages.append(
                 DocumentPage(
                     page_number=index + 1,
@@ -22,6 +72,7 @@ def load_document(pdf_path: str | Path) -> DocumentRecord:
                         TextLayer(
                             method="digital",
                             text=page.get_text("text"),
+                            regions=digital_regions,
                         )
                     ],
                 )

@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from rapidfuzz.fuzz import ratio
+from rapidfuzz.fuzz import partial_ratio
 
 
 @dataclass(frozen=True)
@@ -36,7 +37,10 @@ def find_matching_regions(
     for index, region in enumerate(regions):
         region_text = normalize(region["text"])
 
-        score = ratio(normalized_value, region_text) / 100
+        if normalized_value in region_text:
+            score = 1.0
+        else:
+            score = ratio(normalized_value, region_text) / 100
 
         if score >= min_score:
             matches.append(

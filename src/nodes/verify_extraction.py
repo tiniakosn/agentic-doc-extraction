@@ -6,6 +6,7 @@ from src.evaluation.region_grounding import find_matching_regions
 from src.evaluation.spatial_verifier import compare_boxes
 from src.evaluation.source_anchor import anchor_value
 from src.schemas.workflow_state import WorkflowState
+from src.evaluation.verification_decision import decide_field_action
 
 
 ROLE_LABELS = {
@@ -150,6 +151,16 @@ def verify_extraction_node(state: WorkflowState) -> dict:
             ),
         }
 
+    field_decisions = {}
+
+    for field_name, checks in verification.items():
+        decision = decide_field_action(checks)
+
+        field_decisions[field_name] = {
+            "action": decision.action,
+            "reason": decision.reason,
+        }
+
     metrics = dict(state.get("metrics", {}))
     metrics["verification_duration_sec"] = round(
         perf_counter() - start, 3
@@ -159,4 +170,5 @@ def verify_extraction_node(state: WorkflowState) -> dict:
         "verification": verification,
         "metrics": metrics,
         "status": "verified",
+        "field_decisions": field_decisions,
     }

@@ -1,0 +1,61 @@
+{
+  "document_id": "Ψ6ΓΧ7ΛΛ-19Χ",
+  "page_number": 1,
+  "processing_method": "tesseract",
+  "extraction": {
+    "document_type": {
+      "value": "Πρόσκληση εκδήλωσης ενδιαφέροντος",
+      "status": "present",
+      "evidence": "Ο ΘΕΜΑ αναφέρει: «Πρόσκληση εκδήλωσης ενδιαφέροντος για την ανάθεση Tou υποέργου 3...»"
+    },
+    "issuing_authority": {
+      "value": "ΠΕΡΙΦΕΡΕΙΑ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ - Γενική Διεύθυνση Προγραμματισμού & Υποδομών - Διεύθυνση Τεχνικών Έργων",
+      "status": "present",
+      "evidence": "Το κεφάλαιο του εγγράφου αναφέρει: «ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ ΠΕΡΙΦΕΡΕΙΑ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Γενική Διεύθυνση Προγραμματισμού & Υποδομών Διεύθυνση Τεχνικών Έργων»"
+    },
+    "recipient": {
+      "value": "ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑΕ.Ε.",
+      "status": "present",
+      "evidence": "Στο πεδίο ΠΡΟΣ αναγράφεται: «ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑΕ.Ε.»"
+    },
+    "contractor": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    },
+    "contractor_tax_id": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    }
+  },
+  "verification": {
+    "document_type": {
+      "status": "unsupported",
+      "score": 0.802
+    },
+    "issuing_authority": {
+      "status": "unsupported",
+      "score": 0.694
+    },
+    "recipient": {
+      "status": "unsupported",
+      "score": 0.619
+    },
+    "contractor": {
+      "status": "not_applicable",
+      "score": null
+    },
+    "contractor_tax_id": {
+      "status": "not_applicable",
+      "score": null
+    }
+  },
+  "metrics": {
+    "load_duration_sec": 0.086,
+    "processing_duration_sec": 12.015,
+    "extraction_duration_sec": 1.261,
+    "verification_duration_sec": 0.001
+  },
+  "total_duration_sec": 13.371
+}

@@ -1,0 +1,121 @@
+{
+  "document_id": "Ψ882469Β7Γ-Φ0Κ",
+  "page_number": 1,
+  "routing": {
+    "decision": "digital",
+    "execution_method": "digital",
+    "reason": "Sufficient Greek digital text",
+    "quality": {
+      "text_chars": 2743,
+      "image_count": 1,
+      "image_coverage": 0.0386,
+      "suspicious_text_ratio": 0.0,
+      "visual_ink_ratio": 0.102,
+      "greek_letter_ratio": 0.9257
+    },
+    "fallback_used": false
+  },
+  "processing_method": "digital",
+  "extraction": {
+    "document_type": {
+      "value": "Έγκριση Απευθείας Ανάθεσης Προμήθειας",
+      "status": "present",
+      "evidence": "Τίτλος εγγράφου: 'Έγκριση Απευθείας Ανάθεσης Προμήθειας'"
+    },
+    "issuing_authority": {
+      "value": "Πανεπιστήμιο Κρήτης - Επιτροπή Ερευνών",
+      "status": "present",
+      "evidence": "Αναφορά στον 'πρόεδρο της Επιτροπής Ερευνών του Πανεπιστημίου Κρήτης' και υπογραφή από τον Πρύτανη/Πρόεδρο Επιτροπής Ερευνών."
+    },
+    "recipient": {
+      "value": null,
+      "status": "not_present",
+      "evidence": null
+    },
+    "contractor": {
+      "value": "ΑΝΥΣΜΑ ΚΑΛΗΣΠΕΡΑΚΗΣ ΜΟΝΟΠΡΟΣΩΠΗ Ι Κ Ε",
+      "status": "present",
+      "evidence": "Φράση: 'Την ανάθεση στην Εταιρεία ΑΝΥΣΜΑ ΚΑΛΗΣΠΕΡΑΚΗΣ ΜΟΝΟΠΡΟΣΩΠΗ Ι Κ Ε'"
+    },
+    "contractor_tax_id": {
+      "value": "802394829",
+      "status": "present",
+      "evidence": "Φράση: 'με α.φ.μ. 802394829'"
+    }
+  },
+  "verification": {
+    "document_type": {
+      "value_grounding": {
+        "status": "supported",
+        "score": 1.0
+      },
+      "evidence_matching": {
+        "status": "unsupported",
+        "score": 0.732
+      },
+      "spatial_grounding": null,
+      "source_references": [],
+      "verification_status": "checked",
+      "review_required": true
+    },
+    "issuing_authority": {
+      "value_grounding": {
+        "status": "unsupported",
+        "score": 0.684
+      },
+      "evidence_matching": {
+        "status": "unsupported",
+        "score": 0.616
+      },
+      "spatial_grounding": null,
+      "source_references": [],
+      "verification_status": "checked",
+      "review_required": true
+    },
+    "recipient": {
+      "value_grounding": null,
+      "evidence_matching": null,
+      "spatial_grounding": null,
+      "source_references": [],
+      "verification_status": "not_checked",
+      "review_required": true,
+      "reason": "Absence has not been independently verified"
+    },
+    "contractor": {
+      "value_grounding": {
+        "status": "supported",
+        "score": 1.0
+      },
+      "evidence_matching": {
+        "status": "needs_review",
+        "score": 0.903
+      },
+      "spatial_grounding": null,
+      "source_references": [],
+      "verification_status": "checked",
+      "review_required": true
+    },
+    "contractor_tax_id": {
+      "value_grounding": {
+        "status": "supported",
+        "score": 1.0
+      },
+      "evidence_matching": {
+        "status": "unsupported",
+        "score": 0.75
+      },
+      "spatial_grounding": null,
+      "source_references": [],
+      "verification_status": "checked",
+      "review_required": true
+    }
+  },
+  "metrics": {
+    "load_duration_sec": 0.019,
+    "routing_duration_sec": 0.026,
+    "processing_duration_sec": 0.0,
+    "extraction_duration_sec": 1.341,
+    "verification_duration_sec": 0.002
+  },
+  "total_duration_sec": 1.393
+}
