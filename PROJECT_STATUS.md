@@ -681,3 +681,45 @@ Then implement:
 - Prioritize meaningful research outcomes.
 - Update PROJECT_STATUS.md after milestones.
 - Commit and push tested milestones to GitHub.
+
+---
+
+## Checkpoint — Verification v3 Integration (2026-10-26)
+
+### Implemented
+- Semantic verification node integrated into LangGraph.
+- Final verification decision resolution.
+- Deterministic source-backed evidence repair.
+- Preservation of original extraction and evidence.
+- Field-level final decisions and evidence repair records.
+
+### Validated
+Document: Ψ882469Β7Γ-Φ0Κ, page 1.
+
+Results:
+- document_type: repair_evidence (region 7)
+- issuing_authority: accept_with_evidence (regions 8, 39)
+- recipient: review
+- contractor: repair_evidence (region 32)
+- contractor_tax_id: repair_evidence (region 32)
+
+Verification and evidence repair integration: PASS.
+
+The latest integration test used a mocked semantic
+verification response. Real semantic verification was
+previously tested separately on issuing_authority.
+
+### Limitations
+- No automatic bounded reprocessing loop yet.
+- No independent benchmark for semantic verification.
+- Source matching does not alone prove semantic correctness.
+- Final decisions are not yet equivalent to human validation.
+
+### Next Milestone
+Implement a bounded correction controller with:
+- explicit retry budget,
+- targeted reprocessing,
+- no unnecessary OCR for evidence-only issues,
+- auditable correction decisions.
+
+Then proceed to VLM integration and benchmark evaluation.

@@ -7,6 +7,7 @@ from src.nodes.assess_and_route import assess_and_route_node
 from src.nodes.process_page import process_page_node
 from src.nodes.extract_information import extract_information_node
 from src.nodes.verify_extraction import verify_extraction_node
+from src.nodes.semantic_verification import semantic_verification_node
 
 
 def build_multimodal_graph():
@@ -17,12 +18,14 @@ def build_multimodal_graph():
     workflow.add_node("process_page", process_page_node)
     workflow.add_node("extract_information", extract_information_node)
     workflow.add_node("verify_extraction", verify_extraction_node)
+    workflow.add_node("semantic_verification",semantic_verification_node)
 
     workflow.add_edge(START, "load_document")
     workflow.add_edge("load_document", "assess_and_route")
     workflow.add_edge("assess_and_route", "process_page")
     workflow.add_edge("process_page", "extract_information")
     workflow.add_edge("extract_information", "verify_extraction")
-    workflow.add_edge("verify_extraction", END)
+    workflow.add_edge("verify_extraction","semantic_verification")
+    workflow.add_edge("semantic_verification", END)
 
     return workflow.compile()

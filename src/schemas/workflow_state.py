@@ -23,3 +23,9 @@ class WorkflowState(TypedDict, total=False):
     routing: dict[str, Any]
 
     field_decisions: dict[str, Any]
+
+    semantic_verification: dict[str, Any]
+
+    final_decisions: dict[str, Any]
+
+    evidence_repairs: dict[str, Any]
