@@ -754,3 +754,44 @@ Final status: completed.
 2. Full end-to-end multimodal workflow testing.
 3. Independent benchmark and baseline comparisons.
 4. Document Intelligence demonstrator.
+
+---
+
+## Checkpoint — 2026-10-27: Multimodal Routing v1
+
+### Implemented
+- Production VLM extractor using Qwen via Groq.
+- Structured image-based extraction with PageExtraction.
+- Conditional LangGraph routing for text and VLM strategies.
+- Direct VLM path bypasses OCR processing.
+- Unified extraction output for downstream verification.
+
+### Validated
+Real VLM extraction:
+- Document: Ψ6ΓΧ7ΛΛ-19Χ, page 1.
+- Model: qwen/qwen3.8-27b.
+- Latency: 2.987 seconds.
+- Structured extraction: PASS.
+- Recipient correctly distinguished from contractor in this example.
+
+Mocked production graph integration:
+- OCR calls: 0.
+- VLM calls: 1 (mocked).
+- Processing method: vlm.
+- Final status: completed.
+- Retry count: 0.
+- Direct VLM graph integration: PASS.
+
+### Limitations
+- VLM strategy selection is currently manual.
+- VLM source grounding is incomplete.
+- No independent accuracy benchmark yet.
+- No systematic latency or cost comparison.
+- Real full-graph VLM verification remains to be evaluated.
+- Correction retry has not been validated end-to-end with real OCR/LLM.
+
+### Next Milestone
+1. Establish human-verified benchmark and field definitions.
+2. Compare digital/OCR + LLM against direct VLM.
+3. Evaluate accuracy, evidence quality, latency and cost.
+4. Develop a real-world Document Intelligence demonstrator.

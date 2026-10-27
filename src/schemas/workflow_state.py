@@ -33,3 +33,5 @@ class WorkflowState(TypedDict, total=False):
     retry_count: int
     correction_history: list[dict[str, Any]]
     correction_action: str
+
+    extraction_method: str

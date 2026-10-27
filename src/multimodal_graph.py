@@ -14,6 +14,10 @@ from src.nodes.correction_controller import (
     route_after_correction,
 )
 
+def route_extraction_strategy(state: WorkflowState) -> str:
+    if state.get("extraction_method") == "vlm":
+        return "vlm"
+    return "text"
 
 def build_multimodal_graph():
     workflow = StateGraph(WorkflowState)
@@ -31,7 +35,14 @@ def build_multimodal_graph():
 
     workflow.add_edge(START, "load_document")
     workflow.add_edge("load_document", "assess_and_route")
-    workflow.add_edge("assess_and_route", "process_page")
+    workflow.add_conditional_edges(
+        "assess_and_route",
+        route_extraction_strategy,
+        {
+            "text": "process_page",
+            "vlm": "extract_information",
+        },
+    )
     workflow.add_edge("process_page", "extract_information")
     workflow.add_edge("extract_information", "verify_extraction")
     workflow.add_edge("verify_extraction","semantic_verification")
