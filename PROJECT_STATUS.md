@@ -723,3 +723,34 @@ Implement a bounded correction controller with:
 - auditable correction decisions.
 
 Then proceed to VLM integration and benchmark evaluation.
+
+---
+
+## Checkpoint — 2026-10-27: Bounded Correction Loop
+
+### Implemented
+- Deterministic correction policy with MAX_RETRIES=1.
+- Correction controller LangGraph node.
+- Conditional retry/finish edges.
+- Retry count and correction history in WorkflowState.
+- Alternative processing method selection.
+
+### Validated
+Mocked LangGraph integration test: PASS.
+Processing sequence: digital -> tesseract.
+Retry count: 1.
+Correction history entries: 1.
+Final status: completed.
+
+### Limitations
+- Real end-to-end correction retry not yet tested.
+- Retry policy is conservative and experimental.
+- No measured improvement in extraction accuracy yet.
+- Processing metrics are not yet aggregated per attempt.
+- VLM is not yet integrated into adaptive routing.
+
+### Next Milestone
+1. VLM integration into the existing processing architecture.
+2. Full end-to-end multimodal workflow testing.
+3. Independent benchmark and baseline comparisons.
+4. Document Intelligence demonstrator.

@@ -9,6 +9,11 @@ from src.nodes.extract_information import extract_information_node
 from src.nodes.verify_extraction import verify_extraction_node
 from src.nodes.semantic_verification import semantic_verification_node
 
+from src.nodes.correction_controller import (
+    correction_controller_node,
+    route_after_correction,
+)
+
 
 def build_multimodal_graph():
     workflow = StateGraph(WorkflowState)
@@ -19,6 +24,10 @@ def build_multimodal_graph():
     workflow.add_node("extract_information", extract_information_node)
     workflow.add_node("verify_extraction", verify_extraction_node)
     workflow.add_node("semantic_verification",semantic_verification_node)
+    workflow.add_node(
+        "correction_controller",
+        correction_controller_node,
+    )
 
     workflow.add_edge(START, "load_document")
     workflow.add_edge("load_document", "assess_and_route")
@@ -26,6 +35,18 @@ def build_multimodal_graph():
     workflow.add_edge("process_page", "extract_information")
     workflow.add_edge("extract_information", "verify_extraction")
     workflow.add_edge("verify_extraction","semantic_verification")
-    workflow.add_edge("semantic_verification", END)
+    workflow.add_edge(
+        "semantic_verification",
+        "correction_controller",
+    )
+
+    workflow.add_conditional_edges(
+        "correction_controller",
+        route_after_correction,
+        {
+            "retry": "process_page",
+            "finish": END,
+        },
+    )
 
     return workflow.compile()

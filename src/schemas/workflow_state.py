@@ -29,3 +29,7 @@ class WorkflowState(TypedDict, total=False):
     final_decisions: dict[str, Any]
 
     evidence_repairs: dict[str, Any]
+
+    retry_count: int
+    correction_history: list[dict[str, Any]]
+    correction_action: str
