@@ -795,3 +795,165 @@ Mocked production graph integration:
 2. Compare digital/OCR + LLM against direct VLM.
 3. Evaluate accuracy, evidence quality, latency and cost.
 4. Develop a real-world Document Intelligence demonstrator.
+
+
+
+## Benchmark v1 - Pilot Execution & Exploratory Evaluation
+Date: 2026-11-12
+
+### Completed
+- Pilot corpus: 8 PDFs, 9 annotated pages.
+- Annotations: 9 JSON files, all structurally valid.
+- All annotation review statuses remain `pending`.
+- PDF SHA-256 hashes populated and checked by the runner.
+- Two extraction strategies tested:
+  - Digital Text + LLM
+  - Direct VLM
+- 18/18 predictions collected successfully across the initial
+  and resumed runs.
+- Rate-limit failures handled through a paced resume script.
+- Evaluation runner implemented with 11 passing tests.
+- Document-type normalization improved.
+- Exploratory evaluation v2 generated.
+
+### Exploratory Results
+Digital Text + LLM:
+- match: 16
+- nonpresent_match: 14
+- value_mismatch: 8
+- status_mismatch: 7
+
+Direct VLM:
+- match: 11
+- nonpresent_match: 13
+- value_mismatch: 16
+- status_mismatch: 5
+
+IMPORTANT:
+These are comparisons against provisional annotations.
+They are NOT official ground-truth accuracy metrics.
+
+### Confirmed Findings
+1. Document 63ΤΞ46ΜΦΟΤ-ΑΟΟ:
+   Direct VLM assigned the contractor's mobile number
+   (6983905183) to contractor_tax_id.
+   Correct AFM: 801033798.
+   Error: entity-field misattribution / false evidence.
+
+2. Document 65ΓΦ6-Θ5Μ:
+   Corrupted Greek digital text layer.
+   Direct VLM recovered more readable recipient text.
+   The document orders allocation of funds to a company;
+   it does not explicitly establish a contract award.
+   Keep contractor and contractor_tax_id as not_present
+   under the current annotation definition.
+
+### Important Files
+- benchmark_v1/pilot_annotations/
+- benchmark_v1/scripts/run_pilot.py
+- benchmark_v1/scripts/resume_pilot.py
+- benchmark_v1/scripts/evaluate_pilot.py
+- benchmark_v1/scripts/inspect_mismatches.py
+- tests/test_evaluate_pilot.py
+- evaluation_results/benchmark_v1/pilot_resumed_20261112T173616Z.json
+- evaluation_results/benchmark_v1/evaluation_exploratory_v2.json
+- evaluation_results/benchmark_v1/evaluation_exploratory_v2.csv
+
+### Open Issues
+- Complete human review of provisional annotations.
+- Verify page-level not_present fields against source PDFs.
+- Review remaining entity-role disagreements.
+- Verify source grounding independently of LLM evidence.
+- Define official metrics and evaluation protocol.
+- Evaluate LangGraph verification/correction against baselines.
+- Create an independent held-out test set.
+
+### Next Step
+Continue source-based human annotation review.
+Do not calculate official accuracy until annotations
+are verified and the evaluation protocol is frozen.
+
+
+
+### Routing Experiment: Corrupted Digital Text Layer
+Date: 2026-11-12
+
+Document: data/discovery/65ΓΦ6-Θ5Μ.pdf, page 1
+
+Finding:
+The PDF renders correctly, but digital text extraction
+produces corrupted Greek words.
+
+Existing routing metrics:
+- text_chars: 1799
+- greek_letter_ratio: 0.8935
+- suspicious_text_ratio: 0.0
+- selected_route: digital
+
+Digital extraction:
+- 1800 characters
+- 0.020 seconds
+
+Tesseract OCR (300 DPI, Greek language available):
+- 1300 characters
+- 6.291 seconds
+
+Diagnostic term recovery:
+- ΘΥΜΙΑΝΟΣ: digital=False, OCR=True
+- Διάθεση: digital=False, OCR=True
+- Υπόλογο: digital=False, OCR=True
+- AFM 092597210: digital=True, OCR=True
+
+Conclusion:
+Current routing metrics do not detect this corrupted
+digital text layer.
+Tesseract recovers substantially more readable Greek
+text in this case, at higher processing cost.
+
+Limitations:
+- Single-page diagnostic, not an OCR accuracy benchmark.
+- No CER/WER measured.
+- OCR output still contains transcription errors.
+- No evidence yet that a proposed routing rule generalizes.
+
+Relevant file:
+benchmark_v1/scripts/compare_text_layers.py
+
+Next:
+Evaluate candidate lightweight text-corruption signals
+on multiple development PDFs before changing routing.py.
+
+
+### Routing Diagnostics - Milestone Completed (2026-11-12)
+
+Compared digital text extraction with Tesseract OCR
+on two development PDFs.
+
+Healthy PDF: 63ΤΞ46ΜΦΟΤ-ΑΟΟ, page 1
+- Digital: 2325 chars, 0.016 s, 4/4 diagnostic terms
+- Tesseract: 2160 chars, 9.756 s, 4/4 terms
+- Existing routing decision: digital
+
+Corrupted text PDF: 65ΓΦ6-Θ5Μ, page 1
+- Digital: 1800 chars, 0.020 s, 1/4 terms
+- Tesseract: 1300 chars, 6.291 s, 4/4 terms
+- Existing routing decision: digital (undesirable)
+- Text corruption affects valid Greek Unicode characters.
+- Current suspicious_text_ratio fails to detect it.
+
+Pilot routing audit:
+- 8 development PDFs, page 1 inspected per document
+- 7 selected digital; 1 selected tesseract
+- Corrupted digital text was misrouted.
+
+Conclusions:
+- Selective routing is justified as a research question.
+- No new routing rule implemented yet.
+- These diagnostics do not establish OCR accuracy.
+- Further validation requires additional development
+  examples and independent held-out test documents.
+
+Next research milestone:
+Evaluate existing validation, semantic verification,
+and bounded correction mechanisms using stored
+extraction failures, without changing raw predictions.

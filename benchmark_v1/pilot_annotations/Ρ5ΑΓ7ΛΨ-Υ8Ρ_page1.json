@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+  "document": {
+    "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+    "pdf_path": "data/discovery/Ρ5ΑΓ7ΛΨ-Υ8Ρ.pdf",
+    "sha256": "18f43b9688622dcaed23202ec7427c4d49817feea82ba5b71530441d08be69ce",
+    "page_count": 2,
+    "split": "dev"
+  },
+  "scope": "page",
+  "page_number": 1,
+  "fields": {
+    "document_type": {
+      "status": "present",
+      "value": "administrative_decision",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΑΠΟΦΑΣΗ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "issuing_authority": {
+      "status": "present",
+      "value": "Περιφέρεια Δυτικής Μακεδονίας",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "recipient": {
+      "status": "present",
+      "value": "Διεύθυνση Οικονομικών Υπηρεσιών",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΠΡΟΣ: Δ/νση Οικονομικών Υπηρεσιών",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "contractor": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "On page 1, only heading and legal grounds; no selected provider."
+    },
+    "contractor_tax_id": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "No contractor AFM on the selected page."
+    }
+  },
+  "financial_observations": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Other page not in current annotation scope."
+  }
+}

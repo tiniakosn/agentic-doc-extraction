@@ -11,7 +11,7 @@ The initial task is to extract five fields (`document_type`, `issuing_authority`
 - `document_type`: semantic type of the **current document** (e.g., `award_decision`, `invitation`, `other`, `uncertain_type`). A reference to an older award/invitation does not change the current document's type. The `value` is the canonical category. Record the source wording in evidence.
 - `issuing_authority`: organization responsible for issuing this document, not every superior ministry or department in its letterhead. Choose the narrowest issuing organization clearly supported by title/signature/operative text; preserve its legal name, normalize whitespace only. Disputed granularity => `uncertain` with notes.
 - `recipient`: explicitly addressed person/organization for the current document (e.g., `ΠΡΟΣ`). Multiple independent recipients are **not** silently compressed into one value: mark `uncertain` and record the list in `notes` until a multi-value schema is adopted. Do not infer recipient from bidders or copied parties.
-- `contractor`: awarded economic operator in the operative decision of **this document**. An invitee, candidate, prior contractor, or mentioned firm is not automatically the selected contractor. Normalize only insignificant whitespace/typography; preserve entity spelling.
+- `contractor`: a natural or legal person explicitly awarded goods/works/services **or** a performing counterparty of a concluded work/service contract evidenced in the annotated scope. Record individual service providers (e.g. concluded trainer work contracts) as contractor, with role type noted. An invitee, candidate, prior contractor, or merely mentioned firm is not automatically the selected contractor. Normalize only insignificant whitespace/typography; preserve entity spelling. This is a benchmark operational definition, not a legal reclassification of contract types.
 - `contractor_tax_id`: tax ID linked to the awarded contractor, not any unrelated AFM in the PDF. Preserve digits and leading zeroes as a string. Do not infer a missing AFM from external lookup.
 
 ## Status and evidence
@@ -54,3 +54,11 @@ Each financial observation uses an `amount` decimal string, `currency="EUR"` if 
 - `Ψ6ΓΧ7ΛΛ-19Χ_page1.json`: only page-level development annotation; no independent visual verification established here.
 
 The above observations came from supplied extracted-text review material, not an original-PDF visual audit. All remain `pending` until human review.
+
+## Pilot-specific decisions (12 Nov 2026)
+
+- The user confirmed `685Κ465274-Χ1Ψ` page 2 is completely blank in the original PDF. Retain it as a separate blank-page/workflow-behavior case, but **exclude** it from primary field-extraction accuracy/F1.
+- The pilot uses **page-level** annotations on 9 nonblank pages. Absence is scoped strictly to the annotated page; no inference from other pages.
+- Individual service providers in concluded work/service contracts count as `contractor` under the operational definition above. Record a note about their role; do not treat the issuing body’s tax ID as `contractor_tax_id`.
+- All nine records are draft candidate labels transcribed from supplied page images; `review.status=pending`, not human-verified.
+- Do not score these pilot development annotations as held-out test results.

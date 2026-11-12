@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+  "document": {
+    "document_id": "65ΓΦ6-Θ5Μ",
+    "pdf_path": "data/discovery/65ΓΦ6-Θ5Μ.pdf",
+    "sha256": "5463ed41fc659c5cea5c3d1028766a8e4919056ba8ebc7890028fe327f280c24",
+    "page_count": 1,
+    "split": "dev"
+  },
+  "scope": "page",
+  "page_number": 1,
+  "fields": {
+    "document_type": {
+      "status": "present",
+      "value": "administrative_order",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΔΙΑΤΑΓΗ ΔΙΟΙΚΗΤΟΥ Υπ’αριθμ. «592/26»",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "issuing_authority": {
+      "status": "present",
+      "value": "Κέντρο Εκπαίδευσης Ναυτικής Αποτροπής",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "recipient": {
+      "status": "present",
+      "value": "Υπόλογος Ειδικής Διαχείρισης «Κοστολόγηση Παροχών Εκπαιδεύσεων»",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΠΡΟΣ: Υπόλογο Ειδικής Διαχείρισης «Κοστολόγηση Παροχών Εκπαιδεύσεων»",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "contractor": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "Page orders budget disbursement for a company; does not explicitly record award or concluded provider contract."
+    },
+    "contractor_tax_id": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "Company tax ID on page is not an explicitly selected contractor tax ID; do not copy it."
+    }
+  },
+  "financial_observations": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Encoding-corrupted digital text; source evidence taken from rendered visual page."
+  }
+}

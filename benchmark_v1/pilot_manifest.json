@@ -1,0 +1,120 @@
+{
+  "version": "1.0",
+  "evaluation_unit": "page",
+  "records": [
+    {
+      "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+      "pdf_path": "data/discovery/63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf",
+      "sha256": "7dd4206d4095c617e3c478b182ec47a9ddd3af42527edd3ab00c43ca4aa0a39d",
+      "total_pages": 1,
+      "selected_pages": [
+        1
+      ],
+      "category": "digital_award",
+      "split": "pilot_development",
+      "annotation_status": "pending",
+      "prior_usage_review": "pending",
+      "visual_review": "pending"
+    },
+    {
+      "document_id": "65ΓΦ6-Θ5Μ",
+      "pdf_path": "data/discovery/65ΓΦ6-Θ5Μ.pdf",
+      "sha256": "5463ed41fc659c5cea5c3d1028766a8e4919056ba8ebc7890028fe327f280c24",
+      "total_pages": 1,
+      "selected_pages": [
+        1
+      ],
+      "category": "corrupted_greek_text",
+      "split": "pilot_development",
+      "annotation_status": "pending",
+      "prior_usage_review": "pending",
+      "visual_review": "pending"
+    },
+    {
+      "document_id": "685Κ465274-Χ1Ψ",
+      "pdf_path": "data/discovery/685Κ465274-Χ1Ψ.pdf",
+      "sha256": "76b0c7bc7eeef70e6eb6a07b0f74d73c95828b67cb87ea8259d12bd4030802cc",
+      "total_pages": 2,
+      "selected_pages": [
+        1,
+        2
+      ],
+      "category": "low_text_multipage",
+      "split": "pilot_development",
+      "annotation_status": "pending",
+      "prior_usage_review": "pending",
+      "visual_review": "pending"
+    },
+    {
+      "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+      "pdf_path": "data/discovery/ΨΡ6Ξ469ΗΡΘ-7ΝΗ.pdf",
+      "sha256": "bb7250a3c73b5e7f0e0fd4b2a27953cf219dc80403e6ec103425acb6532f820f",
+      "total_pages": 1,
+      "selected_pages": [
+        1
+      ],
+      "category": "visual_content_candidate",
+      "split": "pilot_development",
+      "annotation_status": "pending",
+      "prior_usage_review": "pending",
+      "visual_review": "pending"
+    },
+    {
+      "document_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ",
+      "pdf_path": "data/discovery/91ΤΣ46ΝΙΦ6-ΠΡΛ.pdf",
+      "sha256": "b491df7eb92bc159cbf361643ab03ab20bbca96bbbc3dc74fdd1500f5f431abd",
+      "total_pages": 4,
+      "selected_pages": [
+        1
+      ],
+      "category": "invitation_recipient",
+      "split": "pilot_development",
+      "annotation_status": "pending",
+      "prior_usage_review": "pending",
+      "visual_review": "pending"
+    },
+    {
+      "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+      "pdf_path": "data/discovery/ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ.pdf",
+      "sha256": "8bc10e36d3b040c21f34f4164dda8a9f983c0fc79fc9c1f2a5c292347f39155b",
+      "total_pages": 9,
+      "selected_pages": [
+        1
+      ],
+      "category": "contract_out_of_domain",
+      "split": "pilot_development",
+      "annotation_status": "pending",
+      "prior_usage_review": "pending",
+      "visual_review": "pending"
+    },
+    {
+      "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+      "pdf_path": "data/discovery/ΨΓΥΖ4ΧΡ-3Θ3.pdf",
+      "sha256": "b2a7f92c33d13013e943e214fa01ab0937671d6b48fb149b68da9994b5c9ca42",
+      "total_pages": 2,
+      "selected_pages": [
+        1,
+        2
+      ],
+      "category": "procurement_award",
+      "split": "pilot_development",
+      "annotation_status": "pending",
+      "prior_usage_review": "pending",
+      "visual_review": "pending"
+    },
+    {
+      "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+      "pdf_path": "data/discovery/Ρ5ΑΓ7ΛΨ-Υ8Ρ.pdf",
+      "sha256": "18f43b9688622dcaed23202ec7427c4d49817feea82ba5b71530441d08be69ce",
+      "total_pages": 2,
+      "selected_pages": [
+        1
+      ],
+      "category": "administrative_decision",
+      "split": "pilot_development",
+      "annotation_status": "pending",
+      "prior_usage_review": "pending",
+      "visual_review": "pending"
+    }
+  ]
+}

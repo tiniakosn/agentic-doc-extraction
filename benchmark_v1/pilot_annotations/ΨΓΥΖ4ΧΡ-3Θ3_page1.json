@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+  "document": {
+    "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+    "pdf_path": "data/discovery/ΨΓΥΖ4ΧΡ-3Θ3.pdf",
+    "sha256": "b2a7f92c33d13013e943e214fa01ab0937671d6b48fb149b68da9994b5c9ca42",
+    "page_count": 2,
+    "split": "dev"
+  },
+  "scope": "page",
+  "page_number": 1,
+  "fields": {
+    "document_type": {
+      "status": "present",
+      "value": "award_decision",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ ΜΙΑΣ (1) ΚΛΙΜΑΤΙΣΤΙΚΗΣ ΜΟΝΑΔΑΣ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "issuing_authority": {
+      "status": "present",
+      "value": "Πρωτοδικείο Κορίνθου",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "recipient": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "No explicit ΠΡΟΣ on page 1."
+    },
+    "contractor": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "Page 1 sets out award-decision heading and background but no named awardee; awardee appears on page 2, which must not be leaked into page 1 labels."
+    },
+    "contractor_tax_id": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "No contractor AFM appears on the selected page."
+    }
+  },
+  "financial_observations": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Only page 1 evidence is considered here; deliberately do not use page 2."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+  "document": {
+    "document_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ",
+    "pdf_path": "data/discovery/91ΤΣ46ΝΙΦ6-ΠΡΛ.pdf",
+    "sha256": "b491df7eb92bc159cbf361643ab03ab20bbca96bbbc3dc74fdd1500f5f431abd",
+    "page_count": 4,
+    "split": "dev"
+  },
+  "scope": "page",
+  "page_number": 1,
+  "fields": {
+    "document_type": {
+      "status": "present",
+      "value": "invitation",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "issuing_authority": {
+      "status": "present",
+      "value": "ΑΜΚΕ Ψυχοκοινωνικών Παρεμβάσεων «ΑΓΚΑΛΙΑ»",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΑΜΚΕ ΨΥΧΟΚΟΙΝΩΝΙΚΩΝ ΠΑΡΕΜΒΑΣΕΩΝ «ΑΓΚΑΛΙΑ»",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "recipient": {
+      "status": "present",
+      "value": "ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Προς: ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "contractor": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "Invitation to offer, not a finalized selection on the selected page."
+    },
+    "contractor_tax_id": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "AFM 124324077 belongs to the invitee, not an awarded contractor."
+    }
+  },
+  "financial_observations": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Only page 1 annotated; other pages are out of scope."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+  "document": {
+    "document_id": "685Κ465274-Χ1Ψ",
+    "pdf_path": "data/discovery/685Κ465274-Χ1Ψ.pdf",
+    "sha256": "76b0c7bc7eeef70e6eb6a07b0f74d73c95828b67cb87ea8259d12bd4030802cc",
+    "page_count": 2,
+    "split": "dev"
+  },
+  "scope": "page",
+  "page_number": 1,
+  "fields": {
+    "document_type": {
+      "status": "present",
+      "value": "commitment_decision",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Απόφαση Ανάληψης Υποχρέωσης",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "issuing_authority": {
+      "status": "present",
+      "value": "Ερευνητικό Πανεπιστημιακό Ινστιτούτο Συστημάτων Επικοινωνιών και Υπολογιστών",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΕΡΕΥΝΗΤΙΚΟ ΠΑΝΕΠΙΣΤΗΜΙΑΚΟ ΙΝΣΤΙΤΟΥΤΟ ΣΥΣΤΗΜΑΤΩΝ ΕΠΙΚΟΙΝΩΝ & ΥΠΟΛΟΓΙΣΤΩΝ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "recipient": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "No explicitly addressed person or organization on page."
+    },
+    "contractor": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "Credit commitment only, no awarded supplier on this page."
+    },
+    "contractor_tax_id": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "No AFM tied to a selected contractor."
+    }
+  },
+  "financial_observations": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Page 2 is confirmed blank by user and excluded from primary scoring."
+  }
+}

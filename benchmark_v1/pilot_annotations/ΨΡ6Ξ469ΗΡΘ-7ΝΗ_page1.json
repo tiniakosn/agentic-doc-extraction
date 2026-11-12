@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+  "document": {
+    "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+    "pdf_path": "data/discovery/ΨΡ6Ξ469ΗΡΘ-7ΝΗ.pdf",
+    "sha256": "bb7250a3c73b5e7f0e0fd4b2a27953cf219dc80403e6ec103425acb6532f820f",
+    "page_count": 1,
+    "split": "dev"
+  },
+  "scope": "page",
+  "page_number": 1,
+  "fields": {
+    "document_type": {
+      "status": "present",
+      "value": "award_decision",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΑΠΟΦΑΣΙΖΟΥΜΕ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "issuing_authority": {
+      "status": "present",
+      "value": "Βιοτεχνικό Επιμελητήριο Θεσσαλονίκης",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Βιοτεχνικού Επιμελητηρίου Θεσσαλονίκης",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": "Verify exact issuing-entity name on original; image uses a chamber committee wording."
+    },
+    "recipient": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "No addressed recipient on this decision page."
+    },
+    "contractor": {
+      "status": "present",
+      "value": "ΜΠΙΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Εγκρίνουμε την ανάθεση, στην επιχείρηση με επωνυμία «ΜΠΙΝΙΑΣ ΝΙΚΟΛΑΟΣ»",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "contractor_tax_id": {
+      "status": "present",
+      "value": "105014125",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Α.Φ.Μ. 105014125",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    }
+  },
+  "financial_observations": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Small-font source; visually reconfirm AFM digits and issuing authority."
+  }
+}

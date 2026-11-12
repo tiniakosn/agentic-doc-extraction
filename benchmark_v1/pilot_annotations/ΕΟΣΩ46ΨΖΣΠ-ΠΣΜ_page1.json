@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+  "document": {
+    "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+    "pdf_path": "data/discovery/ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ.pdf",
+    "sha256": "8bc10e36d3b040c21f34f4164dda8a9f983c0fc79fc9c1f2a5c292347f39155b",
+    "page_count": 9,
+    "split": "dev"
+  },
+  "scope": "page",
+  "page_number": 1,
+  "fields": {
+    "document_type": {
+      "status": "present",
+      "value": "contract_summary",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "issuing_authority": {
+      "status": "present",
+      "value": "Ίδρυμα Νεολαίας και Διά Βίου Μάθησης",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΙΔΡΥΜΑ ΝΕΟΛΑΙΑΣ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗΣ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "recipient": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "Contractual counterparty is not described as an addressee on the page."
+    },
+    "contractor": {
+      "status": "present",
+      "value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ του ΙΩΑΝΝΗ",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": "Individual service provider under concluded work contract; provider-inclusive benchmark policy."
+    },
+    "contractor_tax_id": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "AFM 090044306 is explicitly the Foundation AFM, not the service provider AFM."
+    }
+  },
+  "financial_observations": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Contractor policy expanded to concluded individual provider contracts; further manual review required."
+  }
+}

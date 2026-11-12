@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+  "document": {
+    "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+    "pdf_path": "data/discovery/ΨΓΥΖ4ΧΡ-3Θ3.pdf",
+    "sha256": "b2a7f92c33d13013e943e214fa01ab0937671d6b48fb149b68da9994b5c9ca42",
+    "page_count": 2,
+    "split": "dev"
+  },
+  "scope": "page",
+  "page_number": 2,
+  "fields": {
+    "document_type": {
+      "status": "present",
+      "value": "award_decision",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "Αναθέτουμε",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "issuing_authority": {
+      "status": "present",
+      "value": "Πρωτοδικείο Κορίνθου",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "Ο Διευθύνων το Πρωτοδικείο Κορίνθου",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "recipient": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "No ΠΡΟΣ recipient on page 2."
+    },
+    "contractor": {
+      "status": "present",
+      "value": "ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "στην επιχείρηση με την επωνυμία «ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ»",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": "Confirm punctuation and exact legal spelling against original."
+    },
+    "contractor_tax_id": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "No AFM explicitly linked to contractor on page 2."
+    }
+  },
+  "financial_observations": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Page 2 has operative assignment and 3500 EUR (VAT included)."
+  }
+}

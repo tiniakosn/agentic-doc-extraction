@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+  "document": {
+    "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+    "pdf_path": "data/discovery/63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf",
+    "sha256": "7dd4206d4095c617e3c478b182ec47a9ddd3af42527edd3ab00c43ca4aa0a39d",
+    "page_count": 1,
+    "split": "dev"
+  },
+  "scope": "page",
+  "page_number": 1,
+  "fields": {
+    "document_type": {
+      "status": "present",
+      "value": "award_decision",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Απευθείας ανάθεση της προμήθειας",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "issuing_authority": {
+      "status": "present",
+      "value": "Δήμος Ανατολικής Σάμου",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    },
+    "recipient": {
+      "status": "not_present",
+      "value": null,
+      "evidence": [],
+      "notes": "No addressee/ΠΡΟΣ on the page; named company is the awardee, not recipient."
+    },
+    "contractor": {
+      "status": "present",
+      "value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": "Verify full legal name in operative award sentence; annotation uses clearly visible short form."
+    },
+    "contractor_tax_id": {
+      "status": "present",
+      "value": "801033798",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "ΑΦΜ: 801033798",
+          "source_kind": "visual"
+        }
+      ],
+      "notes": ""
+    }
+  },
+  "financial_observations": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Original PDF text checked for contractor name and tax ID. The number 6983905183 is the contractor's mobile phone, not its tax ID. Other fields remain pending full review."
+  }
+}
