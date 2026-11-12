@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "annotation_id": "REPLACE_WITH_UNIQUE_ID",
+  "document": {
+    "document_id": "REPLACE_WITH_DOCUMENT_ID",
+    "pdf_path": "data/raw/REPLACE.pdf",
+    "sha256": null,
+    "page_count": null,
+    "split": "test"
+  },
+  "scope": "document",
+  "page_number": null,
+  "fields": {
+    "document_type": {"status": "uncertain", "value": null, "evidence": [], "notes": "Pending human annotation"},
+    "issuing_authority": {"status": "uncertain", "value": null, "evidence": [], "notes": "Pending human annotation"},
+    "recipient": {"status": "uncertain", "value": null, "evidence": [], "notes": "Pending human annotation"},
+    "contractor": {"status": "uncertain", "value": null, "evidence": [], "notes": "Pending human annotation"},
+    "contractor_tax_id": {"status": "uncertain", "value": null, "evidence": [], "notes": "Pending human annotation"}
+  },
+  "financial_observations": [],
+  "review": {"status": "pending", "reviewer": null, "reviewed_at": null, "notes": "Original PDF not yet reviewed"}
+}

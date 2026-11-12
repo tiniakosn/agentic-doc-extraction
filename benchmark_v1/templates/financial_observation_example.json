@@ -1,0 +1,9 @@
+{
+  "role": "unit_rate",
+  "amount": "1656.08",
+  "currency": "EUR",
+  "vat_treatment": "exclusive",
+  "unit": "complete_trip",
+  "evidence": [{"page": 1, "text": "REPLACE WITH EXACT QUOTE FROM PDF", "source_kind": "visual"}],
+  "notes": "ILLUSTRATIVE ONLY. Do not insert into a verified benchmark without human review."
+}
