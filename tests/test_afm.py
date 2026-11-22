@@ -1,4 +1,4 @@
-from src.utils.validators import validate_greek_afm
+from src.evaluation.field_validation import validate_greek_afm
 
 def test_afm_validation():
     # 1. Πραγματικό ΑΦΜ από το doc_1
@@ -14,6 +14,13 @@ def test_afm_validation():
     assert validate_greek_afm(invalid_len) is False
 
     print("Όλοι οι έλεγχοι Modulo 11 πέρασαν με απόλυτη επιτυχία!")
+
+def test_afm_rejects_mobile_phone():
+    assert validate_greek_afm("6983905183") is False
+
+
+def test_afm_rejects_missing_value():
+    assert validate_greek_afm(None) is False
 
 if __name__ == "__main__":
     test_afm_validation()

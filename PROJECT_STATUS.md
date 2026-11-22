@@ -957,3 +957,72 @@ Next research milestone:
 Evaluate existing validation, semantic verification,
 and bounded correction mechanisms using stored
 extraction failures, without changing raw predictions.
+
+
+---
+
+## Architecture Cleanup — November 2026
+
+### Active Architecture
+
+The official workflow is implemented in:
+- `src/multimodal_graph.py`
+
+Primary state and extraction schemas:
+- `src/schemas/workflow_state.py`
+- `src/schemas/page_extraction.py`
+
+Active components:
+- PDF ingestion and page-quality assessment
+- Digital text, Tesseract, PaddleOCR and VLM processing
+- Structured information extraction
+- Textual and semantic verification
+- Evidence repair
+- Bounded correction controller
+
+### Cleanup
+
+Removed the original Gemini prototype:
+- Legacy `src/graph.py`
+- Legacy extractor, validator and corrector nodes
+- Legacy `ExtractionState` and `ContractSchema`
+- Unused legacy OCR, vision and PDF utilities
+- Tests specific to the legacy workflow
+
+The semantic verifier now uses:
+- `src/extraction/llm_client.py`
+
+The standalone Greek AFM validator is located at:
+- `src/evaluation/field_validation.py`
+
+IMPORTANT:
+AFM validation is implemented and unit-tested,
+but is not yet integrated into the active LangGraph.
+
+### Validation
+
+- Python compileall: PASS
+- Multimodal graph construction: PASS
+- Active unit tests: 15 passed
+- Full end-to-end regression: NOT YET PERFORMED
+- No LLM API calls were required for cleanup.
+
+### Current Limitations
+
+- Pilot annotations remain provisional.
+- Direct VLM source grounding is incomplete.
+- Bounded correction does not yet retry VLM failures.
+- Benchmark accuracy has not been officially calculated.
+
+### Next Milestone
+
+Verification & Correction Experiment v1.
+
+Start with the documented failure:
+- PDF: `63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf`
+- Correct contractor AFM: `801033798`
+- Incorrect VLM extraction: `6983905183`
+
+Evaluate deterministic validation, source verification,
+correction decisions and final output reliability.
+
