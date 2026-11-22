@@ -1424,3 +1424,77 @@ Agreement with development annotations:
 4. Compare full-workflow results against the original baseline.
 
 
+### KENAP End-to-End Diagnostic — 2026-11-22
+
+Run: `live_20261122T152614Z.json`
+
+- Adaptive Router v2 correctly selected Tesseract.
+- OCR recovered readable company name and AFM.
+- OCR reading order mixed header and recipient columns.
+- Issuing authority and recipient were incorrectly extracted
+  but textually accepted.
+- Contractor and contractor_tax_id received semantic
+  verdict `supported`, conflicting with verified dev labels.
+- Text-only semantic results had no spatial supporting_sources.
+- Final workflow status: review_required; retries: 0.
+- Semantic verification duration: 12.207 seconds.
+
+Research finding:
+Improved OCR readability does not guarantee correct entity
+roles. Textual grounding and LLM semantic verification can
+both accept incorrect role assignments.
+
+No further prompt tuning on this development case.
+
+
+---
+
+## Benchmark v1 — Unified Development Comparison (2026-11-22)
+
+### Dataset
+- 9 verified page-level annotations from 8 PDFs.
+- Five primary extraction fields.
+- All three strategies evaluated on identical cases.
+- All documents belong to the development split.
+
+### Results
+
+| Strategy | Agreement | Rate |
+|---|---:|---:|
+| Digital + LLM | 30/45 | 66.7% |
+| Direct VLM | 24/45 | 53.3% |
+| Adaptive Text Workflow | 32/45 | 71.1% |
+
+Source:
+`evaluation_results/benchmark_v1/strategy_comparison_dev_v1.json`
+
+### Workflow Observations
+- 9/9 executions completed successfully after API rate-limit retries.
+- Routing: 7 digital pages, 2 Tesseract pages.
+- All 9 executions ended with review_required.
+- No LangGraph correction retries occurred.
+- Field decisions: 20 review, 11 repair_evidence,
+  7 accept_with_evidence, 3 accept, 4 reprocess.
+- KENAP exposed OCR reading-order and semantic-role errors.
+- Evidence repair successfully corrected source quotations
+  without changing extracted values.
+
+### Interpretation
+- Adaptive Text Workflow achieved the highest agreement
+  in this small development pilot.
+- Improvement cannot be attributed to the correction loop.
+- No held-out accuracy or statistical superiority established.
+- Role verification and human-review burden remain limitations.
+
+### Next Milestones
+1. Evaluate verification decisions and false acceptance rates.
+2. Design document-level aggregation for multi-page PDFs.
+3. Prepare a distinct, unseen document-level test set.
+4. Run controlled ablations and final held-out evaluation.
+
+### Methodological Constraints
+- Preserve existing baseline predictions and annotations.
+- Do not mix page-level and document-level metrics.
+- Freeze evaluation configuration before held-out testing.
+- Maintain page-specific evidence and source provenance.
+
