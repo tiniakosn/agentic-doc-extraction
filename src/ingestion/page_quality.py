@@ -1,7 +1,7 @@
 import numpy as np
 import re
 from dataclasses import dataclass
-
+import unicodedata
 import pymupdf
 
 
@@ -13,6 +13,7 @@ class PageQuality:
     suspicious_text_ratio: float
     visual_ink_ratio: float
     greek_letter_ratio: float
+    unassigned_char_count: int = 0
 
 def calculate_image_coverage(page: pymupdf.Page) -> float:
     page_area = page.rect.get_area()
@@ -69,6 +70,8 @@ def assess_page_quality(page: pymupdf.Page) -> PageQuality:
         greek_letter_ratio=round(
             calculate_greek_letter_ratio(text), 4
         ),
+        unassigned_char_count=count_unassigned_chars(text),
+        
     )
 
 def calculate_visual_ink_ratio(page: pymupdf.Page, dpi: int = 72) -> float:
@@ -97,3 +100,10 @@ def calculate_greek_letter_ratio(text: str) -> float:
     ))
 
     return greek / letters
+
+def count_unassigned_chars(text: str) -> int:
+    """Count Unicode characters without an assigned code point."""
+    return sum(
+        unicodedata.category(char) == "Cn"
+        for char in text
+    )

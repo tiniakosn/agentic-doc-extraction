@@ -61,7 +61,13 @@ def choose_processing_route_v2(
 
     Thresholds are provisional and must be evaluated.
     """
-
+    # Unassigned Unicode characters indicate potentially
+    # corrupted PDF text extraction.
+    if quality.unassigned_char_count > 0:
+        return RoutingDecision(
+            route="tesseract",
+            reason="Unassigned Unicode characters in digital text",
+        )
     # Low visual density: do not automatically run OCR.
     if (
         quality.visual_ink_ratio < 0.03

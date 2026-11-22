@@ -1262,3 +1262,52 @@ not benchmark-wide correction effectiveness.
 3. Assess role verification and bounded correction.
 4. Freeze evaluation protocol and select independent test PDFs.
 5. Compare strategies on held-out documents.
+
+
+
+---
+
+## Adaptive Routing v2 — Unicode Quality Improvement (2026-11-22)
+
+### Problem
+
+The existing routing policy failed to detect corrupted Greek
+digital text in document 65ΓΦ6-Θ5Μ (KENAP).
+
+The digital text contained sufficient Greek characters,
+but many words were corrupted by PDF character mapping.
+
+### Implementation
+
+- Added Unicode unassigned-character detection (category Cn).
+- Added `unassigned_char_count` to PageQuality.
+- Added a provisional Tesseract fallback rule when
+  unassigned characters are present.
+- Preserved existing routing thresholds and other rules.
+
+### Validation
+
+- Full test suite: 34 passed.
+- Routing audit: 8 development PDFs, page 1 of each.
+- Previous routes: 7 digital, 1 Tesseract.
+- Updated routes: 6 digital, 2 Tesseract.
+- Only changed route: 65ΓΦ6-Θ5Μ, digital -> Tesseract.
+- Healthy digital PDF and image-dominant PDF retained
+  their previous routes.
+
+### Limitations
+
+- The routing rule is experimental.
+- A single unassigned character currently triggers OCR.
+- The absence of unassigned characters does not prove
+  that digital text is readable or complete.
+- No independent held-out evaluation yet.
+- Improved final extraction accuracy has not been
+  established by this routing audit.
+
+### Next Milestone
+
+Evaluate entity-role verification for recipient, contractor
+and contractor_tax_id using documented development failures.
+Preserve the original predictions and benchmark annotations.
+
