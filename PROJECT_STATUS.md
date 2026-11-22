@@ -1363,3 +1363,64 @@ using the verified Benchmark v1 annotations.
 Measure role-verification coverage, false acceptance,
 false review and latency before changing the policy further.
 
+
+
+---
+
+## Entity-Role Verification — Live Development Evaluation (2026-11-22)
+
+### Experiment
+
+Evaluated the standalone semantic claim verifier on three
+selected claims from verified Benchmark v1 development pages.
+
+Source predictions: Digital + LLM pilot run.
+Evidence: Original PDF text anchors with local context.
+Model: qwen/qwen3.8-27b.
+
+Baseline:
+role_verification_20261122T150610Z.json
+
+Revised prompt:
+role_verification_20261122T150907Z.json
+
+### Results
+
+| Claim | Baseline | Revised prompt |
+|---|---|---|
+| KENAP contractor | supported | supported |
+| Educator-contract recipient | supported | insufficient_evidence |
+| Corinth contractor | supported | supported |
+
+Agreement with development annotations:
+- Baseline: 1/3
+- Revised prompt: 2/3
+
+### Findings
+
+- Explicit award language was correctly recognized in Corinth.
+- The revised prompt distinguished a contractual counterparty
+  from an explicitly addressed recipient.
+- KENAP remained a disagreement: payment/disbursement
+  language was interpreted as establishing a contractor.
+- Entity presence and semantic role correctness remain distinct.
+- Corrupted digital text may reduce verification reliability.
+
+### Limitations
+
+- Only three selected development claims.
+- Prompt revision was informed by observed development failures.
+- No independent generalization evidence.
+- Standalone claim verification, not full LangGraph evaluation.
+- Verdicts were not independently replicated across runs.
+- No further prompt tuning planned on these examples.
+
+### Next Steps
+
+1. Freeze the current verifier configuration for evaluation.
+2. Evaluate on a broader, independently selected document set.
+3. Measure false acceptance, unnecessary review, evidence
+   availability, semantic-check coverage and latency.
+4. Compare full-workflow results against the original baseline.
+
+

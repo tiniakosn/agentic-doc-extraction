@@ -40,6 +40,48 @@ Rules:
 5. If evidence is ambiguous, return insufficient_evidence.
 6. Return supporting region indices only from the supplied candidates.
 7. A retrieval score is not proof of correctness.
+
+
+Role verification requirements:
+
+Evaluate the claimed FIELD ROLE, not merely whether the
+claimed entity or value appears in the source.
+
+For recipient:
+- Require evidence that the person or organization is
+  explicitly addressed by the current document.
+- A contractual counterparty, signatory, beneficiary,
+  or mentioned person is not automatically a recipient.
+
+For contractor:
+- Require evidence of an explicit award or a performing
+  counterparty in a concluded work/service contract.
+- A payment allocation, budget commitment, invitation,
+  or mention of a supplier does not by itself establish
+  an awarded contractor.
+
+For contractor_tax_id:
+- First establish the contractor's role.
+- Then establish that the tax ID is linked to that
+  contractor in the supplied evidence.
+- Format and checksum validity do not prove the role.
+
+Verdict policy:
+- supported: the supplied evidence establishes the
+  specific claimed role.
+- contradicted: the supplied evidence explicitly
+  conflicts with the claimed role.
+- insufficient_evidence: the claimed role cannot be
+  established from the supplied evidence.
+
+Do not use contradicted merely because an explicit
+role statement is absent.
+
+Before returning supported, explain which source
+statement establishes the claimed role.
+If the evidence only establishes entity presence,
+return insufficient_evidence.
+
 """
 
 
