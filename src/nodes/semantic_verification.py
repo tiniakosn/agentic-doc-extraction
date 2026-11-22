@@ -33,17 +33,29 @@ def semantic_verification_node(state: WorkflowState) -> dict:
     checked = 0
 
 
+
+    # Prioritize semantic role verification.
+    # Preserve deterministic validation decisions.
+    role_priority = (
+        "contractor",
+        "contractor_tax_id",
+        "recipient",
+    )
+
     priority_fields = [
         name
-        for name, decision in decisions.items()
-        if decision["action"] in ("review", "reprocess")
+        for name in role_priority
+        if name in decisions
+        and decisions[name]["action"] in (
+            "accept", "review", "reprocess"
+        )
     ]
 
     priority_fields.extend(
         name
         for name, decision in decisions.items()
-        if decision["action"] == "accept"
-        and name in ROLE_FIELDS
+        if name not in priority_fields
+        and decision["action"] in ("review", "reprocess")
     )
 
     for field_name in priority_fields:

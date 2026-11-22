@@ -166,3 +166,82 @@ def test_accepted_role_without_evidence_requires_review():
     assert final["semantic_verdict"] == "insufficient_evidence"
 
 
+def test_role_fields_have_priority_with_limited_budget():
+    state = {
+        "extraction": {
+            "document_type": {
+                "status": "present",
+                "value": "Απόφαση",
+            },
+            "issuing_authority": {
+                "status": "present",
+                "value": "ΔΗΜΟΣ",
+            },
+            "contractor": {
+                "status": "present",
+                "value": "ΑΛΦΑ",
+            },
+            "contractor_tax_id": {
+                "status": "present",
+                "value": "801033798",
+            },
+        },
+        "field_decisions": {
+            "document_type": {
+                "action": "review",
+                "reason": "Needs verification",
+            },
+            "issuing_authority": {
+                "action": "review",
+                "reason": "Needs verification",
+            },
+            "contractor": {
+                "action": "accept",
+                "reason": "Textually supported",
+            },
+            "contractor_tax_id": {
+                "action": "accept",
+                "reason": "Textually supported",
+            },
+        },
+        "processed_page": {
+            "page_number": 1,
+            "method": "digital",
+            "text": (
+                "Απόφαση του ΔΗΜΟΣ. "
+                "Αναθέτουμε στην εταιρεία ΑΛΦΑ, "
+                "ΑΦΜ: 801033798."
+            ),
+            "regions": [],
+        },
+        "document": {
+            "document_id": "test_document",
+        },
+        "verification": {},
+        "metrics": {},
+    }
+
+    def fake_verify(**kwargs):
+        return ClaimVerification(
+            field_name=kwargs["field_name"],
+            claimed_value=kwargs["claimed_value"],
+            verdict="supported",
+            explanation="Mocked evidence verification",
+            verification_method="mock_semantic",
+        )
+
+    with patch(
+        "src.nodes.semantic_verification.verify_claim",
+        side_effect=fake_verify,
+    ) as mock_verify:
+        semantic_verification_node(state)
+
+    checked_fields = [
+        call.kwargs["field_name"]
+        for call in mock_verify.call_args_list
+    ]
+
+    assert checked_fields == [
+        "contractor",
+        "contractor_tax_id",
+    ]
