@@ -56,9 +56,9 @@
   },
   "financial_observations": [],
   "review": {
-    "status": "pending",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Page 2 is confirmed blank by user and excluded from primary scoring."
+    "status": "verified",
+    "reviewer": "N. Tiniakos",
+    "reviewed_at": "2026-11-22",
+    "notes": "Manually reviewed page 1 against the original PDF. Confirmed commitment decision and issuing authority EPISΕΥ. The issuing authority's full name appears visually in the document logo. No explicitly addressed recipient or awarded contractor is established on page 1. The amount of EUR 2,800 represents a credit commitment, not an award. SHA-256 and page count verified. Page 2 is blank and excluded from primary scoring."
   }
 }

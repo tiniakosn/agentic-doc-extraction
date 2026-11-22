@@ -61,10 +61,12 @@
     }
   },
   "financial_observations": [],
+
   "review": {
-    "status": "pending",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Page 2 has operative assignment and 3500 EUR (VAT included)."
+    "status": "verified",
+    "reviewer": "N. Tiniakos",
+    "reviewed_at": "2026-11-22",
+    "notes": "Manually reviewed page 2 against the original PDF text. Confirmed the operative award to ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ, preserving source punctuation. No explicitly addressed recipient or contractor AFM is stated on page 2. Award amount is EUR 3500 including VAT 24%. SHA-256 and page count verified. Review scope: page 2 only."
   }
+
 }

@@ -67,10 +67,12 @@
     }
   },
   "financial_observations": [],
+
   "review": {
-    "status": "pending",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Small-font source; visually reconfirm AFM digits and issuing authority."
+    "status": "verified",
+    "reviewer": "N. Tiniakos",
+    "reviewed_at": "2026-11-22",
+    "notes": "Manually reviewed the original PDF page visually. Confirmed award decision 179/2026, issuing organization Βιοτεχνικό Επιμελητήριο Θεσσαλονίκης (decision by its Administrative Committee), contractor ΜΠΙΝΙΑΣ ΝΙΚΟΛΑΟΣ and AFM 105014125. No separately addressed recipient. Most operative content is image-based and absent from the digital text layer. SHA-256 and page count verified. Review scope: page 1."
   }
+
 }

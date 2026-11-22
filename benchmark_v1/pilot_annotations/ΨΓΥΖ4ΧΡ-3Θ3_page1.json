@@ -55,10 +55,12 @@
     }
   },
   "financial_observations": [],
+
   "review": {
-    "status": "pending",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Only page 1 evidence is considered here; deliberately do not use page 2."
+    "status": "verified",
+    "reviewer": "N. Tiniakos",
+    "reviewed_at": "2026-11-22",
+    "notes": "Manually reviewed page 1 against the original PDF. Confirmed award decision, issuing authority and absence of an explicitly addressed recipient. No contractor or contractor AFM is stated on page 1. The awardee is identified on page 2, which is outside this annotation's scope. SHA-256 and page count verified."
   }
+
 }

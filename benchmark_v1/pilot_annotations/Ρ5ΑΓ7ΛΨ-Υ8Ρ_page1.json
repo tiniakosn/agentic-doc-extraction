@@ -61,10 +61,12 @@
     }
   },
   "financial_observations": [],
+
   "review": {
-    "status": "pending",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Other page not in current annotation scope."
+    "status": "verified",
+    "reviewer": "N. Tiniakos",
+    "reviewed_at": "2026-11-22",
+    "notes": "Manually reviewed page 1 of the original PDF. Confirmed administrative decision issued by the Region of Western Macedonia and addressed to the Directorate of Financial Services. No awarded contractor or contractor tax ID is established on page 1. The document concerns participation in the 33rd Orthodoxia Exhibition. SHA-256 and page count verified. Review scope is page 1 only; page 2 is outside this annotation."
   }
+
 }

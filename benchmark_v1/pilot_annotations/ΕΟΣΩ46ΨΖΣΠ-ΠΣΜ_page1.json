@@ -43,7 +43,7 @@
     },
     "contractor": {
       "status": "present",
-      "value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ του ΙΩΑΝΝΗ",
+      "value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ του ΙΩΑΝΝΗΣ",
       "evidence": [
         {
           "page": 1,
@@ -62,9 +62,9 @@
   },
   "financial_observations": [],
   "review": {
-    "status": "pending",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Contractor policy expanded to concluded individual provider contracts; further manual review required."
+    "status": "verified",
+    "reviewer": "N. Tiniakos",
+    "reviewed_at": "2026-11-22",
+    "notes": "Manually reviewed page 1 against the original PDF. Confirmed contract summary, issuing organization and individual service provider. Preserved the exact source spelling ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ. No separate addressee or service provider AFM is stated on page 1. AFM 090044306 belongs to the Foundation. SHA-256 and page count verified. Review scope: page 1 only."
   }
 }

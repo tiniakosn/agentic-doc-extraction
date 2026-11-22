@@ -62,9 +62,9 @@
   },
   "financial_observations": [],
   "review": {
-    "status": "pending",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Encoding-corrupted digital text; source evidence taken from rendered visual page."
+    "status": "verified",
+    "reviewer": "N. Tiniakos",
+    "reviewed_at": "2026-11-22",
+    "notes": "Manually reviewed page 1 of the original document. Confirmed administrative order 592/26, issuing authority and explicitly addressed recipient. The document identifies ΘΥΜΙΑΝΟΣ Α.Ε. (AFM 092597210) as the beneficiary of an authorized disbursement for supplies, but does not explicitly establish an award or concluded contract under the benchmark contractor definition. Contractor and contractor_tax_id remain not_present. SHA-256 and page count confirmed."
   }
 }

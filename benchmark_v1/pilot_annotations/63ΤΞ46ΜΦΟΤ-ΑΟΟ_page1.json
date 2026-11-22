@@ -68,9 +68,9 @@
   },
   "financial_observations": [],
   "review": {
-    "status": "pending",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Original PDF text checked for contractor name and tax ID. The number 6983905183 is the contractor's mobile phone, not its tax ID. Other fields remain pending full review."
+    "status": "verified",
+    "reviewer": "N. Tiniakos",
+    "reviewed_at": "2026-11-22",
+    "notes": "Manually reviewed against the original PDF, page 1. Confirmed document type, issuing authority, absence of a separate recipient, contractor and contractor tax ID. The number 6983905183 is a mobile phone, not an AFM."
   }
 }

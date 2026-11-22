@@ -62,9 +62,9 @@
   },
   "financial_observations": [],
   "review": {
-    "status": "pending",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Candidate labels transcribed from supplied page PNG; verify against original PDF before any verified designation. Only page 1 annotated; other pages are out of scope."
+    "status": "verified",
+    "reviewer": "N. Tiniakos",
+    "reviewed_at": "2026-11-22",
+    "notes": "Manually reviewed page 1 against the original document text. Confirmed invitation document type, issuing authority and recipient. No awarded contractor is identified on this page. AFM 124324077 refers to the invitee and must not be treated as contractor_tax_id. SHA-256 and PDF page count verified. Review scope: page 1 only."
   }
 }
