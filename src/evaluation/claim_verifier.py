@@ -43,14 +43,38 @@ Rules:
 """
 
 
+ROLE_DEFINITIONS = {
+    "recipient": (
+        "The person or organization explicitly addressed by "
+        "the current document. A contractor, applicant or "
+        "mentioned person is not automatically a recipient."
+    ),
+    "contractor": (
+        "A person or organization explicitly awarded goods, "
+        "works or services, or the performing counterparty "
+        "of a concluded work/service contract. "
+        "A mentioned supplier, invitee or payment beneficiary "
+        "is not automatically an awarded contractor."
+    ),
+    "contractor_tax_id": (
+        "A tax identification number explicitly linked to "
+        "the contractor established by the document. "
+        "A valid tax ID belonging to another entity must "
+        "not be accepted as contractor_tax_id."
+    ),
+}
+
+
+
 def verify_claim(
     field_name: str,
     claimed_value: str,
     candidates: list[EvidenceCandidate],
     model_name: str = "qwen/qwen3.8-27b",
+    text_anchors: list[dict] | None = None,
 ) -> ClaimVerification:
 
-    if not candidates:
+    if not candidates and not text_anchors:
         return ClaimVerification(
             field_name=field_name,
             claimed_value=claimed_value,
@@ -67,6 +91,17 @@ def verify_claim(
         for c in candidates
     ]
 
+    if text_anchors:
+        evidence.extend(
+            {
+                "source_type": "text",
+                "text": anchor["context"],
+                "start": anchor["start"],
+                "end": anchor["end"],
+            }
+            for anchor in text_anchors
+        )
+
     llm = get_llm(model_name=model_name)
     structured_llm = llm.with_structured_output(
         ClaimAssessment
@@ -77,6 +112,7 @@ def verify_claim(
         HumanMessage(content=json.dumps({
             "field_name": field_name,
             "claimed_value": claimed_value,
+            "role_definition": ROLE_DEFINITIONS.get(field_name),
             "evidence": evidence,
         }, ensure_ascii=False)),
     ])

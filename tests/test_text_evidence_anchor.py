@@ -54,3 +54,27 @@ def test_text_anchor_preserves_context():
     assert "στην εταιρία" in result["context"]
     assert "ΑΦΜ: 801033798" in result["context"]
     assert text[result["start"]:result["end"]] == result["text"]
+
+
+from src.evaluation.text_evidence_anchor import find_text_anchors
+
+
+def test_find_multiple_text_anchors():
+    text = (
+        "Η εταιρεία ΑΛΦΑ αναφέρεται στο ιστορικό. "
+        "Αποφασίζουμε την ανάθεση στην εταιρεία ΑΛΦΑ."
+    )
+
+    results = find_text_anchors(
+        value="ΑΛΦΑ",
+        source_text=text,
+        context_chars=40,
+    )
+
+    assert len(results) == 2
+
+    for result in results:
+        assert text[result["start"]:result["end"]] == "ΑΛΦΑ"
+
+    assert "ιστορικό" in results[0]["context"]
+    assert "ανάθεση" in results[1]["context"]

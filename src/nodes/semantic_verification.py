@@ -6,7 +6,15 @@ from src.evaluation.claim_verifier import verify_claim
 from src.schemas.workflow_state import WorkflowState
 from src.evaluation.final_decision import resolve_final_decisions
 from src.evaluation.evidence_repair import repair_field_evidence
+from src.evaluation.text_evidence_anchor import find_text_anchors
+
 MAX_SEMANTIC_CHECKS = 2
+
+ROLE_FIELDS = {
+    "recipient",
+    "contractor",
+    "contractor_tax_id",
+}
 
 
 def semantic_verification_node(state: WorkflowState) -> dict:
@@ -24,12 +32,26 @@ def semantic_verification_node(state: WorkflowState) -> dict:
     results = {}
     checked = 0
 
-    for field_name, decision in decisions.items():
+
+    priority_fields = [
+        name
+        for name, decision in decisions.items()
+        if decision["action"] in ("review", "reprocess")
+    ]
+
+    priority_fields.extend(
+        name
+        for name, decision in decisions.items()
+        if decision["action"] == "accept"
+        and name in ROLE_FIELDS
+    )
+
+    for field_name in priority_fields:
         if checked >= MAX_SEMANTIC_CHECKS:
             break
 
-        if decision["action"] not in ("reprocess", "review"):
-            continue
+        decision = decisions[field_name]
+
 
         # A deterministic failure cannot be resolved by an LLM.
         if decision.get("decision_source") == "deterministic_validation":
@@ -48,7 +70,15 @@ def semantic_verification_node(state: WorkflowState) -> dict:
             method=method,
         )
 
-        if not candidates:
+        text_anchors = find_text_anchors(
+            value=field["value"],
+            source_text=processed.get("text", ""),
+            context_chars=250,
+            max_matches=5,
+        )
+
+
+        if not candidates and not text_anchors:
             results[field_name] = {
                 "verdict": "insufficient_evidence",
                 "reason": "No evidence candidates found",
@@ -59,6 +89,7 @@ def semantic_verification_node(state: WorkflowState) -> dict:
             field_name=field_name,
             claimed_value=field["value"],
             candidates=candidates,
+            text_anchors=text_anchors,
         )
 
         results[field_name] = result.model_dump(mode="json")

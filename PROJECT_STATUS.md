@@ -1311,3 +1311,55 @@ Evaluate entity-role verification for recipient, contractor
 and contractor_tax_id using documented development failures.
 Preserve the original predictions and benchmark annotations.
 
+
+---
+
+## Entity-Role Verification v1 — 2026-11-22
+
+### Objective
+
+Improve verification of semantic entity roles in Greek
+administrative and procurement documents.
+
+Textual presence alone does not establish that an entity
+is a recipient, contractor or contractor tax-ID holder.
+
+### Implemented
+
+- Multiple text anchors with original character offsets.
+- Context retrieval across whitespace and line breaks.
+- Role definitions for recipient, contractor and contractor_tax_id.
+- Optional text-only evidence in the existing claim verifier.
+- Integration of text anchors into semantic_verification_node.
+- Risk-based semantic checks for initially accepted role fields.
+- Existing semantic verification budget retained at 2 checks.
+- Deterministic validation overrides remain protected.
+- Ambiguous or contradicted claims can result in review
+  without automatically triggering OCR retries.
+
+### Validation
+
+- Full test suite: 40 passed.
+- Offline mocked LLM and integration tests passed.
+- Real source-context diagnostics:
+  - Corinth: explicit award context retrieved.
+  - KENAP: payment/disbursement context retrieved.
+- No new LLM API calls required for implementation tests.
+
+### Known Limitations
+
+- Actual role-verification accuracy not yet measured.
+- Text anchors use exact token matching with flexible whitespace.
+- Text-only semantic verdicts lack complete structured provenance.
+- A supported semantic verdict is not independent ground truth.
+- Maximum 2 semantic checks may leave role fields unchecked.
+- Current evidence retrieval may miss information in corrupted text.
+
+### Next Milestone
+
+Evaluate role verification on existing development failures
+using the verified Benchmark v1 annotations.
+
+Measure role-verification coverage, false acceptance,
+false review and latency before changing the policy further.
+
