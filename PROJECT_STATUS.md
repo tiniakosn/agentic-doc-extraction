@@ -1156,3 +1156,109 @@ Files:
    using verified ground truth.
 
 Do not treat text matching alone as proof of entity role.
+
+
+
+---
+
+## Benchmark v1 — Verified Development Baseline (2026-11-22)
+
+### Dataset and Human Review
+
+- 8 original PDFs, 9 nonblank page-level annotations.
+- All 9 annotations manually reviewed and marked `verified`.
+- Original PDF SHA-256 hashes and page counts confirmed.
+- Dataset split: `dev`, not held-out `test`.
+- One separately confirmed blank page excluded from primary scoring.
+- Five evaluated fields:
+  `document_type`, `issuing_authority`, `recipient`,
+  `contractor`, `contractor_tax_id`.
+
+### Baseline Experiment
+
+Source predictions:
+`evaluation_results/benchmark_v1/pilot_resumed_20261112T173616Z.json`
+
+Evaluation:
+`evaluation_results/benchmark_v1/evaluation_verified_dev_v1.json`
+
+Strategies:
+- Digital Text + LLM
+- Direct VLM
+
+All 18 prediction runs succeeded.
+Each strategy was compared against 45 verified field annotations.
+
+| Result | Digital + LLM | Direct VLM |
+|---|---:|---:|
+| Match | 16 | 11 |
+| Correct absence | 14 | 13 |
+| Value mismatch | 8 | 16 |
+| Status mismatch | 7 | 5 |
+| Total agreement | 30/45 | 24/45 |
+| Agreement rate | 66.7% | 53.3% |
+
+These are development-set agreement measurements under
+the current evaluator normalization rules, not
+independent held-out accuracy estimates.
+
+### Error Analysis
+
+Observed failure categories:
+
+1. Entity-role confusion:
+   - Invitees or contractual counterparties classified as recipients.
+   - Companies receiving authorized disbursements classified
+     as awarded contractors.
+   - Tax IDs assigned to incorrect semantic roles.
+
+2. Incomplete or corrupted digital text:
+   - Important information absent from the extracted text layer.
+   - Greek text corruption not detected by existing quality metrics.
+
+3. Document-type classification:
+   - Generic descriptions such as "Απόφαση" do not always
+     identify the correct canonical category.
+
+4. Organization-name variation:
+   - Abbreviations, expanded legal names and organizational
+     subdivisions can produce strict value mismatches.
+
+Not every value mismatch represents a wrong entity.
+Semantic equivalence has not yet been independently scored.
+
+### Adaptive Correction Evidence
+
+Separate live experiment:
+`evaluation_results/live_correction_v1/live_20261122T122831Z.json`
+
+Document: `63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf`, page 1.
+
+- Direct VLM extracted mobile number 6983905183 as contractor AFM.
+- Deterministic validation rejected the invalid AFM.
+- Bounded retry used Tesseract OCR + Text LLM.
+- Corrected AFM: 801033798.
+- Retry count: 1.
+- Final workflow status: `review_required`.
+
+This demonstrates one successful field correction,
+not benchmark-wide correction effectiveness.
+
+### Evaluation Limitations
+
+- Small development dataset.
+- No independent held-out test results.
+- Baseline comparison excludes the adaptive correction strategy.
+- Evidence support and semantic role correctness require
+  separate evaluation.
+- AFM checksum validation does not establish tax-ID ownership.
+- Existing evaluator reports exploratory comparisons;
+  no official held-out accuracy has been calculated.
+
+### Next Research Milestones
+
+1. Evaluate adaptive routing on development PDFs.
+2. Investigate corrupted and image-dominant text layers.
+3. Assess role verification and bounded correction.
+4. Freeze evaluation protocol and select independent test PDFs.
+5. Compare strategies on held-out documents.
