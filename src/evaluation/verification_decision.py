@@ -15,12 +15,25 @@ VerificationAction = Literal[
 class FieldDecision:
     action: VerificationAction
     reason: str
+    decision_source: str = "verification"
 
 
 def decide_field_action(
     verification: dict[str, Any],
 ) -> FieldDecision:
     """Classify verification signals into a next action."""
+
+    deterministic = verification.get("deterministic_validation")
+
+    if deterministic and deterministic.get("status") == "invalid":
+        return FieldDecision(
+            action="reprocess",
+            reason=deterministic.get(
+                "reason",
+                "Deterministic validation failed",
+            ),
+            decision_source="deterministic_validation",
+        )
 
     value = verification.get("value_grounding")
     evidence = verification.get("evidence_matching")

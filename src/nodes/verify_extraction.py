@@ -7,6 +7,7 @@ from src.evaluation.spatial_verifier import compare_boxes
 from src.evaluation.source_anchor import anchor_value
 from src.schemas.workflow_state import WorkflowState
 from src.evaluation.verification_decision import decide_field_action
+from src.evaluation.field_validation import validate_greek_afm
 
 
 ROLE_LABELS = {
@@ -54,6 +55,23 @@ def verify_extraction_node(state: WorkflowState) -> dict:
     verification = {}
 
     for field_name, field in extraction.items():
+
+        deterministic_validation = None
+
+        if (
+            field_name == "contractor_tax_id"
+            and field["status"] == "present"
+        ):
+            is_valid = validate_greek_afm(field["value"])
+
+            deterministic_validation = {
+                "status": "valid" if is_valid else "invalid",
+                "reason": (
+                    "Valid Greek AFM format and checksum"
+                    if is_valid
+                    else "Invalid Greek AFM format or checksum"
+                ),
+            }
 
         # Fields without an asserted value
         if field["status"] != "present":
@@ -144,6 +162,7 @@ def verify_extraction_node(state: WorkflowState) -> dict:
                 reference.model_dump(mode="json")
                 for reference in references
             ],
+            "deterministic_validation": deterministic_validation,
             "verification_status": "checked",
             "review_required": (
                 value_result.status != "supported"
@@ -159,6 +178,7 @@ def verify_extraction_node(state: WorkflowState) -> dict:
         field_decisions[field_name] = {
             "action": decision.action,
             "reason": decision.reason,
+            "decision_source": decision.decision_source,
         }
 
     metrics = dict(state.get("metrics", {}))

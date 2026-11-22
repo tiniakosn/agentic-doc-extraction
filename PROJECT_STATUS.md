@@ -1026,3 +1026,76 @@ Start with the documented failure:
 Evaluate deterministic validation, source verification,
 correction decisions and final output reliability.
 
+
+---
+
+## Verification & Correction Experiment v1 — November 2026
+
+### Implemented
+
+- Integrated deterministic Greek AFM validation into
+  `verify_extraction_node`.
+- Invalid AFM values produce a `reprocess` decision.
+- Added `decision_source` to distinguish deterministic
+  validation failures from other verification failures.
+- Protected deterministic failures against semantic
+  verification overrides.
+- Skipped semantic LLM verification for fields already
+  rejected by deterministic validation.
+- Added bounded correction from Direct VLM to
+  Tesseract OCR + Text LLM.
+- Updated both `processing_method` and
+  `extraction_method` during retry.
+- Added `review_required` terminal status when
+  unresolved fields remain.
+
+### Offline Integration Testing
+
+The active `src/multimodal_graph.py` was tested through
+`graph.invoke()` using controlled external responses.
+
+Test scenario:
+- Initial Direct VLM AFM: 6983905183 (invalid).
+- OCR + Text LLM AFM: 801033798 (valid).
+- Retry budget: 1.
+
+Verified:
+- Correction route execution.
+- OCR text passed to the Text LLM.
+- Initial extraction preserved in correction history.
+- Second extraction processed by verification.
+- Workflow termination.
+
+### Validation
+
+- Full pytest suite: 26 passed.
+- Offline integration: PASS.
+- Live end-to-end correction: NOT YET TESTED.
+- Human-verified benchmark accuracy: NOT YET CALCULATED.
+
+### Known Limitations
+
+- Direct VLM currently lacks independent text-region
+  grounding in the active workflow.
+- Tesseract backend produces text but no TextRegion
+  bounding boxes.
+- Valid AFM checksum does not establish contractor identity.
+- Pilot annotations remain provisional.
+- Correction effectiveness has not been measured on
+  human-verified ground truth.
+
+### Next Milestone
+
+Live Correction Experiment v1.
+
+Use the original PDF:
+`data/discovery/63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf`
+
+Compare:
+1. Direct VLM extraction.
+2. Deterministic and source verification.
+3. Tesseract + Text LLM correction.
+4. Final decisions, correction history and latency.
+
+Record raw outputs and failures without modifying
+the original PDF or provisional annotations.

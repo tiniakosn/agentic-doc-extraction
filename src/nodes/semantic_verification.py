@@ -31,6 +31,10 @@ def semantic_verification_node(state: WorkflowState) -> dict:
         if decision["action"] not in ("reprocess", "review"):
             continue
 
+        # A deterministic failure cannot be resolved by an LLM.
+        if decision.get("decision_source") == "deterministic_validation":
+            continue
+
         field = extraction[field_name]
 
         if field.get("status") != "present" or not field.get("value"):

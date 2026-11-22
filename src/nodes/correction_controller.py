@@ -28,16 +28,29 @@ def correction_controller_node(state: WorkflowState) -> dict:
 
         return {
             "processing_method": decision.next_method,
+            "extraction_method": "text",
             "retry_count": retry_count + 1,
             "correction_history": history,
             "correction_action": "retry",
             "status": "retry_scheduled",
         }
 
+    unresolved_fields = [
+        field_name
+        for field_name, field_decision in state["final_decisions"].items()
+        if field_decision["final_action"] in ("reprocess", "review")
+    ]
+
+    final_status = (
+        "review_required"
+        if unresolved_fields
+        else "completed"
+    )
+
     return {
         "correction_action": "finish",
         "correction_history": history,
-        "status": "completed",
+        "status": final_status,
     }
 
 

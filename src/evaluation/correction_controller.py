@@ -48,6 +48,21 @@ def decide_correction(
     routing = routing or {}
     quality = routing.get("quality", {})
 
+    # Retry an invalid VLM extraction using OCR + text LLM.
+    if (
+        current_method == "vlm"
+        and any(
+            final_decisions[name].get("decision_source")
+            == "deterministic_validation"
+            for name in unresolved
+        )
+    ):
+        return CorrectionDecision(
+            action="retry",
+            next_method="tesseract",
+            reason="Deterministic validation failed for VLM extraction",
+        )
+
     # Retry OCR only when digital text is suspiciously limited
     # relative to visible page content.
     if (
