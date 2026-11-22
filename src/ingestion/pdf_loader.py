@@ -36,16 +36,26 @@ def extract_digital_regions(page: pymupdf.Page) -> list[TextRegion]:
 
             x1, y1, x2, y2 = line["bbox"]
 
+
+            # Clip normalized coordinates to the visible PDF page.
+            # Preserve the original PDF-space bounding box.
+            nx1 = max(0.0, min(1.0, x1 / page_width))
+            ny1 = max(0.0, min(1.0, y1 / page_height))
+            nx2 = max(0.0, min(1.0, x2 / page_width))
+            ny2 = max(0.0, min(1.0, y2 / page_height))
+
+            normalized_bbox = (
+                (nx1, ny1, nx2, ny2)
+                if nx1 < nx2 and ny1 < ny2
+                else None
+            )
+
+
             regions.append(
                 TextRegion(
                     text=text,
                     bbox=(x1, y1, x2, y2),
-                    normalized_bbox=(
-                        x1 / page_width,
-                        y1 / page_height,
-                        x2 / page_width,
-                        y2 / page_height,
-                    ),
+                    normalized_bbox=normalized_bbox,
                     confidence=None,
                 )
             )
