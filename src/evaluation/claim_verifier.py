@@ -6,7 +6,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from pydantic import BaseModel, Field
 from typing import Literal
 
-from src.nodes.extractor import get_llm
+from src.extraction.llm_client import get_llm
 from src.schemas.verification import (
     EvidenceCandidate,
     ClaimVerification,
