@@ -1099,3 +1099,60 @@ Compare:
 
 Record raw outputs and failures without modifying
 the original PDF or provisional annotations.
+
+
+
+---
+
+## Live Correction & Text Evidence Improvement — 2026-11-22
+
+### Live Experiment v1
+
+Document: 63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf, page 1
+
+Run ID: 20261122T122831Z
+
+- Initial strategy: Direct VLM
+- Initial contractor_tax_id: 6983905183
+- Deterministic validation: invalid AFM
+- Correction: Tesseract OCR + Text LLM
+- Final contractor_tax_id: 801033798
+- Retry count: 1
+- Final workflow status: review_required
+
+The corrected AFM matches the value stated in the PDF.
+This is one successful correction case, not a benchmark-wide
+accuracy result.
+
+### Text Evidence Improvement
+
+Implemented:
+- Text-only anchoring with original character offsets.
+- Matching across whitespace and line breaks.
+- Context extraction around matched values.
+- Text evidence proposals when spatial regions are unavailable.
+- Preservation of original extraction values and review decisions.
+
+Files:
+- src/evaluation/text_evidence_anchor.py
+- src/evaluation/evidence_repair.py
+- src/nodes/semantic_verification.py
+- tests/test_text_evidence_anchor.py
+- tests/test_evidence_repair.py
+
+### Validation
+
+- Full test suite: 30 passed.
+- Text evidence repair: unit-tested.
+- Live execution after evidence repair integration: not yet tested.
+- Official ground-truth accuracy: not calculated.
+
+### Next Steps
+
+1. Verify text evidence proposals using the saved live run.
+2. Evaluate the active workflow on additional pilot documents.
+3. Complete human review of provisional annotations.
+4. Compare Digital + LLM, Direct VLM and adaptive correction
+   using verified ground truth.
+
+Do not treat text matching alone as proof of entity role.

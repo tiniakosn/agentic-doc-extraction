@@ -73,6 +73,7 @@ def semantic_verification_node(state: WorkflowState) -> dict:
         extraction=extraction,
         verification=state["verification"],
         final_decisions=final_decisions,
+        source_text=processed.get("text", ""),
     )
 
     metrics = dict(state.get("metrics", {}))
