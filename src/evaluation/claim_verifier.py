@@ -133,16 +133,19 @@ def verify_claim(
         for c in candidates
     ]
 
+
     if text_anchors:
         evidence.extend(
             {
                 "source_type": "text",
                 "text": anchor["context"],
-                "start": anchor["start"],
-                "end": anchor["end"],
+                "page_number": anchor.get("page_number"),
+                "start": anchor.get("start"),
+                "end": anchor.get("end"),
             }
             for anchor in text_anchors
         )
+
 
     llm = get_llm(model_name=model_name)
     structured_llm = llm.with_structured_output(

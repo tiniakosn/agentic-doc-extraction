@@ -2,6 +2,7 @@ from unittest.mock import patch
 import pymupdf
 from src.multimodal_graph import build_multimodal_graph
 from unittest.mock import patch
+from src.schemas.verification import ClaimVerification
 from src.ingestion.routing import RoutingDecision
 from src.schemas.document import (
     DocumentRecord,
@@ -97,6 +98,18 @@ def test_vlm_to_ocr_correction_loop(tmp_path):
         return make_extraction("801033798")
 
     with (
+
+        patch(
+            "src.nodes.semantic_verification.verify_claim",
+            return_value=ClaimVerification(
+                field_name="contractor",
+                claimed_value="ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+                verdict="insufficient_evidence",
+                explanation="Mocked semantic verification",
+                verification_method="mock_semantic",
+            ),
+        ),
+
         patch(
             "src.nodes.load_document.load_document",
             return_value=document,

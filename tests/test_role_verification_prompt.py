@@ -95,3 +95,62 @@ def test_text_only_evidence_reaches_llm():
     assert payload["evidence"][0]["text"] == anchor["context"]
     assert result.verdict == "supported"
     assert result.supporting_sources == []
+
+
+def test_multi_page_text_anchors_reach_llm():
+    anchors = [
+        {
+            "page_number": 1,
+            "text": "Πρωτοδικείο Κορίνθου",
+            "context": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ",
+            "start": 0,
+            "end": 20,
+        },
+        {
+            "page_number": 2,
+            "text": "Πρωτοδικείο Κορίνθου",
+            "context": (
+                "Αναθέτουμε στην επιχείρηση ΑΛΦΑ "
+                "για τις ανάγκες του Πρωτοδικείου Κορίνθου."
+            ),
+            "start": 55,
+            "end": 75,
+        },
+    ]
+
+    response = MagicMock()
+    response.verdict = "insufficient_evidence"
+    response.explanation = "No explicitly addressed recipient"
+    response.supporting_region_indices = []
+
+    structured_llm = MagicMock()
+    structured_llm.invoke.return_value = response
+
+    llm = MagicMock()
+    llm.with_structured_output.return_value = structured_llm
+
+    with patch(
+        "src.evaluation.claim_verifier.get_llm",
+        return_value=llm,
+    ):
+        result = verify_claim(
+            field_name="recipient",
+            claimed_value="Πρωτοδικείο Κορίνθου",
+            candidates=[],
+            text_anchors=anchors,
+        )
+
+    messages = structured_llm.invoke.call_args.args[0]
+    payload = json.loads(messages[1].content)
+
+    evidence = payload["evidence"]
+
+    assert len(evidence) == 2
+    assert evidence[0]["page_number"] == 1
+    assert evidence[1]["page_number"] == 2
+
+    assert evidence[0]["text"] == anchors[0]["context"]
+    assert evidence[1]["text"] == anchors[1]["context"]
+
+    assert result.verdict == "insufficient_evidence"
+    assert result.supporting_sources == []

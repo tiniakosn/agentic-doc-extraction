@@ -1498,3 +1498,51 @@ Source:
 - Freeze evaluation configuration before held-out testing.
 - Maintain page-specific evidence and source provenance.
 
+
+---
+
+## Multi-page Processing — Initial Implementation (2026-11-23)
+
+### Implemented
+
+- DocumentExtraction schema.
+- Page-level to document-level deterministic aggregation.
+- Cross-page normalization using shared normalization module.
+- Conflict detection for different field values.
+- Page-level evidence provenance preservation.
+- Document role risk detection.
+- Page-aware text evidence in semantic claim verification.
+- Document Evidence Selector v1.
+- Offline regression and integration tests.
+
+### Validated
+
+- Corinth two-page document aggregation.
+- Contractor correctly retrieved from page 2.
+- Issuing authority normalized consistently across pages.
+- Potential recipient/issuing-authority role confusion detected.
+- Actual PDF text anchors preserve page number and character offsets.
+- Normalized bounding-box compatibility maintained.
+
+### Test Results
+
+- Full test suite: 51 passed.
+- No external API calls required for these tests.
+- Existing page-level benchmark remains unchanged.
+
+### Known Limitations
+
+- Document aggregation is deterministic, not semantic resolution.
+- Recipient role can still be incorrectly extracted at page level.
+- Text evidence references do not yet have complete structured provenance.
+- All pages are currently required for final document aggregation.
+- Multi-page document processing is not yet integrated into LangGraph.
+- Large-document evidence selection and context budgeting remain pending.
+
+### Next Milestones
+
+1. Role-aware document evidence selection.
+2. Document-level semantic verification.
+3. Multi-page LangGraph orchestration.
+4. Partial/incomplete document processing.
+5. Evaluation on multi-page PDFs with document-level annotations.
