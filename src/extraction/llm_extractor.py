@@ -1,7 +1,4 @@
-import os
-
-from dotenv import load_dotenv
-from langchain_groq import ChatGroq
+from src.extraction.llm_client import get_llm
 from langchain_core.messages import HumanMessage
 
 from src.schemas.page_extraction import PageExtraction
@@ -24,8 +21,8 @@ def extract_from_text(
     if not os.getenv("GROQ_API_KEY"):
         raise RuntimeError("Missing GROQ_API_KEY")
 
-    llm = ChatGroq(
-        model=model,
+    llm = get_llm(
+        model_name=model,
         temperature=0,
         max_retries=0,
     ).with_structured_output(

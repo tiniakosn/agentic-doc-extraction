@@ -124,8 +124,12 @@ def select_role_evidence(
     *,
     context_chars: int = 250,
     max_total_matches: int = 10,
+    max_matches_per_type: int = 5,
 ) -> list[dict]:
     """Retrieve entity, explicit role and contextual evidence."""
+
+    if max_matches_per_type < 1:
+        raise ValueError("max_matches_per_type must be positive")
 
     if max_total_matches < 1:
         raise ValueError("max_total_matches must be positive")
@@ -162,7 +166,7 @@ def select_role_evidence(
                     phrase=phrase,
                     source_text=text,
                     context_chars=context_chars,
-                    max_matches=max_total_matches,
+                    max_matches=max_matches_per_type,
                 )
 
                 for match in matches:

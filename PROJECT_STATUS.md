@@ -1,7 +1,7 @@
 
 # MSc Thesis — Project Status
 
-Last updated: 2026-10-13
+Last updated: 2026-11-24
 
 ## 1. Research Goal
 Multimodal Agentic Workflows for Information Extraction from Unstructured Documents.
@@ -1546,3 +1546,80 @@ Source:
 3. Multi-page LangGraph orchestration.
 4. Partial/incomplete document processing.
 5. Evaluation on multi-page PDFs with document-level annotations.
+
+
+---
+
+## Adaptive Evidence Selection — Synthetic Evaluation v2.1 (2026-11-24)
+
+### Completed
+
+- Implemented Adaptive Evidence Selector v1:
+  - Multi-page candidate retrieval.
+  - Evidence deduplication.
+  - Deterministic relevance ranking.
+  - Page-balanced selection.
+  - Injectable token counter and budget enforcement.
+- Implemented Synthetic Generator v2.
+- Added heterogeneous synthetic scenarios:
+  - Repeated entity mentions.
+  - Distractor organizations.
+  - Known and unseen role formulations.
+  - Contextual references.
+  - Negative role contexts.
+- Implemented one-to-one ground-truth matching to prevent duplicate candidates from inflating recall.
+- Added category-specific evaluation metrics.
+- Generated JSON and CSV evaluation reports.
+
+### Validation
+
+- Full test suite: 94 passed.
+- Synthetic evaluation: successfully executed.
+- Document sizes: 2, 10, 25 and 50 pages.
+- No external LLM API calls required.
+- `git diff --check`: PASS.
+
+### Synthetic Evaluation Results
+
+| Metric | Raw Retrieval | Adaptive Selection (10–50 pages) |
+|---|---:|---:|
+| Entity precision | 71.43% | 83.33% |
+| Entity recall | 100% | 50% |
+| Known role precision | 33.33% | 33.33% |
+| Known role recall | 100% | 100% |
+| Unseen direct recall | 0% | 0% |
+| Unseen context exposure | 100% | 100% |
+
+Additional observations:
+
+- Distractor and negative-context evidence were successfully retrieved.
+- Deduplication rate remained 0%.
+- Adaptive selection improved entity precision but reduced entity mention recall.
+- Unseen formulations were present in selected context but were not directly retrieved.
+
+### Important Limitations
+
+- Synthetic results do not establish generalization to real-world documents.
+- The synthetic dataset has limited evidence diversity and page distribution.
+- Deduplication requires dedicated overlap stress testing.
+- Unseen context exposure does not demonstrate semantic role recognition.
+- Distractor and negative-context retrieval do not measure verifier false acceptance.
+- Token budgeting uses a whitespace-based test estimator, not an actual model tokenizer.
+- Ranking weights have not been independently optimized or validated.
+- No production workflow integration has been performed.
+
+### Next Milestone — Synthetic Evaluation v2.2
+
+1. Improve role-level ground-truth annotations.
+2. Separate entity mentions from actual role-supporting evidence.
+3. Expand evidence distribution across document pages.
+4. Introduce overlapping evidence for deduplication stress testing.
+5. Improve category-specific precision and recall evaluation.
+6. Compare baseline, heuristic ranking and adaptive selection.
+7. Update this status file with validated results before committing the milestone.
+
+### Research Principle
+
+Preserve the distinction between entity presence, role evidence, contextual relevance and semantic verification.
+
+Synthetic evaluation must remain separate from the real human-annotated development and held-out test datasets.
