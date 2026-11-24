@@ -3,6 +3,7 @@ import pytest
 
 from src.evaluation.document_evidence_selector import (
     select_document_evidence,
+    select_role_evidence,
 )
 
 
@@ -64,3 +65,110 @@ def test_missing_value_returns_no_evidence():
     )
 
     assert anchors == []
+
+
+def test_retrieves_contextual_recipient_role():
+    pages = {
+        1: (
+            "Για τον τελικό Φορέα "
+            "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ."
+        )
+    }
+
+    results = select_role_evidence(
+        field_name="recipient",
+        value="Πρωτοδικείο Κορίνθου",
+        page_texts=pages,
+    )
+
+    contextual = [
+        item for item in results
+        if item["evidence_type"] == "contextual_role"
+    ]
+
+    assert contextual
+    assert contextual[0]["role_cue"] == "τελικό φορέα"
+    assert contextual[0]["page_number"] == 1
+
+
+def test_retrieves_explicit_contractor_award():
+    pages = {
+        1: (
+            "Αναθέτουμε στην επιχείρηση "
+            "ΑΛΦΑ την προμήθεια εξοπλισμού."
+        )
+    }
+
+    results = select_role_evidence(
+        field_name="contractor",
+        value="ΑΛΦΑ",
+        page_texts=pages,
+    )
+
+    role_evidence = [
+        item for item in results
+        if item["evidence_type"] == "role_cue"
+    ]
+
+    assert len(role_evidence) == 1
+    assert role_evidence[0]["role_cue"] == (
+        "Αναθέτουμε στην επιχείρηση"
+    )
+
+
+
+def test_contextual_evidence_is_preserved_with_entity_matches():
+    pages = {
+        1: (
+            "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ. "
+            "Για τον τελικό Φορέα "
+            "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ."
+        ),
+        2: (
+            "Αναθέτουμε στην επιχείρηση ΑΛΦΑ "
+            "για τις ανάγκες του Πρωτοδικείου Κορίνθου."
+        ),
+    }
+
+    results = select_role_evidence(
+        field_name="recipient",
+        value="Πρωτοδικείο Κορίνθου",
+        page_texts=pages,
+        max_total_matches=10,
+    )
+
+    contextual = [
+        item for item in results
+        if item["evidence_type"] == "contextual_role"
+    ]
+
+    assert contextual
+    assert any(
+        item["page_number"] == 1
+        and item["role_cue"] == "τελικό φορέα"
+        for item in contextual
+    )
+
+def test_phrase_matching_respects_word_boundaries():
+    pages = {
+        1: (
+            "Αναθέτουμε στην επιχείρηση ΑΛΦΑ. "
+            "Η ανάθεση στη δεύτερη εταιρεία έγινε αργότερα."
+        )
+    }
+
+    results = select_role_evidence(
+        field_name="contractor",
+        value="ΑΛΦΑ",
+        page_texts=pages,
+    )
+
+    role_evidence = [
+        item for item in results
+        if item["evidence_type"] == "role_cue"
+    ]
+
+    assert len(role_evidence) == 1
+    assert role_evidence[0]["role_cue"] == (
+        "Αναθέτουμε στην επιχείρηση"
+    )

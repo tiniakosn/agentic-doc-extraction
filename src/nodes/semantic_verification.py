@@ -89,6 +89,13 @@ def semantic_verification_node(state: WorkflowState) -> dict:
             max_matches=5,
         )
 
+        for anchor in text_anchors:
+            anchor.update({
+                "document_id": document_id,
+                "page_number": page_number,
+                "method": method,
+            })
+
 
         if not candidates and not text_anchors:
             results[field_name] = {

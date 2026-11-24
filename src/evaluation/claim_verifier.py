@@ -10,6 +10,7 @@ from src.extraction.llm_client import get_llm
 from src.schemas.verification import (
     EvidenceCandidate,
     ClaimVerification,
+    TextEvidenceReference,
 )
 
 
@@ -21,6 +22,12 @@ class ClaimAssessment(BaseModel):
     ]
     explanation: str = Field(min_length=1)
     supporting_region_indices: list[int] = Field(
+        default_factory=list
+    )
+    supporting_text_anchor_indices: list[int] = Field(
+        default_factory=list
+    )
+    considered_text_anchor_indices: list[int] = Field(
         default_factory=list
     )
 
@@ -82,6 +89,34 @@ statement establishes the claimed role.
 If the evidence only establishes entity presence,
 return insufficient_evidence.
 
+8. Return supporting_text_anchor_indices only from the
+   supplied text anchor candidates.
+
+Text anchor indices are zero-based and are separate
+from region indices.
+
+Never invent evidence indices.
+
+Evidence reference requirements:
+
+1. considered_text_anchor_indices identifies the
+   excerpts materially considered in the decision.
+
+2. supporting_text_anchor_indices identifies only
+   excerpts that directly establish the claimed role.
+
+3. When verdict is insufficient_evidence,
+   supporting_text_anchor_indices must be empty.
+
+4. Entity mentions and contextual role references
+   may be considered without supporting the claimed role.
+
+5. For recipient, mentioning a final beneficiary or
+   budget holder does not establish explicit recipient status.
+
+6. Always provide a concise, evidence-based explanation
+   in 1-3 complete sentences.
+
 """
 
 
@@ -134,17 +169,25 @@ def verify_claim(
     ]
 
 
+
     if text_anchors:
         evidence.extend(
             {
                 "source_type": "text",
-                "text": anchor["context"],
+                "text_anchor_index": index,
+                "document_id": anchor.get("document_id"),
                 "page_number": anchor.get("page_number"),
-                "start": anchor.get("start"),
-                "end": anchor.get("end"),
+                "method": anchor.get("method"),
+                "text": anchor["context"],
+                "matched_text": anchor["text"],
+                "start": anchor["start"],
+                "end": anchor["end"],
+                "context_start": anchor["context_start"],
+                "context_end": anchor["context_end"],
             }
-            for anchor in text_anchors
+            for index, anchor in enumerate(text_anchors)
         )
+
 
 
     llm = get_llm(model_name=model_name)
@@ -173,6 +216,62 @@ def verify_claim(
         if index in by_index
     ]
 
+
+
+    def build_text_references(indices):
+        selected = []
+        seen_indices = set()
+
+        if not isinstance(indices, (list, tuple)):
+            return selected
+
+        for index in indices:
+            if (
+                not isinstance(index, int)
+                or isinstance(index, bool)
+                or index < 0
+                or index >= len(text_anchors or [])
+                or index in seen_indices
+            ):
+                continue
+
+            seen_indices.add(index)
+            anchor = text_anchors[index]
+
+            selected.append(
+                TextEvidenceReference(
+                    document_id=anchor.get("document_id"),
+                    page_number=anchor.get("page_number"),
+                    method=anchor.get("method"),
+                    text=anchor["text"],
+                    start=anchor["start"],
+                    end=anchor["end"],
+                    context=anchor["context"],
+                    context_start=anchor["context_start"],
+                    context_end=anchor["context_end"],
+                )
+            )
+
+        return selected
+
+    considered_text_anchors = build_text_references(
+        getattr(response, "considered_text_anchor_indices", [])
+    )
+
+    # Supporting evidence must establish the claimed role.
+    # A non-supported verdict cannot carry supporting anchors.
+    supporting_indices = (
+        response.supporting_text_anchor_indices
+        if response.verdict == "supported"
+        else []
+    )
+
+    selected_text_anchors = build_text_references(
+        supporting_indices
+    )
+
+
+
     return ClaimVerification(
         field_name=field_name,
         claimed_value=claimed_value,
@@ -180,4 +279,6 @@ def verify_claim(
         supporting_sources=selected_sources,
         explanation=response.explanation,
         verification_method="llm_evidence_verification",
+        supporting_text_anchors=selected_text_anchors,
+        considered_text_anchors=considered_text_anchors,
     )
