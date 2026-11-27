@@ -1,0 +1,21 @@
+﻿annotation,document_id,pdf,field,status,value,annotated_page,matched_pages,evidence_match,issues,human_review
+doc_001.json,doc_001,data/raw/doc_1_digital.pdf,contractor.name,present,ΚΛΕΙΘΡΟΠΟΙΟΣ ΜΠΟΥΛΙΟΣ ΧΡ. ΓΙΑΝΝΑΚΗΣ,,,not_found,evidence_not_found_in_text_layer;missing_page_attribution,pending
+doc_001.json,doc_001,data/raw/doc_1_digital.pdf,contractor.tax_id,present,079242023,,,not_found,evidence_not_found_in_text_layer;missing_page_attribution,pending
+doc_001.json,doc_001,data/raw/doc_1_digital.pdf,financials.net_amount,not_present,,,,not_checked,absence_requires_scope_review,pending
+doc_001.json,doc_001,data/raw/doc_1_digital.pdf,financials.vat_rate,not_present,,,,not_checked,absence_requires_scope_review,pending
+doc_001.json,doc_001,data/raw/doc_1_digital.pdf,financials.total_amount,present,399.9,,2,exact_normalized,missing_page_attribution,pending
+doc_002.json,doc_002,data/raw/doc_2_digital.pdf,contractor.name,not_present,,,,not_checked,absence_requires_scope_review,pending
+doc_002.json,doc_002,data/raw/doc_2_digital.pdf,contractor.tax_id,not_present,,,,not_checked,absence_requires_scope_review,pending
+doc_002.json,doc_002,data/raw/doc_2_digital.pdf,financials.net_amount,not_present,,,,not_checked,absence_requires_scope_review,pending
+doc_002.json,doc_002,data/raw/doc_2_digital.pdf,financials.vat_rate,not_present,,,,not_checked,absence_requires_scope_review,pending
+doc_002.json,doc_002,data/raw/doc_2_digital.pdf,financials.total_amount,not_present,,,,not_checked,absence_requires_scope_review,pending
+doc_003.json,doc_003,data/raw/doc_3_digital.pdf,contractor.name,present,ΚΟΝΤΗΣ ΜΟΝΟΠΡΟΣΩΠΗ Ε.Π.Ε.,1,2,exact_normalized,page_mismatch,pending
+doc_003.json,doc_003,data/raw/doc_3_digital.pdf,contractor.tax_id,present,095367575,,2,exact_normalized,missing_page_attribution,pending
+doc_003.json,doc_003,data/raw/doc_3_digital.pdf,financials.net_amount,not_present,,,,not_checked,absence_requires_scope_review,pending
+doc_003.json,doc_003,data/raw/doc_3_digital.pdf,financials.vat_rate,not_present,,,,not_checked,absence_requires_scope_review,pending
+doc_003.json,doc_003,data/raw/doc_3_digital.pdf,financials.total_amount,present,2015.0,,2,exact_normalized,missing_page_attribution,pending
+Ψ6ΓΧ7ΛΛ-19Χ_page1.json,Ψ6ΓΧ7ΛΛ-19Χ,data/discovery/Ψ6ΓΧ7ΛΛ-19Χ.pdf,document_type,present,invitation,1,,not_found,evidence_not_found_in_text_layer,pending
+Ψ6ΓΧ7ΛΛ-19Χ_page1.json,Ψ6ΓΧ7ΛΛ-19Χ,data/discovery/Ψ6ΓΧ7ΛΛ-19Χ.pdf,issuing_authority,present,Περιφέρεια Κεντρικής Μακεδονίας,1,,not_found,evidence_not_found_in_text_layer,pending
+Ψ6ΓΧ7ΛΛ-19Χ_page1.json,Ψ6ΓΧ7ΛΛ-19Χ,data/discovery/Ψ6ΓΧ7ΛΛ-19Χ.pdf,recipient,present,ΓΕΩΡΓΙΟΣ Μ. ΤΣΑΚΟΥΜΗΣ ΚΑΙ ΣΙΑ Ε.Ε.,1,,not_found,evidence_not_found_in_text_layer,pending
+Ψ6ΓΧ7ΛΛ-19Χ_page1.json,Ψ6ΓΧ7ΛΛ-19Χ,data/discovery/Ψ6ΓΧ7ΛΛ-19Χ.pdf,contractor,not_present,,1,,not_checked,absence_requires_scope_review,pending
+Ψ6ΓΧ7ΛΛ-19Χ_page1.json,Ψ6ΓΧ7ΛΛ-19Χ,data/discovery/Ψ6ΓΧ7ΛΛ-19Χ.pdf,contractor_tax_id,not_present,,1,,not_checked,absence_requires_scope_review,pending

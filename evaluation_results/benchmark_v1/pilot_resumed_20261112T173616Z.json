@@ -1,0 +1,697 @@
+{
+  "run_id": "20261112T173616Z",
+  "source_run": "evaluation_results/benchmark_v1/pilot_20261112T173144Z.json",
+  "dataset": "pilot_development",
+  "evaluation_unit": "page",
+  "ground_truth_scoring": "disabled",
+  "strategies": [
+    "digital_llm",
+    "direct_vlm"
+  ],
+  "results": [
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 1.227,
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση απευθείας ανάθεσης",
+          "status": "present",
+          "evidence": "ΘΕΜΑ: Απευθείας ανάθεση της προμήθειας... Α Π Ο Φ Α Σ Η"
+        },
+        "issuing_authority": {
+          "value": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+          "status": "present",
+          "evidence": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ, Ο ΔΗΜΑΡΧΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ"
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+          "status": "present",
+          "evidence": "Εγκρίνουμε την απευθείας ανάθεση... στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ"
+        },
+        "contractor_tax_id": {
+          "value": "801033798",
+          "status": "present",
+          "evidence": "ΑΦΜ: 801033798"
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 4.744,
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση απευθείας ανάθεσης",
+          "status": "present",
+          "evidence": "ΘΕΜΑ: Απευθείας ανάθεση της προμήθειας για την : «Κάλυψη Δράσεων Πυροπροστασίας ΔΕ Πυθαγορείου»"
+        },
+        "issuing_authority": {
+          "value": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+          "status": "present",
+          "evidence": "ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ ΝΟΜΟΣ ΣΑΜΟΥ ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ ΔΙΕΥΘΥΝΣΗ ΤΕΧΝΙΚΩΝ ΥΠΗΡΕΣΙΩΝ"
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+          "status": "present",
+          "evidence": "Εγκρινούμε την απευθείας ανάθεση της προμήθειας ... στην εταιρεία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ"
+        },
+        "contractor_tax_id": {
+          "value": "6983905183",
+          "status": "present",
+          "evidence": "ΑΦΜ: 6983905183"
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/65ΓΦ6-Θ5Μ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 2.506,
+      "prediction": {
+        "document_type": {
+          "value": "Διάταξη Διοικητού",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «ΔΘΑΣΑΓΗ ΔΘΟΘΚΗΣΟΤ Τπ’απιθμ. «592/26»»."
+        },
+        "issuing_authority": {
+          "value": "ΚΕΝΑΠ/NMIOTC (Κέντρο Εκπαίδευσης ΝΑΤΟικής Αποστολής)",
+          "status": "present",
+          "evidence": "Το κεφάλαιο αναφέρει «ΚΕΝΣΡΟ ΕΚΠΑΘΔΕΤ΢Η΢» και «ΝΑΤΣΘΚΗ΢ ΑΠΟΣΡΟΠΗ΢», ενώ ο υπογράφων αναφέρεται ως «Διοικηηήρ» του ΚΕΝΑΠ/NMIOTC."
+        },
+        "recipient": {
+          "value": "Τπόλογο Ειδικήρ Διασείπιζηρ ΚΕΝΣΡΟ ΕΚΠΑΘΔΕΤ΢Η΢ «Κοζηολόγηζη Παποσών ΝΑΤΣΘΚΗ΢ ΑΠΟΣΡΟΠΗ΢ Εκπαιδεύζευν»",
+          "status": "present",
+          "evidence": "Το πεδίο «ΠΡΟ΢:» αναφέρει «Τπόλογο Ειδικήρ Διασείπιζηρ ΚΕΝΣΡΟ ΕΚΠΑΘΔΕΤ΢Η΢...»."
+        },
+        "contractor": {
+          "value": "ΘΤΜΙΑΝΟ΢ Α.Δ.",
+          "status": "present",
+          "evidence": "Στο σημείο 1 αναφέρεται η διάθεση ποσού «στην επισείπηζη: «ΘΤΜΙΑΝΟ΢ Α.Δ.»» για προμήθεια ειδών."
+        },
+        "contractor_tax_id": {
+          "value": "092597210",
+          "status": "present",
+          "evidence": "Στο σημείο 1, αμέσως μετά το όνομα του αναδόχου, αναγράφεται «(ΑΦΜ:092597210)»."
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/65ΓΦ6-Θ5Μ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 2.15,
+      "prediction": {
+        "document_type": {
+          "value": "Διαταγή Διοικητού",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «ΔΙΑΤΑΓΗ ΔΙΟΙΚΗΤΟΥ Υπ'αριθμ. «592/26»» στο κέντρο της σελίδας."
+        },
+        "issuing_authority": {
+          "value": "ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ ΔΙΕΥΘΥΝΣΗΣ ΔΙΟΙΚΗΣΗΣ ΚΑΙ ΕΛΕΓΧΟΥ",
+          "status": "present",
+          "evidence": "Η ονομασία της αρχής αναγράφεται στην κεφαλίδα του εγγράφου, κάτω από το λογότυπο του Υπουργείου."
+        },
+        "recipient": {
+          "value": "Υπόλογο Ειδικής Διαχείρισης «Κοστολόγηση Παροχών Εκπαίδευσης»",
+          "status": "present",
+          "evidence": "Στο πεδίο «ΠΡΟΣ:» αναγράφεται «Υπόλογο Ειδικής Διαχείρισης «Κοστολόγηση Παροχών Εκπαίδευσης»»."
+        },
+        "contractor": {
+          "value": "ΘΥΜΙΑΝΟΣ Α.Ε.",
+          "status": "present",
+          "evidence": "Στο σημείο 1 του κειμένου αναφέρεται ότι το ποσό διατίθεται «στην επιχείρηση «ΘΥΜΙΑΝΟΣ Α.Ε.» για προμήθεια ειδών εθιμοτυπίας»."
+        },
+        "contractor_tax_id": {
+          "value": "092597210",
+          "status": "present",
+          "evidence": "Στο σημείο 1, αμέσως μετά την ονομασία της επιχείρησης, αναγράφεται «(ΑΦΜ:092597210)»."
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/685Κ465274-Χ1Ψ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 1.161,
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση Ανάληψης Υποχρέωσης",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «Απόφαση Ανάληψης Υποχρέωσης» στο κεφάλαιο του εγγράφου."
+        },
+        "issuing_authority": {
+          "value": "ΕΠΙΣΕΥ (Ερευνητικό Πανεπιστημιακό Ινστιτούτο Συστημάτων Επικοινωνιών και Υπολογιστών του Εθνικού Μετσόβιου Πολυτεχνείου)",
+          "status": "present",
+          "evidence": "Το έγγραφο αναφέρει ότι εκδίδεται από το ΕΠΙΣΕΥ, με υπογραφή του Διευθυντή του ΕΠΙΣΕΥ, Ψαρρά Ιωάννη."
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/685Κ465274-Χ1Ψ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 1.575,
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση Ανάλυσης Υποχρέωσης",
+          "status": "present",
+          "evidence": "Το κείμενο «Απόφαση Ανάλυσης Υποχρέωσης» εμφανίζεται ευκρινώς στο κέντρο της σελίδας, κάτω από τον τίτλο του ιδρύματος."
+        },
+        "issuing_authority": {
+          "value": "Ερευνητικό Πανεπιστημιακό Ίνστιτούτο Συστημάτων Επικοινωνιών και Υπολογιστών (ΕΠΙΣΕΥ)",
+          "status": "present",
+          "evidence": "Στο κεφαλάρι της σελίδας αναγράφεται «ΕΡΕΥΝΗΤΙΚΟ ΠΑΝΕΠΙΣΤΗΜΙΑΚΟ ΙΝΣΤΙΤΟΥΤΟ ΣΥΣΤΗΜΑΤΩΝ ΕΠΙΚΟΙΝΩΝΙΩΝ & ΥΠΟΛΟΓΙΣΤΩΝ» και στο λογότυπο «ΕΠΙΣΕΥ». Επίσης, στο υπογραφήτη αναφέρεται «Ο Διευθυντής του ΕΠΙΣΕΥ»."
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/91ΤΣ46ΝΙΦ6-ΠΡΛ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 1.057,
+      "prediction": {
+        "document_type": {
+          "value": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ» στον τίτλο του εγγράφου."
+        },
+        "issuing_authority": {
+          "value": "ΑΜΚΕ ΨΥΧΟΚΟΙΝΩΝΙΚΩΝ ΠΑΡΕΜΒΑΣΕΩΝ «ΑΓΚΑΛΙΑ»",
+          "status": "present",
+          "evidence": "Η επωνυμία της εταιρείας αναγράφεται στην κεφαλίδα του εγγράφου και επιβεβαιώνεται στο σώμα ως «Αστικής Μη Κερδοσκοπικής Εταιρείας Ψυχοκοινωνικών Παρεμβάσεων «ΑΓΚΑΛΙΑ»»."
+        },
+        "recipient": {
+          "value": "ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+          "status": "present",
+          "evidence": "Το πεδίο «Προς:» αναφέρει το όνομα «ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ»."
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/91ΤΣ46ΝΙΦ6-ΠΡΛ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 1.632,
+      "prediction": {
+        "document_type": {
+          "value": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ",
+          "status": "present",
+          "evidence": "Το κείμενο «ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ» εμφανίζεται με έντονα γράμματα στο κέντρο της σελίδας, κάτω από τα στοιχεία του παραλήπτη."
+        },
+        "issuing_authority": {
+          "value": "ΑΜΚΕ ΨΥΧΟΚΟΙΝΩΝΙΚΩΝ ΠΑΡΕΜΒΑΣΕΩΝ «ΑΓΚΑΛΙΑ»",
+          "status": "present",
+          "evidence": "Το όνομα της εταιρείας «ΑΜΚΕ ΨΥΧΟΚΟΙΝΩΝΙΚΩΝ ΠΑΡΕΜΒΑΣΕΩΝ «ΑΓΚΑΛΙΑ»» αναγράφεται στην κεφαλίδα της σελίδας και επαναλαμβάνεται στο σώμα του κειμένου ως η οντότητα που εκδίδει την πρόσκληση."
+        },
+        "recipient": {
+          "value": "ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+          "status": "present",
+          "evidence": "Το όνομα «ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ» αναγράφεται ρητά μετά την ένδειξη «Προς:»."
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 1.478,
+      "prediction": {
+        "document_type": {
+          "value": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ» στον τίτλο."
+        },
+        "issuing_authority": {
+          "value": "ΙΔΡΥΜΑ ΝΕΟΛΑΙΑΣ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗΣ (Ι.ΝΕ.ΔΙ.ΒΙ.Μ)",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «Αφενός το Ν.Π.Ι.Δ. με την επωνυμία «ΙΔΡΥΜΑ ΝΕΟΛΑΙΑΣ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗΣ» (εφεξής Ι.ΝΕ.ΔΙ.ΒΙ.Μ)» και «δικαιούχο το Ι.ΝΕ.ΔΙ.ΒΙ.Μ»."
+        },
+        "recipient": {
+          "value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ» ως μέρος της σύμβασης."
+        },
+        "contractor": {
+          "value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ» και «Ο/η εκπαιδευτής» ως αυτός που αναλαμβάνει το έργο."
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 1.583,
+      "prediction": {
+        "document_type": {
+          "value": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ",
+          "status": "present",
+          "evidence": "Το κείμενο «ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ» εμφανίζεται ευκρινώς ως τίτλος στο κέντρο της σελίδας."
+        },
+        "issuing_authority": {
+          "value": "ΑΦΕΝΤΟΣ ΤΟΥ/ΤΗΣ ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗ",
+          "status": "present",
+          "evidence": "Στο κείμενο αναφέρεται ρητά: «ΑΦΕΝΤΟΣ ΤΟΥ/ΤΗΣ ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗ»."
+        },
+        "recipient": {
+          "value": "ΑΦΕΝΤΟΣ ΤΟΥ/ΤΗΣ ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗ",
+          "status": "present",
+          "evidence": "Το έγγραφο αναφέρει «ΑΦΕΝΤΟΣ ΤΟΥ/ΤΗΣ ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗ» ως μέρος της σύμβασης."
+        },
+        "contractor": {
+          "value": "ΑΦΕΝΤΟΣ ΤΟΥ/ΤΗΣ ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗ",
+          "status": "present",
+          "evidence": "Το πρόσωπο αναφέρεται ως «ΑΦΕΝΤΟΣ ΤΟΥ/ΤΗΣ» και «Ο/Η εκπαιδευτής», ο οποίος είναι ο μισθωτής/εκτελεστής της εργασίας."
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/Ρ5ΑΓ7ΛΨ-Υ8Ρ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 1.105,
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά τη λέξη 'ΑΠΟΦΑΣΗ' και αναφέρει τον 'ΠΕΡΙΦΕΡΙΑΡΧΗ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ' ως εκδότη."
+        },
+        "issuing_authority": {
+          "value": "Περιφέρεια Δυτικής Μακεδονίας",
+          "status": "present",
+          "evidence": "Το κεφάλαιο του εγγράφου αναφέρει 'ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ' και 'ΓΡΑΦΕΙΟ ΠΕΡΙΦΕΡΕΙΑΡΧΗ'."
+        },
+        "recipient": {
+          "value": "Δ/νση Οικονομικών Υπηρεσιών",
+          "status": "present",
+          "evidence": "Το πεδίο 'ΠΡΟΣ:' αναφέρει 'Δ/νση Οικονομικών Υπηρεσιών'."
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/Ρ5ΑΓ7ΛΨ-Υ8Ρ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 1.301,
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση",
+          "status": "present",
+          "evidence": "ΑΠΟΦΑΣΗ\nΟ ΠΕΡΙΦΕΡΕΙΑΡΧΗΣ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ"
+        },
+        "issuing_authority": {
+          "value": "Περιφέρεια Δυτικής Μακεδονίας - Γραφείο Περιφερειάρχη",
+          "status": "present",
+          "evidence": "ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ\nΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ\nΓΡΑΦΕΙΟ ΠΕΡΙΦΕΡΕΙΑΡΧΗ"
+        },
+        "recipient": {
+          "value": "Δ/νση Οικονομικών Υπηρεσιών",
+          "status": "present",
+          "evidence": "ΠΡΟΣ: Δ/νση Οικονομικών Υπηρεσιών"
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΨΓΥΖ4ΧΡ-3Θ3.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 0.895,
+      "prediction": {
+        "document_type": {
+          "value": "ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά 'ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ ΜΙΑΣ (1) ΚΛΙΜΑΤΙΣΤΙΚΗΣ ΜΟΝΑΔΑΣ' στον τίτλο του εγγράφου."
+        },
+        "issuing_authority": {
+          "value": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ",
+          "status": "present",
+          "evidence": "Στο κεφάλαιο του εγγράφου αναγράφεται 'ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ' και στο σώμα αναφέρεται 'Ο Διευθύνων το Πρωτοδικείο Κορίνθου'."
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΨΓΥΖ4ΧΡ-3Θ3.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 1.563,
+      "prediction": {
+        "document_type": {
+          "value": "Πράξη 199/2026 - Αναγνώριση προμήθειας",
+          "status": "present",
+          "evidence": "Πράξη 199 / 2026\nΑΝΑΓΝΩΣΗ ΠΡΟΜΗΘΕΙΑΣ ΜΙΑΣ (1) ΚΛΙΜΑΤΙΣΤΙΚΗΣ ΜΟΝΑΔΑΣ"
+        },
+        "issuing_authority": {
+          "value": "Πρωτοδικείο Κορίνθου",
+          "status": "present",
+          "evidence": "ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ\nΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ"
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΨΓΥΖ4ΧΡ-3Θ3.pdf",
+      "page_number": 2,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 1.16,
+      "prediction": {
+        "document_type": {
+          "value": "Πράξη αναθέσεως",
+          "status": "present",
+          "evidence": "Η φράση 'Αναθέτουμε στην επιχείρηση...' και η υπογραφή του Διευθύνοντος το Πρωτοδικείο Κορίνθου υποδηλώνουν ότι πρόκειται για πράξη αναθέσεως."
+        },
+        "issuing_authority": {
+          "value": "Πρωτοδικείο Κορίνθου",
+          "status": "present",
+          "evidence": "Αναφέρεται ρητά ως 'Πρωτοδικείο Κορίνθου' και υπογράφεται από τον 'Διευθύνων το Πρωτοδικείο Κορίνθου'."
+        },
+        "recipient": {
+          "value": "Πρωτοδικείο Κορίνθου",
+          "status": "present",
+          "evidence": "Η αναθέτωση γίνεται για την κάλυψη ανάγκης του ίδιου του Πρωτοδικείου Κορίνθου (τοποθέτηση κλιματισμού στην αίθουσα ακροατηρίου του)."
+        },
+        "contractor": {
+          "value": "ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ",
+          "status": "present",
+          "evidence": "Αναφέρεται ρητά ως 'επιχείρηση με την επωνυμία «ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ»' στην οποία γίνεται η αναθέτωση."
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΨΓΥΖ4ΧΡ-3Θ3.pdf",
+      "page_number": 2,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 1.436,
+      "prediction": {
+        "document_type": {
+          "value": "Πράξη Διευθύνοντος",
+          "status": "present",
+          "evidence": "Πράξη του Διευθύνοντος το Πρωτοδικείο Κορίνθου"
+        },
+        "issuing_authority": {
+          "value": "Πρωτοδικείο Κορίνθου",
+          "status": "present",
+          "evidence": "Πράξη του Διευθύνοντος το Πρωτοδικείο Κορίνθου"
+        },
+        "recipient": {
+          "value": "ΨΥΧΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΛΕΡΓΙΜΟΣ ΙΩΑΚΕΙΜΑΡΟΣ",
+          "status": "present",
+          "evidence": "Αναθέτουμε στην επιχείρηση με την επωνυμία «ΨΥΧΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΛΕΡΓΙΜΟΣ ΙΩΑΚΕΙΜΑΡΟΣ»"
+        },
+        "contractor": {
+          "value": "ΨΥΧΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΛΕΡΓΙΜΟΣ ΙΩΑΚΕΙΜΑΡΟΣ",
+          "status": "present",
+          "evidence": "Αναθέτουμε στην επιχείρηση με την επωνυμία «ΨΥΧΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΛΕΡΓΙΜΟΣ ΙΩΑΚΕΙΜΑΡΟΣ»"
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΨΡ6Ξ469ΗΡΘ-7ΝΗ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 0.818,
+      "prediction": {
+        "document_type": {
+          "value": "ΑΠΟΦΑΣΗ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά τη λέξη 'ΑΠΟΦΑΣΗ' και τον αριθμό '179'."
+        },
+        "issuing_authority": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΨΡ6Ξ469ΗΡΘ-7ΝΗ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 2.009,
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση Διευθύνουσας Υπηρεσίας",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «ΑΠΟΦΑΣΗ» και «Διευθύνουσας Υπηρεσίας» στο κεφάλαιο «ΑΠΟΦΑΣΙΖΟΥΜΕ»."
+        },
+        "issuing_authority": {
+          "value": "Επιμελητήριο Θεσσαλονίκης",
+          "status": "present",
+          "evidence": "Στο κείμενο αναφέρεται «Διοικητική Επιτροπή του Επιμελητηρίου» και «Προεδρείου της σε... Επιμελητηρίου Θεσσαλονίκης»."
+        },
+        "recipient": {
+          "value": "ΜΗΤΣΟΠΟΥΛΟΣ ΣΤΕΦΑΝΟΣ",
+          "status": "present",
+          "evidence": "Στο κείμενο αναφέρεται «Εγκρίνουμε την ανάθεση, στην επιχείρηση με επωνυμία «ΜΗΤΣΟΠΟΥΛΟΣ ΣΤΕΦΑΝΟΣ»»."
+        },
+        "contractor": {
+          "value": "ΜΗΤΣΟΠΟΥΛΟΣ ΣΤΕΦΑΝΟΣ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «Εγκρίνουμε την ανάθεση, στην επιχείρηση με επωνυμία «ΜΗΤΣΟΠΟΥΛΟΣ ΣΤΕΦΑΝΟΣ»» και «Η πληρωμή θα γίνει... στο όνομα του αναδόχου»."
+        },
+        "contractor_tax_id": {
+          "value": "105014125",
+          "status": "present",
+          "evidence": "Στο κείμενο αναφέρεται «Α.Φ.Μ. 105014125»."
+        }
+      },
+      "error": null
+    }
+  ]
+}

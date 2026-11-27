@@ -1,0 +1,5 @@
+document_id,pages,raw_candidates,raw_entity_recall,raw_supporting_relation_recall,raw_non_supporting_exposure,deduplicated_candidates,deduplication_rate,deduplicated_supporting_recall,selected_candidates,selected_entity_recall,selected_supporting_relation_recall,selected_non_supporting_exposure,selected_supporting_page_coverage,estimated_tokens,budget_utilization
+synthetic_v2_2_2_pages,2,12,1.0,1.0,1.0,12,0.0,1.0,6,0.0,1.0,1.0,1.0,257,0.514
+synthetic_v2_2_10_pages,10,18,1.0,1.0,1.0,18,0.0,1.0,10,0.375,1.0,1.0,1.0,315,0.63
+synthetic_v2_2_25_pages,25,18,1.0,1.0,1.0,18,0.0,1.0,10,0.375,1.0,1.0,1.0,315,0.63
+synthetic_v2_2_50_pages,50,18,1.0,1.0,1.0,18,0.0,1.0,10,0.375,1.0,1.0,1.0,315,0.63

@@ -1,0 +1,88 @@
+{
+  "run_id": "20261112T172532Z",
+  "dataset": "pilot_development",
+  "evaluation_unit": "page",
+  "ground_truth_scoring": "disabled",
+  "strategies": [
+    "digital_llm",
+    "direct_vlm"
+  ],
+  "results": [
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "digital_llm",
+      "status": "success",
+      "latency_sec": 1.626,
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση απευθείας ανάθεσης",
+          "status": "present",
+          "evidence": "ΘΕΜΑ: Απευθείας ανάθεση της προμήθειας... Α Π Ο Φ Α Σ Η"
+        },
+        "issuing_authority": {
+          "value": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+          "status": "present",
+          "evidence": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ, Ο ΔΗΜΑΡΧΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ"
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+          "status": "present",
+          "evidence": "Εγκρίνουμε την απευθείας ανάθεση... στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ"
+        },
+        "contractor_tax_id": {
+          "value": "801033798",
+          "status": "present",
+          "evidence": "ΑΦΜ: 801033798"
+        }
+      },
+      "error": null
+    },
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf",
+      "page_number": 1,
+      "review_status": "pending",
+      "split": "dev",
+      "strategy": "direct_vlm",
+      "status": "success",
+      "latency_sec": 1.617,
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση απευθείας ανάθεσης",
+          "status": "present",
+          "evidence": "ΘΕΜΑ: Απευθείας ανάθεση της προμήθειας για την : «Κάλυψη Δράσεων Πυροπροστασίας ΔΕ Πυθαγορείου»"
+        },
+        "issuing_authority": {
+          "value": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+          "status": "present",
+          "evidence": "ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ ΝΟΜΟΣ ΣΑΜΟΥ ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ ΔΙΕΥΘΥΝΣΗ ΤΕΧΝΙΚΩΝ ΥΠΗΡΕΣΙΩΝ"
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+          "status": "present",
+          "evidence": "Εγκρινούμε την απευθείας ανάθεση της προμήθειας ... στην εταιρεία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ"
+        },
+        "contractor_tax_id": {
+          "value": "6983905183",
+          "status": "present",
+          "evidence": "ΑΦΜ: 6983905183"
+        }
+      },
+      "error": null
+    }
+  ]
+}

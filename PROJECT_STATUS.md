@@ -1,7 +1,43 @@
 
 # MSc Thesis — Project Status
 
-Last updated: 2026-11-24
+Last updated: 2026-11-27
+
+## Current State (living summary — keep up to date)
+
+Verified on 2026-11-27 (repository reconnaissance, no code changes):
+
+- Last commit: `bce5933`. Synthetic Evaluation v2.2 work (generator, relation metrics,
+  evaluator, 5 test files) is local and NOT yet committed.
+- Full test suite: 119 passed (offline, mocked LLM).
+- Active workflow: `src/multimodal_graph.py`, page-level (one page per run).
+  Document-level modules (aggregator, document verifier, evidence selectors)
+  exist as offline code and are not integrated into the graph.
+- Verified annotations: 9 page-level dev annotations from 8 PDFs
+  (`benchmark_v1/pilot_annotations/`). Held-out test set: none.
+  Document-level annotations: none.
+- `benchmark_v1/pilot_manifest.json` still shows `pending` review fields,
+  although the annotation files are marked `verified`.
+- `evaluation_results/annotation_audit_v1.csv` covers only the 4 legacy
+  annotations in `data/annotations/`, not the pilot set.
+- Best dev result: Adaptive Text Workflow 32/45 field agreement (71.1%,
+  95% Wilson CI ≈ 57–82%). Not distinguishable from Digital + LLM (30/45).
+  Agreement includes correct absences; P/R/F1 not yet computed.
+- All 9 workflow runs ended `review_required` → verifier discrimination
+  (false acceptance vs. review rate) not yet established.
+
+Decision: the synthetic adaptive-evidence benchmark is frozen at v2.2.
+The planned "Synthetic Evaluation v2.3" milestone is superseded.
+
+Next milestone — Real-document evaluation:
+1. Freeze evaluation protocol (`benchmark_v1/EVALUATION_PROTOCOL.md`).
+2. Select a stratified, unseen held-out test set before any runs.
+3. Document-level human annotation of the test set.
+4. Extend evaluator with per-field P/R/F1, CIs and verifier metrics.
+5. Minimal multi-page runner (per-page graph + `aggregate_document`).
+6. Single frozen-config run of all strategies + error analysis.
+
+---
 
 ## 1. Research Goal
 Multimodal Agentic Workflows for Information Extraction from Unstructured Documents.
@@ -1623,3 +1659,74 @@ Additional observations:
 Preserve the distinction between entity presence, role evidence, contextual relevance and semantic verification.
 
 Synthetic evaluation must remain separate from the real human-annotated development and held-out test datasets.
+
+
+
+---
+
+## Adaptive Evidence Selection — Synthetic Evaluation v2.2 (2026-11-24)
+
+### Completed
+
+- Implemented relation-level synthetic ground truth.
+- Separated entity mentions from role relations.
+- Added semantic role, polarity and formulation type annotations.
+- Preserved sentence, entity and role-cue character offsets.
+- Added relation-level context exposure evaluation.
+- Added one-to-one relation matching.
+- Added deduplication stress tests.
+- Implemented end-to-end evaluation pipeline:
+  Raw Retrieval → Deduplicated Retrieval → Adaptive Selection.
+- Generated JSON and CSV evaluation reports.
+
+### Validation
+
+- Full regression suite: 119 passed.
+- Synthetic documents: 2, 10, 25 and 50 pages.
+- External LLM API calls: 0.
+- git diff --check: PASS.
+
+### Synthetic Evaluation Results
+
+| Metric | 2 pages | 10 pages | 25 pages | 50 pages |
+|---|---:|---:|---:|---:|
+| Raw supporting relation recall | 100% | 100% | 100% | 100% |
+| Deduplicated supporting relation recall | 100% | 100% | 100% | 100% |
+| Adaptive supporting relation recall | 100% | 100% | 100% | 100% |
+| Adaptive entity mention recall | 0% | 37.5% | 37.5% | 37.5% |
+| Non-supporting relation exposure | 100% | 100% | 100% | 100% |
+| Unseen relation context exposure | 100% | 100% | 100% | 100% |
+| Supporting page coverage | 100% | 100% | 100% | 100% |
+| End-to-end deduplication removal rate | 0% | 0% | 0% | 0% |
+
+### Findings
+
+- Adaptive selection retained all annotated supporting contractor relations in the synthetic evaluation.
+- Supporting evidence was preserved across all pages containing positive role relations.
+- Entity mention recall decreased after adaptive budget selection.
+- Non-supporting and ambiguous relations were retained for downstream verification.
+- No overlapping candidates were produced by the current end-to-end synthetic retrieval scenarios.
+
+### Limitations
+
+- The dataset is synthetic and does not establish generalization to real Greek administrative documents.
+- Context exposure does not demonstrate semantic role recognition.
+- The 250-character context window may expose nearby relations without directly retrieving their role cues.
+- End-to-end deduplication effectiveness remains unproven.
+- The token estimator is whitespace-based, not an actual model tokenizer.
+- Semantic verifier false acceptance has not been evaluated in this experiment.
+- Ranking weights remain unchanged.
+
+### Next Milestone — Synthetic Evaluation v2.3
+
+1. Add controlled overlapping candidate scenarios to end-to-end retrieval.
+2. Test deduplication preservation of distinct role relations.
+3. Increase and vary distances between entity mentions and role evidence.
+4. Evaluate entity mention versus supporting relation trade-offs.
+5. Add verifier-level positive, negative and ambiguous evidence evaluation.
+6. Compare raw, deduplicated and adaptive selection under multiple token budgets.
+7. Update benchmark documentation with validated results.
+
+### Research Principle
+
+Entity presence must not be treated as proof of an entity's role. Relation-level evidence, polarity and semantic verification must be evaluated separately.

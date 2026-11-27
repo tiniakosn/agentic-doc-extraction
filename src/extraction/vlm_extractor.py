@@ -3,6 +3,7 @@ import base64
 import os
 
 import pymupdf
+from dotenv import load_dotenv
 
 from src.extraction.llm_client import get_llm
 from langchain_core.messages import HumanMessage

@@ -1,0 +1,471 @@
+{
+  "kind": "development_workflow_evaluation",
+  "official_accuracy_computed": false,
+  "strategy": "adaptive_text_workflow",
+  "source_run": "evaluation_results/benchmark_v1/workflow_pilot_20261122T153546Z.json",
+  "summary": {
+    "evaluated_fields": 45,
+    "agreement_count": 32,
+    "disagreement_count": 13,
+    "final_actions": {
+      "reprocess": 4,
+      "repair_evidence": 11,
+      "review": 20,
+      "accept_with_evidence": 7,
+      "accept": 3
+    }
+  },
+  "missing": [],
+  "rows": [
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "field": "document_type",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "award_decision",
+      "prediction_value": "Απόφαση απευθείας ανάθεσης",
+      "correct": true,
+      "final_action": "reprocess"
+    },
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "field": "issuing_authority",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Δήμος Ανατολικής Σάμου",
+      "prediction_value": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+      "correct": true,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "field": "recipient",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "field": "contractor",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+      "prediction_value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+      "correct": true,
+      "final_action": "accept_with_evidence"
+    },
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "field": "contractor_tax_id",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "801033798",
+      "prediction_value": "801033798",
+      "correct": true,
+      "final_action": "accept_with_evidence"
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "field": "document_type",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "administrative_order",
+      "prediction_value": "Διαταγή Διοικητού",
+      "correct": true,
+      "final_action": "reprocess"
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "field": "issuing_authority",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Κέντρο Εκπαίδευσης Ναυτικής Αποτροπής",
+      "prediction_value": "ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ (ΚΕΝΑΠ)",
+      "correct": false,
+      "final_action": "reprocess"
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "field": "recipient",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Υπόλογος Ειδικής Διαχείρισης «Κοστολόγηση Παροχών Εκπαιδεύσεων»",
+      "prediction_value": "Υπόλογο Ειδικής Διαχείρισης ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ «Κοστολόγηση Παροχών ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ Εκπαιδεύσεων»",
+      "correct": false,
+      "final_action": "accept"
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "field": "contractor",
+      "reference_status": "not_present",
+      "prediction_status": "present",
+      "reference_value": null,
+      "prediction_value": "ΘΥΜΙΑΝΟΣ Α.Ε.",
+      "correct": false,
+      "final_action": "accept"
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "field": "contractor_tax_id",
+      "reference_status": "not_present",
+      "prediction_status": "present",
+      "reference_value": null,
+      "prediction_value": "092597210",
+      "correct": false,
+      "final_action": "accept"
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "field": "document_type",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "commitment_decision",
+      "prediction_value": "Απόφαση Ανάληψης Υποχρέωσης",
+      "correct": true,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "field": "issuing_authority",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Ερευνητικό Πανεπιστημιακό Ινστιτούτο Συστημάτων Επικοινωνιών και Υπολογιστών",
+      "prediction_value": "ΕΠΙΣΕΥ (Ερευνητικό Πανεπιστημιακό Ινστιτούτο Συστημάτων Επικοινωνιών και Υπολογιστών του Εθνικού Μετσόβιου Πολυτεχνείου)",
+      "correct": false,
+      "final_action": "accept_with_evidence"
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "field": "recipient",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "field": "contractor",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "field": "contractor_tax_id",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "field": "document_type",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "contract_summary",
+      "prediction_value": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ",
+      "correct": true,
+      "final_action": "accept_with_evidence"
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "field": "issuing_authority",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Ίδρυμα Νεολαίας και Διά Βίου Μάθησης",
+      "prediction_value": "ΙΔΡΥΜΑ ΝΕΟΛΑΙΑΣ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗΣ (Ι.ΝΕ.ΔΙ.ΒΙ.Μ)",
+      "correct": false,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "field": "recipient",
+      "reference_status": "not_present",
+      "prediction_status": "present",
+      "reference_value": null,
+      "prediction_value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ",
+      "correct": false,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "field": "contractor",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ του ΙΩΑΝΝΗΣ",
+      "prediction_value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ",
+      "correct": false,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "field": "contractor_tax_id",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "field": "document_type",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "award_decision",
+      "prediction_value": "ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ",
+      "correct": true,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "field": "issuing_authority",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Πρωτοδικείο Κορίνθου",
+      "prediction_value": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ",
+      "correct": true,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "field": "recipient",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "field": "contractor",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "field": "contractor_tax_id",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "field": "document_type",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "invitation",
+      "prediction_value": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ",
+      "correct": true,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "field": "issuing_authority",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "ΑΜΚΕ Ψυχοκοινωνικών Παρεμβάσεων «ΑΓΚΑΛΙΑ»",
+      "prediction_value": "ΑΜΚΕ ΨΥΧΟΚΟΙΝΩΝΙΚΩΝ ΠΑΡΕΜΒΑΣΕΩΝ «ΑΓΚΑΛΙΑ»",
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "field": "recipient",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+      "prediction_value": "ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+      "correct": true,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "field": "contractor",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "field": "contractor_tax_id",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "field": "document_type",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "administrative_decision",
+      "prediction_value": "Απόφαση",
+      "correct": false,
+      "final_action": "accept_with_evidence"
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "field": "issuing_authority",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Περιφέρεια Δυτικής Μακεδονίας",
+      "prediction_value": "Περιφέρεια Δυτικής Μακεδονίας",
+      "correct": true,
+      "final_action": "accept_with_evidence"
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "field": "recipient",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Διεύθυνση Οικονομικών Υπηρεσιών",
+      "prediction_value": "Δ/νση Οικονομικών Υπηρεσιών",
+      "correct": false,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "field": "contractor",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "field": "contractor_tax_id",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "field": "document_type",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "award_decision",
+      "prediction_value": "Πράξη αναθέσεως",
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "field": "issuing_authority",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Πρωτοδικείο Κορίνθου",
+      "prediction_value": "Πρωτοδικείο Κορίνθου",
+      "correct": true,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "field": "recipient",
+      "reference_status": "not_present",
+      "prediction_status": "present",
+      "reference_value": null,
+      "prediction_value": "Πρωτοδικείο Κορίνθου",
+      "correct": false,
+      "final_action": "repair_evidence"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "field": "contractor",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ",
+      "prediction_value": "ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ",
+      "correct": true,
+      "final_action": "accept_with_evidence"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "field": "contractor_tax_id",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "field": "document_type",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "award_decision",
+      "prediction_value": "Απόφαση",
+      "correct": false,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "field": "issuing_authority",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "Βιοτεχνικό Επιμελητήριο Θεσσαλονίκης",
+      "prediction_value": "Βιοτεχνικό Επιμελητήριο Θεσσαλονίκης",
+      "correct": true,
+      "final_action": "reprocess"
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "field": "recipient",
+      "reference_status": "not_present",
+      "prediction_status": "not_present",
+      "reference_value": null,
+      "prediction_value": null,
+      "correct": true,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "field": "contractor",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "ΜΠΙΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+      "prediction_value": "ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+      "correct": false,
+      "final_action": "review"
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "field": "contractor_tax_id",
+      "reference_status": "present",
+      "prediction_status": "present",
+      "reference_value": "105014125",
+      "prediction_value": "105014125",
+      "correct": true,
+      "final_action": "review"
+    }
+  ]
+}

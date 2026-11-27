@@ -1,5 +1,9 @@
-from src.extraction.llm_client import get_llm
+import os
+
+from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage
+
+from src.extraction.llm_client import get_llm
 
 from src.schemas.page_extraction import PageExtraction
 

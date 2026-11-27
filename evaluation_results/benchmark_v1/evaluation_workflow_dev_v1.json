@@ -1,0 +1,120 @@
+{
+  "kind": "exploratory_provisional_annotation_comparison",
+  "official_accuracy_computed": false,
+  "note": "Pending/unverified annotations must not be called ground truth. Agreement does not imply correctness; evidence flags are heuristics, not PDF grounding.",
+  "source_run_id": "20261122T153546Z",
+  "annotation_counts": {},
+  "summary_by_strategy": {
+    "digital_llm": {},
+    "direct_vlm": {}
+  },
+  "summary_by_field": {
+    "digital_llm": {
+      "document_type": {},
+      "issuing_authority": {},
+      "recipient": {},
+      "contractor": {},
+      "contractor_tax_id": {}
+    },
+    "direct_vlm": {
+      "document_type": {},
+      "issuing_authority": {},
+      "recipient": {},
+      "contractor": {},
+      "contractor_tax_id": {}
+    }
+  },
+  "missing_or_failed": [
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "strategy": "digital_llm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "strategy": "direct_vlm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "strategy": "digital_llm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "strategy": "direct_vlm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "strategy": "digital_llm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "strategy": "direct_vlm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "strategy": "digital_llm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "strategy": "direct_vlm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "strategy": "digital_llm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "strategy": "direct_vlm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "strategy": "digital_llm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "strategy": "direct_vlm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "strategy": "digital_llm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "strategy": "direct_vlm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "strategy": "digital_llm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "strategy": "direct_vlm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "strategy": "digital_llm",
+      "reason": "missing"
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "strategy": "direct_vlm",
+      "reason": "missing"
+    }
+  ],
+  "rows": []
+}
