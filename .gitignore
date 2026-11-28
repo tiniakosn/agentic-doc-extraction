@@ -15,5 +15,6 @@ __pycache__/
 *.zip
 
 .DS_Store
-evaluation_results/
-token_usage.jsonl
+
+# Token usage log grows continuously; per-run usage is stored in results.
+evaluation_results/token_usage.jsonl
