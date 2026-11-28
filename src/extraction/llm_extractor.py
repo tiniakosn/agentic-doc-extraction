@@ -1,9 +1,10 @@
 import os
+import time
 
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage
 
-from src.extraction.llm_client import get_llm
+from src.extraction.llm_client import get_llm, unwrap_structured
 
 from src.schemas.page_extraction import PageExtraction
 
@@ -32,6 +33,7 @@ def extract_from_text(
     ).with_structured_output(
         PageExtraction,
         method="json_mode",
+        include_raw=True,
     )
 
     prompt = (
@@ -49,9 +51,15 @@ def extract_from_text(
         f"DOCUMENT TEXT:\n{text}"
     )
 
+    start = time.perf_counter()
     result = llm.invoke([HumanMessage(content=prompt)])
+    latency = time.perf_counter() - start
 
-    if isinstance(result, PageExtraction):
-        return result
-
-    return PageExtraction.model_validate(result)
+    return unwrap_structured(
+        result,
+        PageExtraction,
+        call_type="text_extraction",
+        model=model,
+        latency_s=latency,
+        extra={"input_chars": len(text)},
+    )
