@@ -5,66 +5,19 @@ import argparse
 import csv
 import json
 import re
-import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
+
+# Re-exported so existing imports (tests, compare_strategies, evaluate_workflow) keep working.
+from src.evaluation.normalization import (  # noqa: F401
+    normalize_document_type,
+    normalized,
+    normalized_value,
+)
 
 FIELDS = (
     "document_type", "issuing_authority", "recipient", "contractor", "contractor_tax_id"
 )
-
-
-def normalized(value):
-    """Conservative normalization: accents/case/whitespace, not identity resolution."""
-    if value is None:
-        return None
-    s = unicodedata.normalize("NFKC", str(value))
-    s = "".join(c for c in unicodedata.normalize("NFD", s)
-                if unicodedata.category(c) != "Mn")
-    s = s.casefold()
-    return " ".join(s.split())
-
-
-def normalize_document_type(value):
-    """Map only well-supported document-type synonyms; otherwise keep raw normalized value."""
-    s = normalized(value)
-    if not s:
-        return s
-    canonical_types = {
-        "award_decision",
-        "invitation",
-        "commitment_decision",
-        "administrative_order",
-        "administrative_decision",
-        "contract_summary",
-    }
-
-    if s in canonical_types:
-        return s
-    if "αναληψη" in s and "υποχρεωσ" in s:
-        return "commitment_decision"
-    if "περιληψη συμβαση" in s or "contract_summary" in s:
-        return "contract_summary"
-    if "προσκληση" in s or s == "invitation":
-        return "invitation"
-    if (
-        ("απευθειασ" in s and "αναθεσ" in s)
-        or "πραξη αναθεσ" in s
-        or "αναθεση προμηθειασ" in s
-    ):
-        return "award_decision"
-    if "διαταγη διοικητου" in s or "διαταξη διοικητου" in s:
-        return "administrative_order"
-    # Unknown names are intentionally NOT forced into a category.
-    return s
-
-
-def normalized_value(field, value):
-    if field == "contractor_tax_id" and value is not None:
-        return re.sub(r"\s|[-.]", "", str(value))
-    if field == "document_type":
-        return normalize_document_type(value)
-    return normalized(value)
 
 
 def check_afm(value):
