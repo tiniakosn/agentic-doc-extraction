@@ -1,0 +1,4196 @@
+{
+  "run_id": "20261128T100714Z",
+  "dataset": "pilot_development",
+  "evaluation_unit": "page",
+  "strategy": "adaptive_text_workflow",
+  "ground_truth_scoring": "disabled",
+  "results": [
+    {
+      "annotation_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf",
+      "page_number": 1,
+      "review_status": "verified",
+      "split": "dev",
+      "status": "success",
+      "latency_sec": 19.17,
+      "workflow_status": "completed",
+      "routing": {
+        "decision": "digital",
+        "execution_method": "digital",
+        "reason": "Sufficient Greek digital text",
+        "quality": {
+          "text_chars": 2308,
+          "image_count": 13,
+          "image_coverage": 0.0089,
+          "suspicious_text_ratio": 0.0,
+          "visual_ink_ratio": 0.0959,
+          "greek_letter_ratio": 0.9279,
+          "unassigned_char_count": 0
+        },
+        "fallback_used": false
+      },
+      "processing_method": "digital",
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση",
+          "status": "present",
+          "evidence": "Το κείμενο περιλαμβάνει την ένδειξη «Α Π Ο Φ Α Σ Η» και αναφέρει «ΑΡ. ΑΠΟΦΑΣΗΣ: 853/2026»."
+        },
+        "issuing_authority": {
+          "value": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+          "status": "present",
+          "evidence": "Στο κεφαλάρι αναγράφεται «ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ» και υπογράφεται από τον «Ο ΔΗΜΑΡΧΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ»."
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+          "status": "present",
+          "evidence": "Στο σημείο 3 αναφέρεται: «Εγκρίνουμε την απευθείας ανάθεση της προμήθειας... στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ»."
+        },
+        "contractor_tax_id": {
+          "value": "801033798",
+          "status": "present",
+          "evidence": "Στο σημείο 3 αναφέρεται: «ΑΦΜ: 801033798»."
+        }
+      },
+      "verification": {
+        "document_type": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.522
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 28,
+              "text": "Την υπ’ αρ. ΑΑΥ 292/2026 Απόφαση ανάληψης υποχρέωσης για την έγκριση της",
+              "bbox": [
+                81.79600524902344,
+                404.12799072265625,
+                508.5519714355469,
+                416.41497802734375
+              ],
+              "normalized_bbox": [
+                0.13739146485816284,
+                0.4799619842311832,
+                0.8542067561773814,
+                0.4945546057331873
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "issuing_authority": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.571
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 5,
+              "text": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+              "bbox": [
+                73.19999694824219,
+                121.21299743652344,
+                230.97299194335938,
+                133.5
+              ],
+              "normalized_bbox": [
+                0.12295288477369884,
+                0.14395842925952904,
+                0.3879617055766872,
+                0.15855106888361045
+              ]
+            },
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 14,
+              "text": "Ο ΔΗΜΑΡΧΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+              "bbox": [
+                188.87399291992188,
+                277.40802001953125,
+                380.9780578613281,
+                289.69500732421875
+              ],
+              "normalized_bbox": [
+                0.3172486783660888,
+                0.3294632066740276,
+                0.6399228579565713,
+                0.34405582817603175
+              ]
+            },
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 52,
+              "text": "Ο ΔΗΜΑΡΧΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+              "bbox": [
+                188.79901123046875,
+                698.2119750976562,
+                383.9610290527344,
+                710.4989624023438
+              ],
+              "normalized_bbox": [
+                0.3171227328004081,
+                0.8292303742252449,
+                0.6449333077990702,
+                0.8438229957272491
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "recipient": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        },
+        "contractor": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.608
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "contractor_tax_id": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.524
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 47,
+              "text": "ΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,",
+              "bbox": [
+                78.0,
+                618.5240478515625,
+                597.9923095703125,
+                630.81103515625
+              ],
+              "normalized_bbox": [
+                0.1310153744832746,
+                0.7345891304650386,
+                1.0,
+                0.7491817519670427
+              ]
+            }
+          ],
+          "deterministic_validation": {
+            "status": "valid",
+            "reason": "Valid Greek AFM format and checksum"
+          },
+          "verification_status": "checked",
+          "review_required": true
+        }
+      },
+      "field_decisions": {
+        "document_type": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        },
+        "contractor": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        }
+      },
+      "semantic_verification": {
+        "contractor": {
+          "field_name": "contractor",
+          "claimed_value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+          "verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 46,
+              "text": "Πυροπροστασίας ΔΕ Πυθαγορείου», στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ",
+              "bbox": [
+                78.0,
+                605.875,
+                503.2489318847656,
+                618.1619873046875
+              ],
+              "normalized_bbox": [
+                0.1310153744832746,
+                0.7195665083135392,
+                0.8452993239639811,
+                0.7341591298155433
+              ]
+            }
+          ],
+          "supporting_text_anchors": [
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "text": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ \nΟΕ",
+              "start": 1682,
+              "end": 1711,
+              "context": "κθεσης της Δ/νσης \nΤΥ που αφορά την προμήθεια για τη «Κάλυψη Δράσεων Πυροπροστασίας ΔΕ \nΠυθαγορείου», ποσού 2.490,00 € με ΦΠΑ.\n3. Εγκρίνουμε την απευθείας ανάθεση της προμήθειας για την : «Κάλυψη Δράσεων \nΠυροπροστασίας ΔΕ Πυθαγορείου», στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ \nΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,                                \nκιν: 6983905183, σύμφωνα με την από 17-06-2026 Τεχνική Έκθεση της Δ/νσης ΤΥ του \nΔήμου Ανατολικής Σάμου. \n4. Η παρούσα ανάθεση ισχύει για 10 ημέρες.\n5. Η συνολική",
+              "context_start": 1432,
+              "context_end": 1961
+            }
+          ],
+          "considered_text_anchors": [
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "text": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ \nΟΕ",
+              "start": 1682,
+              "end": 1711,
+              "context": "κθεσης της Δ/νσης \nΤΥ που αφορά την προμήθεια για τη «Κάλυψη Δράσεων Πυροπροστασίας ΔΕ \nΠυθαγορείου», ποσού 2.490,00 € με ΦΠΑ.\n3. Εγκρίνουμε την απευθείας ανάθεση της προμήθειας για την : «Κάλυψη Δράσεων \nΠυροπροστασίας ΔΕ Πυθαγορείου», στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ \nΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,                                \nκιν: 6983905183, σύμφωνα με την από 17-06-2026 Τεχνική Έκθεση της Δ/νσης ΤΥ του \nΔήμου Ανατολικής Σάμου. \n4. Η παρούσα ανάθεση ισχύει για 10 ημέρες.\n5. Η συνολική",
+              "context_start": 1432,
+              "context_end": 1961
+            }
+          ],
+          "explanation": "Η απόφαση εγκρίνει την απευθείας ανάθεση της προμήθειας «Κάλυψη Δράσεων Πυροπροστασίας ΔΕ Πυθαγορείου» στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ, με ΑΦΜ 801033798, σύμφωνα με την Τεχνική Έκθεση της Δ/νσης ΤΥ του Δήμου Ανατολικής Σάμου. Η φράση «εγκρίνουμε την απευθείας ανάθεση ... στην εταιρία» καθορίζει ρητά την εταιρεία ως ανάδοχο της προμήθειας.",
+          "verification_method": "llm_evidence_verification"
+        }
+      },
+      "final_decisions": {
+        "document_type": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        },
+        "contractor": {
+          "initial_action": "review",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 46,
+              "text": "Πυροπροστασίας ΔΕ Πυθαγορείου», στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ",
+              "bbox": [
+                78.0,
+                605.875,
+                503.2489318847656,
+                618.1619873046875
+              ],
+              "normalized_bbox": [
+                0.1310153744832746,
+                0.7195665083135392,
+                0.8452993239639811,
+                0.7341591298155433
+              ]
+            }
+          ],
+          "supporting_text_anchors": [
+            {
+              "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+              "page_number": 1,
+              "method": "digital",
+              "text": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ \nΟΕ",
+              "start": 1682,
+              "end": 1711,
+              "context": "κθεσης της Δ/νσης \nΤΥ που αφορά την προμήθεια για τη «Κάλυψη Δράσεων Πυροπροστασίας ΔΕ \nΠυθαγορείου», ποσού 2.490,00 € με ΦΠΑ.\n3. Εγκρίνουμε την απευθείας ανάθεση της προμήθειας για την : «Κάλυψη Δράσεων \nΠυροπροστασίας ΔΕ Πυθαγορείου», στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ \nΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,                                \nκιν: 6983905183, σύμφωνα με την από 17-06-2026 Τεχνική Έκθεση της Δ/νσης ΤΥ του \nΔήμου Ανατολικής Σάμου. \n4. Η παρούσα ανάθεση ισχύει για 10 ημέρες.\n5. Η συνολική",
+              "context_start": 1432,
+              "context_end": 1961
+            }
+          ],
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        }
+      },
+      "evidence_repairs": {
+        "document_type": {
+          "original_value": "Απόφαση",
+          "original_evidence": "Το κείμενο περιλαμβάνει την ένδειξη «Α Π Ο Φ Α Σ Η» και αναφέρει «ΑΡ. ΑΠΟΦΑΣΗΣ: 853/2026».",
+          "repaired_evidence": "Την υπ’ αρ. ΑΑΥ 292/2026 Απόφαση ανάληψης υποχρέωσης για την έγκριση της",
+          "source_reference": {
+            "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 28,
+            "text": "Την υπ’ αρ. ΑΑΥ 292/2026 Απόφαση ανάληψης υποχρέωσης για την έγκριση της",
+            "bbox": [
+              81.79600524902344,
+              404.12799072265625,
+              508.5519714355469,
+              416.41497802734375
+            ],
+            "normalized_bbox": [
+              0.13739146485816284,
+              0.4799619842311832,
+              0.8542067561773814,
+              0.4945546057331873
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        },
+        "issuing_authority": {
+          "original_value": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+          "original_evidence": "Στο κεφαλάρι αναγράφεται «ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ» και υπογράφεται από τον «Ο ΔΗΜΑΡΧΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ».",
+          "repaired_evidence": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+          "source_reference": {
+            "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 5,
+            "text": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+            "bbox": [
+              73.19999694824219,
+              121.21299743652344,
+              230.97299194335938,
+              133.5
+            ],
+            "normalized_bbox": [
+              0.12295288477369884,
+              0.14395842925952904,
+              0.3879617055766872,
+              0.15855106888361045
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        },
+        "contractor_tax_id": {
+          "original_value": "801033798",
+          "original_evidence": "Στο σημείο 3 αναφέρεται: «ΑΦΜ: 801033798».",
+          "repaired_evidence": "ΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,",
+          "source_reference": {
+            "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 47,
+            "text": "ΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,",
+            "bbox": [
+              78.0,
+              618.5240478515625,
+              597.9923095703125,
+              630.81103515625
+            ],
+            "normalized_bbox": [
+              0.1310153744832746,
+              0.7345891304650386,
+              1.0,
+              0.7491817519670427
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        }
+      },
+      "retry_count": 1,
+      "correction_history": [
+        {
+          "attempt": 1,
+          "action": "reflect",
+          "previous_method": "digital",
+          "next_method": "digital",
+          "reason": "Re-extract from the same text with verification feedback",
+          "feedback": "Στην προηγούμενη προσπάθεια εντοπίστηκαν τα εξής προβλήματα:\n- document_type: η τιμή «Απόφαση απευθείας ανάθεσης» απορρίφθηκε. Λόγος: Extracted value not supported by source text.\nΞαναέλεγξε προσεκτικά αυτά τα πεδία στο κείμενο. Αν η σωστή τιμή δεν υπάρχει, δήλωσε not_present ή uncertain. Μην επαναλάβεις τιμές που απορρίφθηκαν.",
+          "previous_extraction": {
+            "document_type": {
+              "value": "Απόφαση απευθείας ανάθεσης",
+              "status": "present",
+              "evidence": "ΘΕΜΑ: Απευθείας ανάθεση της προμήθειας... Α Π Ο Φ Α Σ Η"
+            },
+            "issuing_authority": {
+              "value": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+              "status": "present",
+              "evidence": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ"
+            },
+            "recipient": {
+              "value": null,
+              "status": "not_present",
+              "evidence": null
+            },
+            "contractor": {
+              "value": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+              "status": "present",
+              "evidence": "Εγκρίνουμε την απευθείας ανάθεση... στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ ΟΕ"
+            },
+            "contractor_tax_id": {
+              "value": "801033798",
+              "status": "present",
+              "evidence": "ΑΦΜ: 801033798"
+            }
+          },
+          "previous_verification": {
+            "document_type": {
+              "value_grounding": {
+                "status": "unsupported",
+                "score": 0.808
+              },
+              "evidence_matching": {
+                "status": "unsupported",
+                "score": 0.782
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": true
+            },
+            "issuing_authority": {
+              "value_grounding": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "evidence_matching": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "spatial_grounding": null,
+              "source_references": [
+                {
+                  "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+                  "page_number": 1,
+                  "method": "digital",
+                  "region_index": 5,
+                  "text": "ΔΗΜΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+                  "bbox": [
+                    73.19999694824219,
+                    121.21299743652344,
+                    230.97299194335938,
+                    133.5
+                  ],
+                  "normalized_bbox": [
+                    0.12295288477369884,
+                    0.14395842925952904,
+                    0.3879617055766872,
+                    0.15855106888361045
+                  ]
+                },
+                {
+                  "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+                  "page_number": 1,
+                  "method": "digital",
+                  "region_index": 14,
+                  "text": "Ο ΔΗΜΑΡΧΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+                  "bbox": [
+                    188.87399291992188,
+                    277.40802001953125,
+                    380.9780578613281,
+                    289.69500732421875
+                  ],
+                  "normalized_bbox": [
+                    0.3172486783660888,
+                    0.3294632066740276,
+                    0.6399228579565713,
+                    0.34405582817603175
+                  ]
+                },
+                {
+                  "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+                  "page_number": 1,
+                  "method": "digital",
+                  "region_index": 52,
+                  "text": "Ο ΔΗΜΑΡΧΟΣ ΑΝΑΤΟΛΙΚΗΣ ΣΑΜΟΥ",
+                  "bbox": [
+                    188.79901123046875,
+                    698.2119750976562,
+                    383.9610290527344,
+                    710.4989624023438
+                  ],
+                  "normalized_bbox": [
+                    0.3171227328004081,
+                    0.8292303742252449,
+                    0.6449333077990702,
+                    0.8438229957272491
+                  ]
+                }
+              ],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": false
+            },
+            "recipient": {
+              "value_grounding": null,
+              "evidence_matching": null,
+              "spatial_grounding": null,
+              "source_references": [],
+              "absence_check": {
+                "status": "supported",
+                "cues": [],
+                "reason": "No field cues found in page text"
+              },
+              "verification_status": "absence_checked",
+              "review_required": false,
+              "reason": "No field cues found in page text"
+            },
+            "contractor": {
+              "value_grounding": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "evidence_matching": {
+                "status": "unsupported",
+                "score": 0.688
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": true
+            },
+            "contractor_tax_id": {
+              "value_grounding": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "evidence_matching": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "spatial_grounding": null,
+              "source_references": [
+                {
+                  "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+                  "page_number": 1,
+                  "method": "digital",
+                  "region_index": 47,
+                  "text": "ΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,",
+                  "bbox": [
+                    78.0,
+                    618.5240478515625,
+                    597.9923095703125,
+                    630.81103515625
+                  ],
+                  "normalized_bbox": [
+                    0.1310153744832746,
+                    0.7345891304650386,
+                    1.0,
+                    0.7491817519670427
+                  ]
+                }
+              ],
+              "deterministic_validation": {
+                "status": "valid",
+                "reason": "Valid Greek AFM format and checksum"
+              },
+              "verification_status": "checked",
+              "review_required": false
+            }
+          },
+          "previous_final_decisions": {
+            "document_type": {
+              "initial_action": "reprocess",
+              "final_action": "reprocess",
+              "reason": "Extracted value not supported by source text",
+              "semantic_verdict": null,
+              "supporting_sources": [],
+              "supporting_text_anchors": [],
+              "decision_source": "verification"
+            },
+            "issuing_authority": {
+              "initial_action": "accept",
+              "final_action": "accept",
+              "reason": "Value and evidence are textually supported",
+              "semantic_verdict": null,
+              "supporting_sources": [],
+              "supporting_text_anchors": [],
+              "decision_source": "verification"
+            },
+            "recipient": {
+              "initial_action": "accept",
+              "final_action": "accept",
+              "reason": "No field cues found in page text",
+              "semantic_verdict": null,
+              "supporting_sources": [],
+              "supporting_text_anchors": [],
+              "decision_source": "absence_check"
+            },
+            "contractor": {
+              "initial_action": "review",
+              "final_action": "accept_with_evidence",
+              "reason": "Semantic verification supports the claim",
+              "semantic_verdict": "supported",
+              "supporting_sources": [
+                {
+                  "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+                  "page_number": 1,
+                  "method": "digital",
+                  "region_index": 46,
+                  "text": "Πυροπροστασίας ΔΕ Πυθαγορείου», στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ",
+                  "bbox": [
+                    78.0,
+                    605.875,
+                    503.2489318847656,
+                    618.1619873046875
+                  ],
+                  "normalized_bbox": [
+                    0.1310153744832746,
+                    0.7195665083135392,
+                    0.8452993239639811,
+                    0.7341591298155433
+                  ]
+                }
+              ],
+              "supporting_text_anchors": [
+                {
+                  "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+                  "page_number": 1,
+                  "method": "digital",
+                  "text": "ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ \nΟΕ",
+                  "start": 1682,
+                  "end": 1711,
+                  "context": "κθεσης της Δ/νσης \nΤΥ που αφορά την προμήθεια για τη «Κάλυψη Δράσεων Πυροπροστασίας ΔΕ \nΠυθαγορείου», ποσού 2.490,00 € με ΦΠΑ.\n3. Εγκρίνουμε την απευθείας ανάθεση της προμήθειας για την : «Κάλυψη Δράσεων \nΠυροπροστασίας ΔΕ Πυθαγορείου», στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ \nΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,                                \nκιν: 6983905183, σύμφωνα με την από 17-06-2026 Τεχνική Έκθεση της Δ/νσης ΤΥ του \nΔήμου Ανατολικής Σάμου. \n4. Η παρούσα ανάθεση ισχύει για 10 ημέρες.\n5. Η συνολική",
+                  "context_start": 1432,
+                  "context_end": 1961
+                }
+              ],
+              "decision_source": "verification"
+            },
+            "contractor_tax_id": {
+              "initial_action": "accept",
+              "final_action": "accept_with_evidence",
+              "reason": "Semantic verification supports the claim",
+              "semantic_verdict": "supported",
+              "supporting_sources": [
+                {
+                  "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+                  "page_number": 1,
+                  "method": "digital",
+                  "region_index": 47,
+                  "text": "ΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,",
+                  "bbox": [
+                    78.0,
+                    618.5240478515625,
+                    597.9923095703125,
+                    630.81103515625
+                  ],
+                  "normalized_bbox": [
+                    0.1310153744832746,
+                    0.7345891304650386,
+                    1.0,
+                    0.7491817519670427
+                  ]
+                }
+              ],
+              "supporting_text_anchors": [
+                {
+                  "document_id": "63ΤΞ46ΜΦΟΤ-ΑΟΟ",
+                  "page_number": 1,
+                  "method": "digital",
+                  "text": "801033798",
+                  "start": 1744,
+                  "end": 1753,
+                  "context": "ράσεων Πυροπροστασίας ΔΕ \nΠυθαγορείου», ποσού 2.490,00 € με ΦΠΑ.\n3. Εγκρίνουμε την απευθείας ανάθεση της προμήθειας για την : «Κάλυψη Δράσεων \nΠυροπροστασίας ΔΕ Πυθαγορείου», στην εταιρία ΔΗΜΗΤΡΙΟΣ ΚΑΝΑΡΗΣ ΚΑΙ ΣΙΑ \nΟΕ, ΑΓΙΑ ΖΩΝΗ ΒΛΑΜΑΡΗΣ ΣΑΜΟΥ, ΑΦΜ: 801033798 – ΔΟΥ ΣΑΜΟΥ,                                \nκιν: 6983905183, σύμφωνα με την από 17-06-2026 Τεχνική Έκθεση της Δ/νσης ΤΥ του \nΔήμου Ανατολικής Σάμου. \n4. Η παρούσα ανάθεση ισχύει για 10 ημέρες.\n5. Η συνολική αξία της ανάθεσης είναι 2.490,00 € ευρώ μ",
+                  "context_start": 1494,
+                  "context_end": 2003
+                }
+              ],
+              "decision_source": "verification"
+            }
+          }
+        }
+      ],
+      "metrics": {
+        "load_duration_sec": 0.028,
+        "routing_duration_sec": 0.045,
+        "processing_duration_sec": 0.0,
+        "extraction_duration_sec": 1.018,
+        "reflection_feedback_used": true,
+        "verification_duration_sec": 0.003,
+        "semantic_verification_duration_sec": 13.308
+      },
+      "error": null,
+      "api_rate_limit_retries": 0
+    },
+    {
+      "annotation_id": "685Κ465274-Χ1Ψ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/685Κ465274-Χ1Ψ.pdf",
+      "page_number": 1,
+      "review_status": "verified",
+      "split": "dev",
+      "status": "success",
+      "latency_sec": 29.47,
+      "workflow_status": "completed",
+      "routing": {
+        "decision": "digital",
+        "execution_method": "digital",
+        "reason": "Sufficient Greek digital text",
+        "quality": {
+          "text_chars": 4109,
+          "image_count": 1,
+          "image_coverage": 0.0386,
+          "suspicious_text_ratio": 0.0,
+          "visual_ink_ratio": 0.1488,
+          "greek_letter_ratio": 0.915,
+          "unassigned_char_count": 0
+        },
+        "fallback_used": false
+      },
+      "processing_method": "digital",
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση Ανάληψης Υποχρέωσης",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «Απόφαση Ανάληψης Υποχρέωσης» στο κεφάλαιο του εγγράφου."
+        },
+        "issuing_authority": {
+          "value": "ΕΠΙΣΕΥ (Ερευνητικό Πανεπιστημιακό Ινστιτούτο Συστημάτων Επικοινωνιών και Υπολογιστών του Εθνικού Μετσόβιου Πολυτεχνείου)",
+          "status": "present",
+          "evidence": "Το έγγραφο αναφέρει την ονομασία του ιδρύματος «ΕΠΙΣΕΥ» και υπογράφεται από τον «Διευθυντής του ΕΠΙΣΕΥ»."
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "verification": {
+        "document_type": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.548
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "685Κ465274-Χ1Ψ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 1,
+              "text": "Απόφαση Ανάληψης Υποχρέωσης",
+              "bbox": [
+                218.1999969482422,
+                173.5499725341797,
+                382.3901062011719,
+                184.719970703125
+              ],
+              "normalized_bbox": [
+                0.36672268394662555,
+                0.20636144177667026,
+                0.6426724473969275,
+                0.21964324697161117
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "issuing_authority": {
+          "value_grounding": {
+            "status": "needs_review",
+            "score": 0.9
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.462
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "recipient": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        },
+        "contractor": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        },
+        "contractor_tax_id": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        }
+      },
+      "field_decisions": {
+        "document_type": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        },
+        "contractor": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        },
+        "contractor_tax_id": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        }
+      },
+      "semantic_verification": {
+        "issuing_authority": {
+          "field_name": "issuing_authority",
+          "claimed_value": "ΕΠΙΣΕΥ (Ερευνητικό Πανεπιστημιακό Ινστιτούτο Συστημάτων Επικοινωνιών και Υπολογιστών του Εθνικού Μετσόβιου Πολυτεχνείου)",
+          "verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "685Κ465274-Χ1Ψ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 8,
+              "text": "ΕΠΙΚΟΙΝΩΝΊΑΣ ΚΑΙ ΥΠΟΛΟΓΙΣΤΏΝ του ΕΘΝΙΚΟΥ ΜΕΤΣΟΒΙΟΥ ΠΟΛΥΤΕΧΝΕΙΟΥ (εφ’ εξής αποκαλούμενο «ΕΠΙΣΕΥ»),",
+              "bbox": [
+                63.25,
+                249.3049774169922,
+                554.5280151367188,
+                259.35797119140625
+              ],
+              "normalized_bbox": [
+                0.10630252100840336,
+                0.2964387365243665,
+                0.9319798573726366,
+                0.30839235575672563
+              ]
+            },
+            {
+              "document_id": "685Κ465274-Χ1Ψ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 4,
+              "text": "Τις διατάξεις του ΠΔ 271/1989 «Ίδρυση Ακαδημαϊκού Ερευνητικού Ινστιτούτου Συστημάτων Επικοινωνιών και",
+              "bbox": [
+                63.25,
+                208.50497436523438,
+                554.7589721679688,
+                218.5579833984375
+              ],
+              "normalized_bbox": [
+                0.10630252100840336,
+                0.2479250586982573,
+                0.9323680204503676,
+                0.25987869607424197
+              ]
+            }
+          ],
+          "supporting_text_anchors": [],
+          "considered_text_anchors": [],
+          "explanation": "Η πηγή αναφέρει ρητά το «ΕΠΙΣΕΥ» ως συντομογραφία του Ερευνητικού Πανεπιστημιακού Ινστιτούτου Συστημάτων Επικοινωνιών και Υπολογιστών του Εθνικού Μετσόβιου Πολυτεχνείου, επιβεβαιώνοντας την ταυτότητα της εκδίδουσας αρχής.",
+          "verification_method": "llm_evidence_verification"
+        }
+      },
+      "final_decisions": {
+        "document_type": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "initial_action": "review",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "685Κ465274-Χ1Ψ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 8,
+              "text": "ΕΠΙΚΟΙΝΩΝΊΑΣ ΚΑΙ ΥΠΟΛΟΓΙΣΤΏΝ του ΕΘΝΙΚΟΥ ΜΕΤΣΟΒΙΟΥ ΠΟΛΥΤΕΧΝΕΙΟΥ (εφ’ εξής αποκαλούμενο «ΕΠΙΣΕΥ»),",
+              "bbox": [
+                63.25,
+                249.3049774169922,
+                554.5280151367188,
+                259.35797119140625
+              ],
+              "normalized_bbox": [
+                0.10630252100840336,
+                0.2964387365243665,
+                0.9319798573726366,
+                0.30839235575672563
+              ]
+            },
+            {
+              "document_id": "685Κ465274-Χ1Ψ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 4,
+              "text": "Τις διατάξεις του ΠΔ 271/1989 «Ίδρυση Ακαδημαϊκού Ερευνητικού Ινστιτούτου Συστημάτων Επικοινωνιών και",
+              "bbox": [
+                63.25,
+                208.50497436523438,
+                554.7589721679688,
+                218.5579833984375
+              ],
+              "normalized_bbox": [
+                0.10630252100840336,
+                0.2479250586982573,
+                0.9323680204503676,
+                0.25987869607424197
+              ]
+            }
+          ],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        },
+        "contractor": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        },
+        "contractor_tax_id": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        }
+      },
+      "evidence_repairs": {
+        "document_type": {
+          "original_value": "Απόφαση Ανάληψης Υποχρέωσης",
+          "original_evidence": "Το κείμενο αναφέρει ρητά «Απόφαση Ανάληψης Υποχρέωσης» στο κεφάλαιο του εγγράφου.",
+          "repaired_evidence": "Απόφαση Ανάληψης Υποχρέωσης",
+          "source_reference": {
+            "document_id": "685Κ465274-Χ1Ψ",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 1,
+            "text": "Απόφαση Ανάληψης Υποχρέωσης",
+            "bbox": [
+              218.1999969482422,
+              173.5499725341797,
+              382.3901062011719,
+              184.719970703125
+            ],
+            "normalized_bbox": [
+              0.36672268394662555,
+              0.20636144177667026,
+              0.6426724473969275,
+              0.21964324697161117
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        }
+      },
+      "retry_count": 0,
+      "correction_history": [],
+      "metrics": {
+        "load_duration_sec": 0.022,
+        "routing_duration_sec": 0.025,
+        "processing_duration_sec": 0.0,
+        "extraction_duration_sec": 2.721,
+        "reflection_feedback_used": false,
+        "verification_duration_sec": 0.006,
+        "semantic_verification_duration_sec": 16.668
+      },
+      "error": null,
+      "api_rate_limit_retries": 1
+    },
+    {
+      "annotation_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/91ΤΣ46ΝΙΦ6-ΠΡΛ.pdf",
+      "page_number": 1,
+      "review_status": "verified",
+      "split": "dev",
+      "status": "success",
+      "latency_sec": 35.436,
+      "workflow_status": "review_required",
+      "routing": {
+        "decision": "digital",
+        "execution_method": "digital",
+        "reason": "Sufficient Greek digital text",
+        "quality": {
+          "text_chars": 2718,
+          "image_count": 0,
+          "image_coverage": 0.0,
+          "suspicious_text_ratio": 0.0,
+          "visual_ink_ratio": 0.107,
+          "greek_letter_ratio": 0.9171,
+          "unassigned_char_count": 0
+        },
+        "fallback_used": false
+      },
+      "processing_method": "digital",
+      "prediction": {
+        "document_type": {
+          "value": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ» στον τίτλο του εγγράφου."
+        },
+        "issuing_authority": {
+          "value": "ΑΜΚΕ ΨΥΧΟΚΟΙΝΩΝΙΚΩΝ ΠΑΡΕΜΒΑΣΕΩΝ «ΑΓΚΑΛΙΑ»",
+          "status": "present",
+          "evidence": "Η επωνυμία της εταιρείας αναγράφεται στην κεφαλίδα του εγγράφου και επιβεβαιώνεται στο σώμα ως «Αστικής Μη Κερδοσκοπικής Εταιρείας Ψυχοκοινωνικών Παρεμβάσεων «ΑΓΚΑΛΙΑ»»."
+        },
+        "recipient": {
+          "value": "ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+          "status": "present",
+          "evidence": "Το πεδίο «Προς:» αναφέρει το όνομα «ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ»."
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "verification": {
+        "document_type": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.537
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 8,
+              "text": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ",
+              "bbox": [
+                185.5399932861328,
+                220.88658142089844,
+                410.7439880371094,
+                232.88658142089844
+              ],
+              "normalized_bbox": [
+                0.31157009787763695,
+                0.2622577398882736,
+                0.689746411481292,
+                0.2765052910904107
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "issuing_authority": {
+          "value_grounding": {
+            "status": "needs_review",
+            "score": 0.976
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.669
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 0,
+              "text": "ΑMΚΕ ΨΥΧΟΚΟΙΝΩΝΙΚΩΝ ΠΑΡΕΜΒΑΣΕΩΝ «ΑΓΚΑΛΙΑ»",
+              "bbox": [
+                58.689998626708984,
+                65.0588150024414,
+                322.1500244140625,
+                75.0588150024414
+              ],
+              "normalized_bbox": [
+                0.09855583312629553,
+                0.07724406649147095,
+                0.540974012450147,
+                0.08911702582658522
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "recipient": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.516
+          },
+          "spatial_grounding": {
+            "label_region": 4,
+            "value_region": 4,
+            "horizontal_gap": 0,
+            "vertical_gap": 0,
+            "nearby": true,
+            "right_of_label": false
+          },
+          "source_references": [
+            {
+              "document_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 4,
+              "text": "Προς: ΠΑΝΤΕΛΙΔΟΥ  ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+              "bbox": [
+                58.75,
+                169.59474182128906,
+                246.67962646484375,
+                179.63076782226562
+              ],
+              "normalized_bbox": [
+                0.09865659109991604,
+                0.20135914730933696,
+                0.41423950707782325,
+                0.21327488016891138
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "contractor": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        },
+        "contractor_tax_id": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "cues_found",
+            "cues": [
+              "124324077"
+            ],
+            "reason": "Page contains cues for this field; possible missed value"
+          },
+          "verification_status": "absence_checked",
+          "review_required": true,
+          "reason": "Page contains cues for this field; possible missed value"
+        }
+      },
+      "field_decisions": {
+        "document_type": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        },
+        "contractor_tax_id": {
+          "action": "review",
+          "reason": "Page contains cues for this field; possible missed value",
+          "decision_source": "absence_check"
+        }
+      },
+      "semantic_verification": {
+        "issuing_authority": {
+          "field_name": "issuing_authority",
+          "claimed_value": "ΑΜΚΕ ΨΥΧΟΚΟΙΝΩΝΙΚΩΝ ΠΑΡΕΜΒΑΣΕΩΝ «ΑΓΚΑΛΙΑ»",
+          "verdict": "insufficient_evidence",
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "considered_text_anchors": [],
+          "explanation": "Η πηγή αναφέρει την οντότητα «ΑΜΚΕ ΨΥΧΟΚΟΙΝΩΝΙΚΩΝ ΠΑΡΕΜΒΑΣΕΩΝ «ΑΓΚΑΛΙΑ»» ως επωνυμία/εταιρεία, αλλά δεν υπάρχει ρητή δήλωση ότι αυτή αποτελεί την εκδίδουσα αρχή του εγγράφου. Η απλή αναφορά της οντότητας δεν αποδεικνύει τον ρόλο του εκδότη.",
+          "verification_method": "llm_evidence_verification"
+        }
+      },
+      "final_decisions": {
+        "document_type": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "initial_action": "review",
+          "final_action": "review",
+          "reason": "Available evidence is insufficient",
+          "semantic_verdict": "insufficient_evidence",
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        },
+        "contractor_tax_id": {
+          "initial_action": "review",
+          "final_action": "review",
+          "reason": "Page contains cues for this field; possible missed value",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        }
+      },
+      "evidence_repairs": {
+        "document_type": {
+          "original_value": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ",
+          "original_evidence": "Το κείμενο αναφέρει ρητά «ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ» στον τίτλο του εγγράφου.",
+          "repaired_evidence": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ",
+          "source_reference": {
+            "document_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 8,
+            "text": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ",
+            "bbox": [
+              185.5399932861328,
+              220.88658142089844,
+              410.7439880371094,
+              232.88658142089844
+            ],
+            "normalized_bbox": [
+              0.31157009787763695,
+              0.2622577398882736,
+              0.689746411481292,
+              0.2765052910904107
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        },
+        "recipient": {
+          "original_value": "ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+          "original_evidence": "Το πεδίο «Προς:» αναφέρει το όνομα «ΠΑΝΤΕΛΙΔΟΥ ΣΤΕΛΛΑ ΜΙΧΑΗΛ».",
+          "repaired_evidence": "Προς: ΠΑΝΤΕΛΙΔΟΥ  ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+          "source_reference": {
+            "document_id": "91ΤΣ46ΝΙΦ6-ΠΡΛ",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 4,
+            "text": "Προς: ΠΑΝΤΕΛΙΔΟΥ  ΣΤΕΛΛΑ ΜΙΧΑΗΛ",
+            "bbox": [
+              58.75,
+              169.59474182128906,
+              246.67962646484375,
+              179.63076782226562
+            ],
+            "normalized_bbox": [
+              0.09865659109991604,
+              0.20135914730933696,
+              0.41423950707782325,
+              0.21327488016891138
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        }
+      },
+      "retry_count": 0,
+      "correction_history": [],
+      "metrics": {
+        "load_duration_sec": 0.044,
+        "routing_duration_sec": 0.017,
+        "processing_duration_sec": 0.0,
+        "extraction_duration_sec": 1.087,
+        "reflection_feedback_used": false,
+        "verification_duration_sec": 0.004,
+        "semantic_verification_duration_sec": 22.796
+      },
+      "error": null,
+      "api_rate_limit_retries": 2
+    },
+    {
+      "annotation_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ.pdf",
+      "page_number": 1,
+      "review_status": "verified",
+      "split": "dev",
+      "status": "success",
+      "latency_sec": 63.798,
+      "workflow_status": "review_required",
+      "routing": {
+        "decision": "digital",
+        "execution_method": "digital",
+        "reason": "Sufficient Greek digital text",
+        "quality": {
+          "text_chars": 3358,
+          "image_count": 0,
+          "image_coverage": 0.0,
+          "suspicious_text_ratio": 0.0,
+          "visual_ink_ratio": 0.1368,
+          "greek_letter_ratio": 0.9594,
+          "unassigned_char_count": 0
+        },
+        "fallback_used": false
+      },
+      "processing_method": "digital",
+      "prediction": {
+        "document_type": {
+          "value": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ» στον τίτλο."
+        },
+        "issuing_authority": {
+          "value": "ΙΔΡΥΜΑ ΝΕΟΛΑΙΑΣ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗΣ (Ι.ΝΕ.ΔΙ.ΒΙ.Μ)",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «Αφενός το Ν.Π.Ι.Δ. με την επωνυμία «ΙΔΡΥΜΑ ΝΕΟΛΑΙΑΣ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗΣ» (εφεξής Ι.ΝΕ.ΔΙ.ΒΙ.Μ)» και «δικαιούχο το Ι.ΝΕ.ΔΙ.ΒΙ.Μ»."
+        },
+        "recipient": {
+          "value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ» ως μέρος της σύμβασης."
+        },
+        "contractor": {
+          "value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ» και «Ο/η εκπαιδευτής» ως αυτός που αναλαμβάνει το έργο."
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "verification": {
+        "document_type": {
+          "value_grounding": {
+            "status": "needs_review",
+            "score": 0.986
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.788
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 1,
+              "text": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ EΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ",
+              "bbox": [
+                109.072998046875,
+                142.8300018310547,
+                502.50994873046875,
+                156.25
+              ],
+              "normalized_bbox": [
+                0.1832235852234017,
+                0.16965197492476633,
+                0.8441289417684816,
+                0.18559210769562023
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "issuing_authority": {
+          "value_grounding": {
+            "status": "unsupported",
+            "score": 0.843
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.727
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "recipient": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.739
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 11,
+              "text": "Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ",
+              "bbox": [
+                56.70000076293945,
+                310.77001953125,
+                310.9360046386719,
+                324.19000244140625
+              ],
+              "normalized_bbox": [
+                0.09524609764087275,
+                0.36912936277384806,
+                0.5223181774141209,
+                0.3850694774204727
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "contractor": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.58
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 11,
+              "text": "Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ",
+              "bbox": [
+                56.70000076293945,
+                310.77001953125,
+                310.9360046386719,
+                324.19000244140625
+              ],
+              "normalized_bbox": [
+                0.09524609764087275,
+                0.36912936277384806,
+                0.5223181774141209,
+                0.3850694774204727
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "contractor_tax_id": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "cues_found",
+            "cues": [
+              "090044306"
+            ],
+            "reason": "Page contains cues for this field; possible missed value"
+          },
+          "verification_status": "absence_checked",
+          "review_required": true,
+          "reason": "Page contains cues for this field; possible missed value"
+        }
+      },
+      "field_decisions": {
+        "document_type": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "action": "reprocess",
+          "reason": "Extracted value not supported by source text",
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "action": "review",
+          "reason": "Page contains cues for this field; possible missed value",
+          "decision_source": "absence_check"
+        }
+      },
+      "semantic_verification": {
+        "document_type": {
+          "field_name": "document_type",
+          "claimed_value": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ",
+          "verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 1,
+              "text": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ EΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ",
+              "bbox": [
+                109.072998046875,
+                142.8300018310547,
+                502.50994873046875,
+                156.25
+              ],
+              "normalized_bbox": [
+                0.1832235852234017,
+                0.16965197492476633,
+                0.8441289417684816,
+                0.18559210769562023
+              ]
+            },
+            {
+              "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 12,
+              "text": "Υπογράφηκε σύμβαση μίσθωσης έργου εκπαιδευτή επαγγελματικής κατάρτισης στο πλαίσιο των έργων",
+              "bbox": [
+                56.70000076293945,
+                330.197998046875,
+                525.925048828125,
+                343.6180114746094
+              ],
+              "normalized_bbox": [
+                0.09524609764087275,
+                0.3922057114521205,
+                0.8834622200782394,
+                0.4081458623472037
+              ]
+            }
+          ],
+          "supporting_text_anchors": [],
+          "considered_text_anchors": [],
+          "explanation": "Η απόδειξη στην περιοχή 1 αναφέρει ρητά τον τίτλο «ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ EΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ», ο οποίος ταιριάζει ακριβώς με την αξιολογημένη τιμή. Η περιοχή 12 επιβεβαιώνει περαιτέρω ότι υπογράφηκε σύμβαση μίσθωσης έργου εκπαιδευτή επαγγελματικής κατάρτισης.",
+          "verification_method": "llm_evidence_verification"
+        },
+        "issuing_authority": {
+          "field_name": "issuing_authority",
+          "claimed_value": "ΙΔΡΥΜΑ ΝΕΟΛΑΙΑΣ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗΣ (Ι.ΝΕ.ΔΙ.ΒΙ.Μ)",
+          "verdict": "insufficient_evidence",
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "considered_text_anchors": [],
+          "explanation": "Το Ν.Π.Ι.Δ. με την επωνυμία «ΙΔΡΥΜΑ ΝΕΟΛΑΙΑΣ ΚΑΙ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗΣ» (εφεξής Ι.ΝΕΔΙ.ΒΙ.Μ)",
+          "verification_method": "llm_evidence_verification"
+        }
+      },
+      "final_decisions": {
+        "document_type": {
+          "initial_action": "review",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 1,
+              "text": "ΠΕΡΙΛΗΨΗ ΣΥΜΒΑΣΗΣ ΜΙΣΘΩΣΗΣ ΕΡΓΟΥ ΕΚΠΑΙΔΕΥΤΗ EΠΑΓΓΕΛΜΑΤΙΚΗΣ ΚΑΤΑΡΤΙΣΗΣ",
+              "bbox": [
+                109.072998046875,
+                142.8300018310547,
+                502.50994873046875,
+                156.25
+              ],
+              "normalized_bbox": [
+                0.1832235852234017,
+                0.16965197492476633,
+                0.8441289417684816,
+                0.18559210769562023
+              ]
+            },
+            {
+              "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 12,
+              "text": "Υπογράφηκε σύμβαση μίσθωσης έργου εκπαιδευτή επαγγελματικής κατάρτισης στο πλαίσιο των έργων",
+              "bbox": [
+                56.70000076293945,
+                330.197998046875,
+                525.925048828125,
+                343.6180114746094
+              ],
+              "normalized_bbox": [
+                0.09524609764087275,
+                0.3922057114521205,
+                0.8834622200782394,
+                0.4081458623472037
+              ]
+            }
+          ],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "initial_action": "reprocess",
+          "final_action": "review",
+          "reason": "Available evidence is insufficient",
+          "semantic_verdict": "insufficient_evidence",
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "initial_action": "review",
+          "final_action": "review",
+          "reason": "Page contains cues for this field; possible missed value",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        }
+      },
+      "evidence_repairs": {
+        "recipient": {
+          "original_value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ",
+          "original_evidence": "Το κείμενο αναφέρει «Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ» ως μέρος της σύμβασης.",
+          "repaired_evidence": "Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ",
+          "source_reference": {
+            "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 11,
+            "text": "Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ",
+            "bbox": [
+              56.70000076293945,
+              310.77001953125,
+              310.9360046386719,
+              324.19000244140625
+            ],
+            "normalized_bbox": [
+              0.09524609764087275,
+              0.36912936277384806,
+              0.5223181774141209,
+              0.3850694774204727
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        },
+        "contractor": {
+          "original_value": "ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ",
+          "original_evidence": "Το κείμενο αναφέρει «Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ» και «Ο/η εκπαιδευτής» ως αυτός που αναλαμβάνει το έργο.",
+          "repaired_evidence": "Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ",
+          "source_reference": {
+            "document_id": "ΕΟΣΩ46ΨΖΣΠ-ΠΣΜ",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 11,
+            "text": "Αφετέρου του/της ΚΕΣΑΠΙΔΟΥ ΦΩΤΕΙΝΗ, του ΙΩΑΝΝΗΣ",
+            "bbox": [
+              56.70000076293945,
+              310.77001953125,
+              310.9360046386719,
+              324.19000244140625
+            ],
+            "normalized_bbox": [
+              0.09524609764087275,
+              0.36912936277384806,
+              0.5223181774141209,
+              0.3850694774204727
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        }
+      },
+      "retry_count": 0,
+      "correction_history": [],
+      "metrics": {
+        "load_duration_sec": 0.135,
+        "routing_duration_sec": 0.019,
+        "processing_duration_sec": 0.0,
+        "extraction_duration_sec": 1.371,
+        "reflection_feedback_used": false,
+        "verification_duration_sec": 0.004,
+        "semantic_verification_duration_sec": 49.14
+      },
+      "error": null,
+      "api_rate_limit_retries": 1
+    },
+    {
+      "annotation_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/Ρ5ΑΓ7ΛΨ-Υ8Ρ.pdf",
+      "page_number": 1,
+      "review_status": "verified",
+      "split": "dev",
+      "status": "success",
+      "latency_sec": 40.149,
+      "workflow_status": "completed",
+      "routing": {
+        "decision": "digital",
+        "execution_method": "digital",
+        "reason": "Sufficient Greek digital text",
+        "quality": {
+          "text_chars": 2297,
+          "image_count": 1,
+          "image_coverage": 0.003,
+          "suspicious_text_ratio": 0.0,
+          "visual_ink_ratio": 0.0906,
+          "greek_letter_ratio": 0.922,
+          "unassigned_char_count": 0
+        },
+        "fallback_used": false
+      },
+      "processing_method": "digital",
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά τη λέξη 'ΑΠΟΦΑΣΗ' και αναφέρει τον 'ΠΕΡΙΦΕΡΙΑΡΧΗ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ' ως εκδότη."
+        },
+        "issuing_authority": {
+          "value": "Περιφέρεια Δυτικής Μακεδονίας",
+          "status": "present",
+          "evidence": "Το κεφάλαιο του εγγράφου αναφέρει 'ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ' και 'ΓΡΑΦΕΙΟ ΠΕΡΙΦΕΡΕΙΑΡΧΗ'."
+        },
+        "recipient": {
+          "value": "Δ/νση Οικονομικών Υπηρεσιών",
+          "status": "present",
+          "evidence": "Το πεδίο 'ΠΡΟΣ:' αναφέρει 'Δ/νση Οικονομικών Υπηρεσιών'."
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "verification": {
+        "document_type": {
+          "value_grounding": {
+            "status": "unsupported",
+            "score": 0.857
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.587
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 18,
+              "text": "ΑΠΟΦΑΣΗ",
+              "bbox": [
+                253.12399291992188,
+                288.2809753417969,
+                306.1759948730469,
+                302.9329833984375
+              ],
+              "normalized_bbox": [
+                0.42520409559953226,
+                0.34241711246229256,
+                0.5143221924263295,
+                0.35982061362840545
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "issuing_authority": {
+          "value_grounding": {
+            "status": "needs_review",
+            "score": 0.966
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.727
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 1,
+              "text": "ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ",
+              "bbox": [
+                61.20000076293945,
+                105.82699584960938,
+                224.29698181152344,
+                119.25799560546875
+              ],
+              "normalized_bbox": [
+                0.10280531163764002,
+                0.12570019334927782,
+                0.37677975207607195,
+                0.14165339368943336
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "recipient": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.661
+          },
+          "spatial_grounding": {
+            "label_region": 12,
+            "value_region": 12,
+            "horizontal_gap": 0,
+            "vertical_gap": 0,
+            "nearby": true,
+            "right_of_label": false
+          },
+          "source_references": [
+            {
+              "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 12,
+              "text": "ΠΡΟΣ: Δ/νση Οικονομικών Υπηρεσιών",
+              "bbox": [
+                327.04998779296875,
+                160.0380096435547,
+                513.5659790039062,
+                174.69000244140625
+              ],
+              "normalized_bbox": [
+                0.5493868545260394,
+                0.1900914657354196,
+                0.8627011414999598,
+                0.20749494877730323
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "contractor": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        },
+        "contractor_tax_id": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        }
+      },
+      "field_decisions": {
+        "document_type": {
+          "action": "reprocess",
+          "reason": "Extracted value not supported by source text",
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        },
+        "contractor_tax_id": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        }
+      },
+      "semantic_verification": {
+        "document_type": {
+          "field_name": "document_type",
+          "claimed_value": "Απόφαση",
+          "verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 18,
+              "text": "ΑΠΟΦΑΣΗ",
+              "bbox": [
+                253.12399291992188,
+                288.2809753417969,
+                306.1759948730469,
+                302.9329833984375
+              ],
+              "normalized_bbox": [
+                0.42520409559953226,
+                0.34241711246229256,
+                0.5143221924263295,
+                0.35982061362840545
+              ]
+            }
+          ],
+          "supporting_text_anchors": [],
+          "considered_text_anchors": [],
+          "explanation": "Η πηγή αναφέρει ρητά τον τίτλο «ΑΠΟΦΑΣΗ», ο οποίος αντιστοιχεί στο αξιολογούμενο είδος εγγράμου «Απόφαση».",
+          "verification_method": "llm_evidence_verification"
+        },
+        "issuing_authority": {
+          "field_name": "issuing_authority",
+          "claimed_value": "Περιφέρεια Δυτικής Μακεδονίας",
+          "verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 1,
+              "text": "ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ",
+              "bbox": [
+                61.20000076293945,
+                105.82699584960938,
+                224.29698181152344,
+                119.25799560546875
+              ],
+              "normalized_bbox": [
+                0.10280531163764002,
+                0.12570019334927782,
+                0.37677975207607195,
+                0.14165339368943336
+              ]
+            },
+            {
+              "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 19,
+              "text": "Ο ΠΕΡΙΦΕΡΕΙΑΡΧΗΣ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ",
+              "bbox": [
+                172.17098999023438,
+                302.928955078125,
+                387.1270751953125,
+                317.5809631347656
+              ],
+              "normalized_bbox": [
+                0.28921719052699085,
+                0.3598158288318789,
+                0.650305867854219,
+                0.37721932999799185
+              ]
+            }
+          ],
+          "supporting_text_anchors": [],
+          "considered_text_anchors": [],
+          "explanation": "Η Περιφέρεια Δυτικής Μακεδονίας",
+          "verification_method": "llm_evidence_verification"
+        }
+      },
+      "final_decisions": {
+        "document_type": {
+          "initial_action": "reprocess",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 18,
+              "text": "ΑΠΟΦΑΣΗ",
+              "bbox": [
+                253.12399291992188,
+                288.2809753417969,
+                306.1759948730469,
+                302.9329833984375
+              ],
+              "normalized_bbox": [
+                0.42520409559953226,
+                0.34241711246229256,
+                0.5143221924263295,
+                0.35982061362840545
+              ]
+            }
+          ],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "initial_action": "review",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 1,
+              "text": "ΠΕΡΙΦΕΡΕΙΑ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ",
+              "bbox": [
+                61.20000076293945,
+                105.82699584960938,
+                224.29698181152344,
+                119.25799560546875
+              ],
+              "normalized_bbox": [
+                0.10280531163764002,
+                0.12570019334927782,
+                0.37677975207607195,
+                0.14165339368943336
+              ]
+            },
+            {
+              "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 19,
+              "text": "Ο ΠΕΡΙΦΕΡΕΙΑΡΧΗΣ ΔΥΤΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ",
+              "bbox": [
+                172.17098999023438,
+                302.928955078125,
+                387.1270751953125,
+                317.5809631347656
+              ],
+              "normalized_bbox": [
+                0.28921719052699085,
+                0.3598158288318789,
+                0.650305867854219,
+                0.37721932999799185
+              ]
+            }
+          ],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        },
+        "contractor_tax_id": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        }
+      },
+      "evidence_repairs": {
+        "recipient": {
+          "original_value": "Δ/νση Οικονομικών Υπηρεσιών",
+          "original_evidence": "Το πεδίο 'ΠΡΟΣ:' αναφέρει 'Δ/νση Οικονομικών Υπηρεσιών'.",
+          "repaired_evidence": "ΠΡΟΣ: Δ/νση Οικονομικών Υπηρεσιών",
+          "source_reference": {
+            "document_id": "Ρ5ΑΓ7ΛΨ-Υ8Ρ",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 12,
+            "text": "ΠΡΟΣ: Δ/νση Οικονομικών Υπηρεσιών",
+            "bbox": [
+              327.04998779296875,
+              160.0380096435547,
+              513.5659790039062,
+              174.69000244140625
+            ],
+            "normalized_bbox": [
+              0.5493868545260394,
+              0.1900914657354196,
+              0.8627011414999598,
+              0.20749494877730323
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        }
+      },
+      "retry_count": 0,
+      "correction_history": [],
+      "metrics": {
+        "load_duration_sec": 0.022,
+        "routing_duration_sec": 0.024,
+        "processing_duration_sec": 0.0,
+        "extraction_duration_sec": 2.476,
+        "reflection_feedback_used": false,
+        "verification_duration_sec": 0.004,
+        "semantic_verification_duration_sec": 28.261
+      },
+      "error": null,
+      "api_rate_limit_retries": 1
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΨΓΥΖ4ΧΡ-3Θ3.pdf",
+      "page_number": 1,
+      "review_status": "verified",
+      "split": "dev",
+      "status": "success",
+      "latency_sec": 7.232,
+      "workflow_status": "completed",
+      "routing": {
+        "decision": "digital",
+        "execution_method": "digital",
+        "reason": "Sufficient Greek digital text",
+        "quality": {
+          "text_chars": 1280,
+          "image_count": 1,
+          "image_coverage": 0.0036,
+          "suspicious_text_ratio": 0.0,
+          "visual_ink_ratio": 0.0644,
+          "greek_letter_ratio": 0.8463,
+          "unassigned_char_count": 0
+        },
+        "fallback_used": false
+      },
+      "processing_method": "digital",
+      "prediction": {
+        "document_type": {
+          "value": "ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά 'ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ ΜΙΑΣ (1) ΚΛΙΜΑΤΙΣΤΙΚΗΣ ΜΟΝΑΔΑΣ' στον τίτλο του εγγράφου."
+        },
+        "issuing_authority": {
+          "value": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ",
+          "status": "present",
+          "evidence": "Στο κεφάλαιο του εγγράφου αναγράφεται 'ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ' και στο σώμα αναφέρεται 'Ο Διευθύνων το Πρωτοδικείο Κορίνθου'."
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "verification": {
+        "document_type": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.653
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 16,
+              "text": "ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ ΜΙΑΣ (1) ΚΛΙΜΑΤΙΣΤΙΚΗΣ ΜΟΝΑΔΑΣ",
+              "bbox": [
+                94.80000305175781,
+                287.16497802734375,
+                504.1205139160156,
+                303.18499755859375
+              ],
+              "normalized_bbox": [
+                0.15924209145574464,
+                0.34108345668995477,
+                0.846805932462917,
+                0.3601114164206119
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "issuing_authority": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.602
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 1,
+              "text": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ",
+              "bbox": [
+                137.05999755859375,
+                136.8599853515625,
+                265.6014709472656,
+                148.8599853515625
+              ],
+              "normalized_bbox": [
+                0.23022911353951717,
+                0.16255699844360058,
+                0.4461490755888803,
+                0.17681013442277185
+              ]
+            },
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 35,
+              "text": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ,  με χρέωση στον ΑΛΕ 2410189, για την",
+              "bbox": [
+                114.44000244140625,
+                612.89501953125,
+                521.9442138671875,
+                626.875
+              ],
+              "normalized_bbox": [
+                0.19223275050972843,
+                0.7279730045279776,
+                0.8767456283103385,
+                0.7445778847452487
+              ]
+            },
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 1,
+              "method": "digital",
+              "region_index": 38,
+              "text": "Πρωτοδικείου Κορίνθου",
+              "bbox": [
+                114.44000244140625,
+                689.8150024414062,
+                254.79200744628906,
+                703.7949829101562
+              ],
+              "normalized_bbox": [
+                0.19223275050972843,
+                0.8193355858558098,
+                0.4279916755889008,
+                0.8359404660730808
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "recipient": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        },
+        "contractor": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        },
+        "contractor_tax_id": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        }
+      },
+      "field_decisions": {
+        "document_type": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        },
+        "contractor": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        },
+        "contractor_tax_id": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        }
+      },
+      "semantic_verification": {},
+      "final_decisions": {
+        "document_type": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        },
+        "contractor": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        },
+        "contractor_tax_id": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        }
+      },
+      "evidence_repairs": {
+        "document_type": {
+          "original_value": "ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ",
+          "original_evidence": "Το κείμενο αναφέρει ρητά 'ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ ΜΙΑΣ (1) ΚΛΙΜΑΤΙΣΤΙΚΗΣ ΜΟΝΑΔΑΣ' στον τίτλο του εγγράφου.",
+          "repaired_evidence": "ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ ΜΙΑΣ (1) ΚΛΙΜΑΤΙΣΤΙΚΗΣ ΜΟΝΑΔΑΣ",
+          "source_reference": {
+            "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 16,
+            "text": "ΑΝΑΘΕΣΗ ΠΡΟΜΗΘΕΙΑΣ ΜΙΑΣ (1) ΚΛΙΜΑΤΙΣΤΙΚΗΣ ΜΟΝΑΔΑΣ",
+            "bbox": [
+              94.80000305175781,
+              287.16497802734375,
+              504.1205139160156,
+              303.18499755859375
+            ],
+            "normalized_bbox": [
+              0.15924209145574464,
+              0.34108345668995477,
+              0.846805932462917,
+              0.3601114164206119
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        },
+        "issuing_authority": {
+          "original_value": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ",
+          "original_evidence": "Στο κεφάλαιο του εγγράφου αναγράφεται 'ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ' και στο σώμα αναφέρεται 'Ο Διευθύνων το Πρωτοδικείο Κορίνθου'.",
+          "repaired_evidence": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ",
+          "source_reference": {
+            "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+            "page_number": 1,
+            "method": "digital",
+            "region_index": 1,
+            "text": "ΠΡΩΤΟΔΙΚΕΙΟ ΚΟΡΙΝΘΟΥ",
+            "bbox": [
+              137.05999755859375,
+              136.8599853515625,
+              265.6014709472656,
+              148.8599853515625
+            ],
+            "normalized_bbox": [
+              0.23022911353951717,
+              0.16255699844360058,
+              0.4461490755888803,
+              0.17681013442277185
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        }
+      },
+      "retry_count": 0,
+      "correction_history": [],
+      "metrics": {
+        "load_duration_sec": 0.016,
+        "routing_duration_sec": 0.02,
+        "processing_duration_sec": 0.0,
+        "extraction_duration_sec": 0.862,
+        "reflection_feedback_used": false,
+        "verification_duration_sec": 0.002,
+        "semantic_verification_duration_sec": 0.0
+      },
+      "error": null,
+      "api_rate_limit_retries": 2
+    },
+    {
+      "annotation_id": "ΨΓΥΖ4ΧΡ-3Θ3_page2_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΨΓΥΖ4ΧΡ-3Θ3.pdf",
+      "page_number": 2,
+      "review_status": "verified",
+      "split": "dev",
+      "status": "success",
+      "latency_sec": 77.762,
+      "workflow_status": "review_required",
+      "routing": {
+        "decision": "digital",
+        "execution_method": "digital",
+        "reason": "Sufficient Greek digital text",
+        "quality": {
+          "text_chars": 906,
+          "image_count": 0,
+          "image_coverage": 0.0,
+          "suspicious_text_ratio": 0.0,
+          "visual_ink_ratio": 0.0456,
+          "greek_letter_ratio": 1.0,
+          "unassigned_char_count": 0
+        },
+        "fallback_used": false
+      },
+      "processing_method": "digital",
+      "prediction": {
+        "document_type": {
+          "value": "Πράξη αναθέσεως",
+          "status": "present",
+          "evidence": "Η φράση 'Αναθέτουμε στην επιχείρηση...' και η υπογραφή του Διευθύνοντος το Πρωτοδικείο Κορίνθου υποδηλώνουν ότι πρόκειται για πράξη αναθέσεως."
+        },
+        "issuing_authority": {
+          "value": "Πρωτοδικείο Κορίνθου",
+          "status": "present",
+          "evidence": "Αναφέρεται ρητά ως 'Πρωτοδικείο Κορίνθου' και υπογράφεται από τον 'Διευθύνων το Πρωτοδικείο Κορίνθου'."
+        },
+        "recipient": {
+          "value": "Πρωτοδικείο Κορίνθου",
+          "status": "present",
+          "evidence": "Η αναθέτωση γίνεται για την κάλυψη ανάγκης του ίδιου του Πρωτοδικείου Κορίνθου (τοποθέτηση κλιματισμού στην αίθουσα ακροατηρίου του)."
+        },
+        "contractor": {
+          "value": "ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ",
+          "status": "present",
+          "evidence": "Αναφέρεται ρητά ως 'επιχείρηση με την επωνυμία «ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ»' στην οποία γίνεται η αναθέτωση."
+        },
+        "contractor_tax_id": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        }
+      },
+      "verification": {
+        "document_type": {
+          "value_grounding": {
+            "status": "unsupported",
+            "score": 0.533
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.542
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "issuing_authority": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.539
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 2,
+              "method": "digital",
+              "region_index": 2,
+              "text": "Πράξη του Διευθύνοντος το Πρωτοδικείο Κορίνθου (ΑΔΑ: ΡΠΓ4ΧΡ-5ΚΧ)",
+              "bbox": [
+                114.44000244140625,
+                94.63499450683594,
+                520.6394653320312,
+                108.61499786376953
+              ],
+              "normalized_bbox": [
+                0.19223275050972843,
+                0.11240378709117148,
+                0.8745539523728529,
+                0.12900869449414193
+              ]
+            },
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 2,
+              "method": "digital",
+              "region_index": 27,
+              "text": "Ο Διευθύνων το Πρωτοδικείο Κορίνθου",
+              "bbox": [
+                182.5399932861328,
+                477.93499755859375,
+                415.9994812011719,
+                491.91497802734375
+              ],
+              "normalized_bbox": [
+                0.30662499334869364,
+                0.5676727091172934,
+                0.6987829672833645,
+                0.5842775893345644
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "recipient": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.579
+          },
+          "spatial_grounding": null,
+          "source_references": [
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 2,
+              "method": "digital",
+              "region_index": 2,
+              "text": "Πράξη του Διευθύνοντος το Πρωτοδικείο Κορίνθου (ΑΔΑ: ΡΠΓ4ΧΡ-5ΚΧ)",
+              "bbox": [
+                114.44000244140625,
+                94.63499450683594,
+                520.6394653320312,
+                108.61499786376953
+              ],
+              "normalized_bbox": [
+                0.19223275050972843,
+                0.11240378709117148,
+                0.8745539523728529,
+                0.12900869449414193
+              ]
+            },
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 2,
+              "method": "digital",
+              "region_index": 27,
+              "text": "Ο Διευθύνων το Πρωτοδικείο Κορίνθου",
+              "bbox": [
+                182.5399932861328,
+                477.93499755859375,
+                415.9994812011719,
+                491.91497802734375
+              ],
+              "normalized_bbox": [
+                0.30662499334869364,
+                0.5676727091172934,
+                0.6987829672833645,
+                0.5842775893345644
+              ]
+            }
+          ],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "contractor": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.754
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "contractor_tax_id": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        }
+      },
+      "field_decisions": {
+        "document_type": {
+          "action": "reprocess",
+          "reason": "Extracted value not supported by source text",
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        }
+      },
+      "semantic_verification": {
+        "contractor": {
+          "field_name": "contractor",
+          "claimed_value": "ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ",
+          "verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 2,
+              "method": "digital",
+              "region_index": 13,
+              "text": "στην επιχείρηση με την επωνυμία «ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ.",
+              "bbox": [
+                96.41999816894531,
+                288.45501708984375,
+                521.8825073242188,
+                302.43499755859375
+              ],
+              "normalized_bbox": [
+                0.16196330877963214,
+                0.34261571520464273,
+                0.8766419755820418,
+                0.3592205954219137
+              ]
+            }
+          ],
+          "supporting_text_anchors": [
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 2,
+              "method": "digital",
+              "text": "ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. \nΙΩΑΚΕΙΜΑΡΟΣ",
+              "start": 432,
+              "end": 473,
+              "context": " ΡΠΓ4ΧΡ-5ΚΧ) \n3) Την άμεση και επιτακτική ανάγκη για προμήθεια και τοποθέτηση μίας \n(1) \nκλιματιστικής \nμονάδας \nστην \nαίθουσα \nακροατηρίου \nτης \nΠεριφερειακής Έδρας Σικυώνος του Πρωτοδικείου Κορίνθου  \n \nΑναθέτουμε \nστην επιχείρηση με την επωνυμία «ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. \nΙΩΑΚΕΙΜΑΡΟΣ», Κιάτο Κορινθίας (Εθνικής Αντίστασης αρ. 98), την προμήθεια \nκαι τοποθέτηση μίας (1) κλιματιστικής μονάδας τύπου ντουλάπας στην \nαίθουσα ακροατηρίου της Περιφερειακής Έδρας Σικυώνος του Πρωτοδικείου \nΚορίνθου, \nαντί \nτου \nσυνολικού \nποσού \nτων \n3.5",
+              "context_start": 182,
+              "context_end": 723
+            }
+          ],
+          "considered_text_anchors": [
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 2,
+              "method": "digital",
+              "text": "ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. \nΙΩΑΚΕΙΜΑΡΟΣ",
+              "start": 432,
+              "end": 473,
+              "context": " ΡΠΓ4ΧΡ-5ΚΧ) \n3) Την άμεση και επιτακτική ανάγκη για προμήθεια και τοποθέτηση μίας \n(1) \nκλιματιστικής \nμονάδας \nστην \nαίθουσα \nακροατηρίου \nτης \nΠεριφερειακής Έδρας Σικυώνος του Πρωτοδικείου Κορίνθου  \n \nΑναθέτουμε \nστην επιχείρηση με την επωνυμία «ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. \nΙΩΑΚΕΙΜΑΡΟΣ», Κιάτο Κορινθίας (Εθνικής Αντίστασης αρ. 98), την προμήθεια \nκαι τοποθέτηση μίας (1) κλιματιστικής μονάδας τύπου ντουλάπας στην \nαίθουσα ακροατηρίου της Περιφερειακής Έδρας Σικυώνος του Πρωτοδικείου \nΚορίνθου, \nαντί \nτου \nσυνολικού \nποσού \nτων \n3.5",
+              "context_start": 182,
+              "context_end": 723
+            }
+          ],
+          "explanation": "Η απόφαση αναθέτει ρητά στην επιχείρηση «ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. ΙΩΑΚΕΙΜΑΡΟΣ» την προμήθεια και τοποθέτηση κλιματιστικής μονάδας, καθορίζοντας έτσι ρητή ανάθεση και όχι απλή αναφορά.",
+          "verification_method": "llm_evidence_verification"
+        },
+        "document_type": {
+          "field_name": "document_type",
+          "claimed_value": "Πράξη αναθέσεως",
+          "verdict": "insufficient_evidence",
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "considered_text_anchors": [],
+          "explanation": "The supplied excerpt identifies the document as a 'Πράξη του Διευθύνοντος το Πρωτοδικείο Κορίνθου' (Act of the President of the Corinth First Instance Court), which is a judicial/administrative act, not a 'Πράξη αναθέσεως' (Award/Contracting Act). The claimed document type is not supported by the evidence.",
+          "verification_method": "llm_evidence_verification"
+        }
+      },
+      "final_decisions": {
+        "document_type": {
+          "initial_action": "reprocess",
+          "final_action": "review",
+          "reason": "Available evidence is insufficient",
+          "semantic_verdict": "insufficient_evidence",
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "initial_action": "repair_evidence",
+          "final_action": "repair_evidence",
+          "reason": "Value anchored; evidence quotation needs repair",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "initial_action": "review",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 2,
+              "method": "digital",
+              "region_index": 13,
+              "text": "στην επιχείρηση με την επωνυμία «ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ.",
+              "bbox": [
+                96.41999816894531,
+                288.45501708984375,
+                521.8825073242188,
+                302.43499755859375
+              ],
+              "normalized_bbox": [
+                0.16196330877963214,
+                0.34261571520464273,
+                0.8766419755820418,
+                0.3592205954219137
+              ]
+            }
+          ],
+          "supporting_text_anchors": [
+            {
+              "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+              "page_number": 2,
+              "method": "digital",
+              "text": "ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. \nΙΩΑΚΕΙΜΑΡΟΣ",
+              "start": 432,
+              "end": 473,
+              "context": " ΡΠΓ4ΧΡ-5ΚΧ) \n3) Την άμεση και επιτακτική ανάγκη για προμήθεια και τοποθέτηση μίας \n(1) \nκλιματιστικής \nμονάδας \nστην \nαίθουσα \nακροατηρίου \nτης \nΠεριφερειακής Έδρας Σικυώνος του Πρωτοδικείου Κορίνθου  \n \nΑναθέτουμε \nστην επιχείρηση με την επωνυμία «ΨΥΞΗ ΚΛΙΜΑΤΙΣΜΟΣ ΕΞΑΕΡΙΣΜΟΣ. \nΙΩΑΚΕΙΜΑΡΟΣ», Κιάτο Κορινθίας (Εθνικής Αντίστασης αρ. 98), την προμήθεια \nκαι τοποθέτηση μίας (1) κλιματιστικής μονάδας τύπου ντουλάπας στην \nαίθουσα ακροατηρίου της Περιφερειακής Έδρας Σικυώνος του Πρωτοδικείου \nΚορίνθου, \nαντί \nτου \nσυνολικού \nποσού \nτων \n3.5",
+              "context_start": 182,
+              "context_end": 723
+            }
+          ],
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        }
+      },
+      "evidence_repairs": {
+        "issuing_authority": {
+          "original_value": "Πρωτοδικείο Κορίνθου",
+          "original_evidence": "Αναφέρεται ρητά ως 'Πρωτοδικείο Κορίνθου' και υπογράφεται από τον 'Διευθύνων το Πρωτοδικείο Κορίνθου'.",
+          "repaired_evidence": "Πράξη του Διευθύνοντος το Πρωτοδικείο Κορίνθου (ΑΔΑ: ΡΠΓ4ΧΡ-5ΚΧ)",
+          "source_reference": {
+            "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+            "page_number": 2,
+            "method": "digital",
+            "region_index": 2,
+            "text": "Πράξη του Διευθύνοντος το Πρωτοδικείο Κορίνθου (ΑΔΑ: ΡΠΓ4ΧΡ-5ΚΧ)",
+            "bbox": [
+              114.44000244140625,
+              94.63499450683594,
+              520.6394653320312,
+              108.61499786376953
+            ],
+            "normalized_bbox": [
+              0.19223275050972843,
+              0.11240378709117148,
+              0.8745539523728529,
+              0.12900869449414193
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        },
+        "recipient": {
+          "original_value": "Πρωτοδικείο Κορίνθου",
+          "original_evidence": "Η αναθέτωση γίνεται για την κάλυψη ανάγκης του ίδιου του Πρωτοδικείου Κορίνθου (τοποθέτηση κλιματισμού στην αίθουσα ακροατηρίου του).",
+          "repaired_evidence": "Πράξη του Διευθύνοντος το Πρωτοδικείο Κορίνθου (ΑΔΑ: ΡΠΓ4ΧΡ-5ΚΧ)",
+          "source_reference": {
+            "document_id": "ΨΓΥΖ4ΧΡ-3Θ3",
+            "page_number": 2,
+            "method": "digital",
+            "region_index": 2,
+            "text": "Πράξη του Διευθύνοντος το Πρωτοδικείο Κορίνθου (ΑΔΑ: ΡΠΓ4ΧΡ-5ΚΧ)",
+            "bbox": [
+              114.44000244140625,
+              94.63499450683594,
+              520.6394653320312,
+              108.61499786376953
+            ],
+            "normalized_bbox": [
+              0.19223275050972843,
+              0.11240378709117148,
+              0.8745539523728529,
+              0.12900869449414193
+            ]
+          },
+          "repair_method": "deterministic_source_anchor"
+        }
+      },
+      "retry_count": 0,
+      "correction_history": [],
+      "metrics": {
+        "load_duration_sec": 0.016,
+        "routing_duration_sec": 0.013,
+        "processing_duration_sec": 0.0,
+        "extraction_duration_sec": 1.23,
+        "reflection_feedback_used": false,
+        "verification_duration_sec": 0.002,
+        "semantic_verification_duration_sec": 35.906
+      },
+      "error": null,
+      "api_rate_limit_retries": 2
+    },
+    {
+      "annotation_id": "65ΓΦ6-Θ5Μ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/65ΓΦ6-Θ5Μ.pdf",
+      "page_number": 1,
+      "review_status": "verified",
+      "split": "dev",
+      "status": "success",
+      "latency_sec": 106.283,
+      "workflow_status": "review_required",
+      "routing": {
+        "decision": "tesseract",
+        "execution_method": "tesseract",
+        "reason": "Unassigned Unicode characters in digital text",
+        "quality": {
+          "text_chars": 1799,
+          "image_count": 0,
+          "image_coverage": 0.0,
+          "suspicious_text_ratio": 0.0,
+          "visual_ink_ratio": 0.0646,
+          "greek_letter_ratio": 0.8935,
+          "unassigned_char_count": 15
+        },
+        "fallback_used": false
+      },
+      "processing_method": "tesseract",
+      "prediction": {
+        "document_type": {
+          "value": "ΔΙΑΤΑΓΗ ΔΙΟΙΚΗΤΟΥ",
+          "status": "present",
+          "evidence": "ΔΙΑΤΑΓΗ AIOIKHTOY Υπ’αριθµ. «592/26»"
+        },
+        "issuing_authority": {
+          "value": "ΚΕΝΑΠ",
+          "status": "present",
+          "evidence": "ΠΡΟΣ: Υπόλογο Ειδικής Διαχείρισης ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ... ΚΕΝΑΠ/ΝΜΙΟΤΟ... Διαγγελείο Διοικητού KENAN/NMIOTC"
+        },
+        "recipient": {
+          "value": "Υπόλογο Ειδικής Διαχείρισης ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ «Κοστολόγηση Παροχών ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ Εκπαιδεύσεων»",
+          "status": "present",
+          "evidence": "ΠΡΟΣ: Υπόλογο Ειδικής Διαχείρισης ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ «Κοστολόγηση Παροχών ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ Εκπαιδεύσεων»"
+        },
+        "contractor": {
+          "value": "ΘΥΜΙΑΝΟΣ Α.Ε.",
+          "status": "present",
+          "evidence": "στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.»"
+        },
+        "contractor_tax_id": {
+          "value": "092597210",
+          "status": "present",
+          "evidence": "(A®M:092597210)"
+        }
+      },
+      "verification": {
+        "document_type": {
+          "value_grounding": {
+            "status": "unsupported",
+            "score": 0.647
+          },
+          "evidence_matching": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "issuing_authority": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.638
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "recipient": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": false
+        },
+        "contractor": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": false
+        },
+        "contractor_tax_id": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": {
+            "status": "valid",
+            "reason": "Valid Greek AFM format and checksum"
+          },
+          "verification_status": "checked",
+          "review_required": false
+        }
+      },
+      "field_decisions": {
+        "document_type": {
+          "action": "reprocess",
+          "reason": "Extracted value not supported by source text",
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "action": "accept",
+          "reason": "Value and evidence are textually supported",
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "action": "accept",
+          "reason": "Value and evidence are textually supported",
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "action": "accept",
+          "reason": "Value and evidence are textually supported",
+          "decision_source": "verification"
+        }
+      },
+      "semantic_verification": {
+        "contractor": {
+          "field_name": "contractor",
+          "claimed_value": "ΘΥΜΙΑΝΟΣ Α.Ε.",
+          "verdict": "supported",
+          "supporting_sources": [],
+          "supporting_text_anchors": [
+            {
+              "document_id": "65ΓΦ6-Θ5Μ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "ΘΥΜΙΑΝΟΣ Α.Ε.",
+              "start": 754,
+              "end": 767,
+              "context": "\ny.®.800/61/2101/2.1136/13 NOE 25/KENAN\n6. NAA 091355Z IAN 26/4ΕΝ\n\n1. Παραγγέλλω, όπως διατεθεί το ποσό των Τριάντα τεσσάρων ευρώ\nκαι ενός λεπτού (34,01€) από το κεφάλαιο της Ειδικής Διαχείρισης «ΙΚοστολόγηση\nΠαροχών Εκπαιδεύσεως», στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.», (A®M:092597210),\nγια προμήθεια ειδών εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το ποσό των (1,36€) από το κεφάλαιο της ανωτέρω\nΔιαχείρισης για κάλυψη αντιστοιχούντος κόστους κράτησης 4% υπέρ EKOEMN.\n\n3. Αριθµό",
+              "context_start": 504,
+              "context_end": 1017
+            }
+          ],
+          "considered_text_anchors": [
+            {
+              "document_id": "65ΓΦ6-Θ5Μ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "ΘΥΜΙΑΝΟΣ Α.Ε.",
+              "start": 754,
+              "end": 767,
+              "context": "\ny.®.800/61/2101/2.1136/13 NOE 25/KENAN\n6. NAA 091355Z IAN 26/4ΕΝ\n\n1. Παραγγέλλω, όπως διατεθεί το ποσό των Τριάντα τεσσάρων ευρώ\nκαι ενός λεπτού (34,01€) από το κεφάλαιο της Ειδικής Διαχείρισης «ΙΚοστολόγηση\nΠαροχών Εκπαιδεύσεως», στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.», (A®M:092597210),\nγια προμήθεια ειδών εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το ποσό των (1,36€) από το κεφάλαιο της ανωτέρω\nΔιαχείρισης για κάλυψη αντιστοιχούντος κόστους κράτησης 4% υπέρ EKOEMN.\n\n3. Αριθµό",
+              "context_start": 504,
+              "context_end": 1017
+            }
+          ],
+          "explanation": "Η απόφαση παραγγέλλει τη διάθεση ποσού στην επιχείρηση «ΘΥΜΙΑΝΟΣ Α.Ε.» για προμήθεια ειδών εθιμοτυπίας, δηλαδή ρητή ανάθεση προμήθειας αγαθών σε αυτήν, η οποία την καθιστά αναδόχο.",
+          "verification_method": "llm_evidence_verification"
+        },
+        "contractor_tax_id": {
+          "field_name": "contractor_tax_id",
+          "claimed_value": "092597210",
+          "verdict": "supported",
+          "supporting_sources": [],
+          "supporting_text_anchors": [
+            {
+              "document_id": "65ΓΦ6-Θ5Μ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "092597210",
+              "start": 775,
+              "end": 784,
+              "context": "36/13 NOE 25/KENAN\n6. NAA 091355Z IAN 26/4ΕΝ\n\n1. Παραγγέλλω, όπως διατεθεί το ποσό των Τριάντα τεσσάρων ευρώ\nκαι ενός λεπτού (34,01€) από το κεφάλαιο της Ειδικής Διαχείρισης «ΙΚοστολόγηση\nΠαροχών Εκπαιδεύσεως», στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.», (A®M:092597210),\nγια προμήθεια ειδών εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το ποσό των (1,36€) από το κεφάλαιο της ανωτέρω\nΔιαχείρισης για κάλυψη αντιστοιχούντος κόστους κράτησης 4% υπέρ EKOEMN.\n\n3. Αριθµός untpwou δεσμεύσ",
+              "context_start": 525,
+              "context_end": 1034
+            }
+          ],
+          "considered_text_anchors": [
+            {
+              "document_id": "65ΓΦ6-Θ5Μ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "092597210",
+              "start": 775,
+              "end": 784,
+              "context": "36/13 NOE 25/KENAN\n6. NAA 091355Z IAN 26/4ΕΝ\n\n1. Παραγγέλλω, όπως διατεθεί το ποσό των Τριάντα τεσσάρων ευρώ\nκαι ενός λεπτού (34,01€) από το κεφάλαιο της Ειδικής Διαχείρισης «ΙΚοστολόγηση\nΠαροχών Εκπαιδεύσεως», στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.», (A®M:092597210),\nγια προμήθεια ειδών εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το ποσό των (1,36€) από το κεφάλαιο της ανωτέρω\nΔιαχείρισης για κάλυψη αντιστοιχούντος κόστους κράτησης 4% υπέρ EKOEMN.\n\n3. Αριθµός untpwou δεσμεύσ",
+              "context_start": 525,
+              "context_end": 1034
+            }
+          ],
+          "explanation": "Η απόφαση διατάσσει τη διάθεση ποσού στην επιχείρηση «ΘΥΜΙΑΝΟΣ Α.Ε.», (ΑΦΜ:092597210), για προμήθεια ειδών, καθιστώντας την ως αναδόχο/παραλήπτη της προμήθειας και συνδέοντας ρητά το ΑΦΜ 092597210 με αυτήν.",
+          "verification_method": "llm_evidence_verification"
+        }
+      },
+      "final_decisions": {
+        "document_type": {
+          "initial_action": "reprocess",
+          "final_action": "reprocess",
+          "reason": "Extracted value not supported by source text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "initial_action": "review",
+          "final_action": "review",
+          "reason": "Verification remains ambiguous",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "Value and evidence are textually supported",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "contractor": {
+          "initial_action": "accept",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [],
+          "supporting_text_anchors": [
+            {
+              "document_id": "65ΓΦ6-Θ5Μ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "ΘΥΜΙΑΝΟΣ Α.Ε.",
+              "start": 754,
+              "end": 767,
+              "context": "\ny.®.800/61/2101/2.1136/13 NOE 25/KENAN\n6. NAA 091355Z IAN 26/4ΕΝ\n\n1. Παραγγέλλω, όπως διατεθεί το ποσό των Τριάντα τεσσάρων ευρώ\nκαι ενός λεπτού (34,01€) από το κεφάλαιο της Ειδικής Διαχείρισης «ΙΚοστολόγηση\nΠαροχών Εκπαιδεύσεως», στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.», (A®M:092597210),\nγια προμήθεια ειδών εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το ποσό των (1,36€) από το κεφάλαιο της ανωτέρω\nΔιαχείρισης για κάλυψη αντιστοιχούντος κόστους κράτησης 4% υπέρ EKOEMN.\n\n3. Αριθµό",
+              "context_start": 504,
+              "context_end": 1017
+            }
+          ],
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "initial_action": "accept",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [],
+          "supporting_text_anchors": [
+            {
+              "document_id": "65ΓΦ6-Θ5Μ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "092597210",
+              "start": 775,
+              "end": 784,
+              "context": "36/13 NOE 25/KENAN\n6. NAA 091355Z IAN 26/4ΕΝ\n\n1. Παραγγέλλω, όπως διατεθεί το ποσό των Τριάντα τεσσάρων ευρώ\nκαι ενός λεπτού (34,01€) από το κεφάλαιο της Ειδικής Διαχείρισης «ΙΚοστολόγηση\nΠαροχών Εκπαιδεύσεως», στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.», (A®M:092597210),\nγια προμήθεια ειδών εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το ποσό των (1,36€) από το κεφάλαιο της ανωτέρω\nΔιαχείρισης για κάλυψη αντιστοιχούντος κόστους κράτησης 4% υπέρ EKOEMN.\n\n3. Αριθµός untpwou δεσμεύσ",
+              "context_start": 525,
+              "context_end": 1034
+            }
+          ],
+          "decision_source": "verification"
+        }
+      },
+      "evidence_repairs": {
+        "issuing_authority": {
+          "original_value": "ΚΕΝΑΠ",
+          "original_evidence": "ΠΡΟΣ: Υπόλογο Ειδικής Διαχείρισης ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ... ΚΕΝΑΠ/ΝΜΙΟΤΟ... Διαγγελείο Διοικητού KENAN/NMIOTC",
+          "repaired_evidence": "εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το πο",
+          "text_anchor": {
+            "text": "ΚΕΝΑΠ",
+            "start": 847,
+            "end": 852,
+            "context": "εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το πο",
+            "context_start": 807,
+            "context_end": 892
+          },
+          "source_reference": null,
+          "repair_method": "text_evidence_proposal"
+        }
+      },
+      "retry_count": 1,
+      "correction_history": [
+        {
+          "attempt": 1,
+          "action": "reflect",
+          "previous_method": "tesseract",
+          "next_method": "tesseract",
+          "reason": "Re-extract from the same text with verification feedback",
+          "feedback": "Στην προηγούμενη προσπάθεια εντοπίστηκαν τα εξής προβλήματα:\n- document_type: η τιμή «Διαταγή Διοικητού» απορρίφθηκε. Λόγος: Extracted value not supported by source text.\n- issuing_authority: η τιμή «ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ (ΚΕΝΑΠ)» απορρίφθηκε. Λόγος: Extracted value not supported by source text.\nΞαναέλεγξε προσεκτικά αυτά τα πεδία στο κείμενο. Αν η σωστή τιμή δεν υπάρχει, δήλωσε not_present ή uncertain. Μην επαναλάβεις τιμές που απορρίφθηκαν.",
+          "previous_extraction": {
+            "document_type": {
+              "value": "Διαταγή Διοικητού",
+              "status": "present",
+              "evidence": "ΔΙΑΤΑΓΗ AIOIKHTOY Υπ’αριθµ. «592/26»"
+            },
+            "issuing_authority": {
+              "value": "ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ (ΚΕΝΑΠ)",
+              "status": "present",
+              "evidence": "Υπόλογο Ειδικής Διαχείρισης ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ «Κοστολόγηση Παροχών ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ Εκπαιδεύσεων»"
+            },
+            "recipient": {
+              "value": "Υπόλογο Ειδικής Διαχείρισης ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ «Κοστολόγηση Παροχών ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ Εκπαιδεύσεων»",
+              "status": "present",
+              "evidence": "ΠΡΟΣ: Υπόλογο Ειδικής Διαχείρισης ΚΕΝΤΡΟ ΕΚΠΑΙΔΕΥΣΗΣ «Κοστολόγηση Παροχών ΝΑΥΤΙΚΗΣ ΑΠΟΤΡΟΠΗΣ Εκπαιδεύσεων»"
+            },
+            "contractor": {
+              "value": "ΘΥΜΙΑΝΟΣ Α.Ε.",
+              "status": "present",
+              "evidence": "στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.»"
+            },
+            "contractor_tax_id": {
+              "value": "092597210",
+              "status": "present",
+              "evidence": "(A®M:092597210)"
+            }
+          },
+          "previous_verification": {
+            "document_type": {
+              "value_grounding": {
+                "status": "unsupported",
+                "score": 0.647
+              },
+              "evidence_matching": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": true
+            },
+            "issuing_authority": {
+              "value_grounding": {
+                "status": "unsupported",
+                "score": 0.644
+              },
+              "evidence_matching": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": true
+            },
+            "recipient": {
+              "value_grounding": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "evidence_matching": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": false
+            },
+            "contractor": {
+              "value_grounding": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "evidence_matching": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": false
+            },
+            "contractor_tax_id": {
+              "value_grounding": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "evidence_matching": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": {
+                "status": "valid",
+                "reason": "Valid Greek AFM format and checksum"
+              },
+              "verification_status": "checked",
+              "review_required": false
+            }
+          },
+          "previous_final_decisions": {
+            "document_type": {
+              "initial_action": "reprocess",
+              "final_action": "reprocess",
+              "reason": "Extracted value not supported by source text",
+              "semantic_verdict": null,
+              "supporting_sources": [],
+              "supporting_text_anchors": [],
+              "decision_source": "verification"
+            },
+            "issuing_authority": {
+              "initial_action": "reprocess",
+              "final_action": "reprocess",
+              "reason": "Extracted value not supported by source text",
+              "semantic_verdict": null,
+              "supporting_sources": [],
+              "supporting_text_anchors": [],
+              "decision_source": "verification"
+            },
+            "recipient": {
+              "initial_action": "accept",
+              "final_action": "accept",
+              "reason": "Value and evidence are textually supported",
+              "semantic_verdict": null,
+              "supporting_sources": [],
+              "supporting_text_anchors": [],
+              "decision_source": "verification"
+            },
+            "contractor": {
+              "initial_action": "accept",
+              "final_action": "accept_with_evidence",
+              "reason": "Semantic verification supports the claim",
+              "semantic_verdict": "supported",
+              "supporting_sources": [],
+              "supporting_text_anchors": [
+                {
+                  "document_id": "65ΓΦ6-Θ5Μ",
+                  "page_number": 1,
+                  "method": "tesseract",
+                  "text": "ΘΥΜΙΑΝΟΣ Α.Ε.",
+                  "start": 754,
+                  "end": 767,
+                  "context": "\ny.®.800/61/2101/2.1136/13 NOE 25/KENAN\n6. NAA 091355Z IAN 26/4ΕΝ\n\n1. Παραγγέλλω, όπως διατεθεί το ποσό των Τριάντα τεσσάρων ευρώ\nκαι ενός λεπτού (34,01€) από το κεφάλαιο της Ειδικής Διαχείρισης «ΙΚοστολόγηση\nΠαροχών Εκπαιδεύσεως», στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.», (A®M:092597210),\nγια προμήθεια ειδών εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το ποσό των (1,36€) από το κεφάλαιο της ανωτέρω\nΔιαχείρισης για κάλυψη αντιστοιχούντος κόστους κράτησης 4% υπέρ EKOEMN.\n\n3. Αριθµό",
+                  "context_start": 504,
+                  "context_end": 1017
+                }
+              ],
+              "decision_source": "verification"
+            },
+            "contractor_tax_id": {
+              "initial_action": "accept",
+              "final_action": "accept_with_evidence",
+              "reason": "Semantic verification supports the claim",
+              "semantic_verdict": "supported",
+              "supporting_sources": [],
+              "supporting_text_anchors": [
+                {
+                  "document_id": "65ΓΦ6-Θ5Μ",
+                  "page_number": 1,
+                  "method": "tesseract",
+                  "text": "092597210",
+                  "start": 775,
+                  "end": 784,
+                  "context": "36/13 NOE 25/KENAN\n6. NAA 091355Z IAN 26/4ΕΝ\n\n1. Παραγγέλλω, όπως διατεθεί το ποσό των Τριάντα τεσσάρων ευρώ\nκαι ενός λεπτού (34,01€) από το κεφάλαιο της Ειδικής Διαχείρισης «ΙΚοστολόγηση\nΠαροχών Εκπαιδεύσεως», στην επιχείρηση: «ΘΥΜΙΑΝΟΣ Α.Ε.», (A®M:092597210),\nγια προμήθεια ειδών εθιµοτυπίας στο πλαίσιο κάλυψης αναγκών ΚΕΝΑΠ/ΝΜΙΟΤΟ.\n\n2. Επιπλέον, να διατεθεί το ποσό των (1,36€) από το κεφάλαιο της ανωτέρω\nΔιαχείρισης για κάλυψη αντιστοιχούντος κόστους κράτησης 4% υπέρ EKOEMN.\n\n3. Αριθµός untpwou δεσμεύσ",
+                  "context_start": 525,
+                  "context_end": 1034
+                }
+              ],
+              "decision_source": "verification"
+            }
+          }
+        }
+      ],
+      "metrics": {
+        "load_duration_sec": 0.012,
+        "routing_duration_sec": 0.018,
+        "processing_duration_sec": 4.971,
+        "extraction_duration_sec": 1.059,
+        "reflection_feedback_used": true,
+        "verification_duration_sec": 0.002,
+        "semantic_verification_duration_sec": 42.931
+      },
+      "error": null,
+      "api_rate_limit_retries": 1
+    },
+    {
+      "annotation_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ_page1_pilot_candidate_v1",
+      "pdf_path": "data/discovery/ΨΡ6Ξ469ΗΡΘ-7ΝΗ.pdf",
+      "page_number": 1,
+      "review_status": "verified",
+      "split": "dev",
+      "status": "success",
+      "latency_sec": 85.726,
+      "workflow_status": "review_required",
+      "routing": {
+        "decision": "tesseract",
+        "execution_method": "tesseract",
+        "reason": "Visible content exceeds available digital text",
+        "quality": {
+          "text_chars": 304,
+          "image_count": 3,
+          "image_coverage": 0.2689,
+          "suspicious_text_ratio": 0.0,
+          "visual_ink_ratio": 0.0591,
+          "greek_letter_ratio": 0.4796,
+          "unassigned_char_count": 0
+        },
+        "fallback_used": false
+      },
+      "processing_method": "tesseract",
+      "prediction": {
+        "document_type": {
+          "value": "Απόφαση",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει ρητά «ΑΠΟΦΑΣΗ» και περιγράφει τη διαδικασία λήψης απόφασης από τη Διοικητική Επιτροπή."
+        },
+        "issuing_authority": {
+          "value": "Επιμελητήριο Θεσσαλονίκης",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «η Διοικητική Επιτροπή του Επιμελητηρίου» και αργότερα «του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσσαλονίκης». Η προηγούμενη τιμή απορρίφθηκε, οπότε χρησιμοποιώ την πιο γενική και σαφή αναφορά «Επιμελητήριο Θεσσαλονίκης» που υποστηρίζεται από το «Επιμελητηρίου» και τη γεωγραφική αναφορά «ΘΕΣΣΑΛΟΝΙΚΗ»."
+        },
+        "recipient": {
+          "value": null,
+          "status": "not_present",
+          "evidence": null
+        },
+        "contractor": {
+          "value": "ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ»»."
+        },
+        "contractor_tax_id": {
+          "value": "105014125",
+          "status": "present",
+          "evidence": "Το κείμενο αναφέρει «Α.Φ.Μ. 105014125» αμέσως μετά το όνομα του αναδόχου."
+        }
+      },
+      "verification": {
+        "document_type": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.509
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "issuing_authority": {
+          "value_grounding": {
+            "status": "unsupported",
+            "score": 0.88
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.466
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "recipient": {
+          "value_grounding": null,
+          "evidence_matching": null,
+          "spatial_grounding": null,
+          "source_references": [],
+          "absence_check": {
+            "status": "supported",
+            "cues": [],
+            "reason": "No field cues found in page text"
+          },
+          "verification_status": "absence_checked",
+          "review_required": false,
+          "reason": "No field cues found in page text"
+        },
+        "contractor": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.83
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": null,
+          "verification_status": "checked",
+          "review_required": true
+        },
+        "contractor_tax_id": {
+          "value_grounding": {
+            "status": "supported",
+            "score": 1.0
+          },
+          "evidence_matching": {
+            "status": "unsupported",
+            "score": 0.507
+          },
+          "spatial_grounding": null,
+          "source_references": [],
+          "deterministic_validation": {
+            "status": "valid",
+            "reason": "Valid Greek AFM format and checksum"
+          },
+          "verification_status": "checked",
+          "review_required": true
+        }
+      },
+      "field_decisions": {
+        "document_type": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "action": "reprocess",
+          "reason": "Extracted value not supported by source text",
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "action": "accept",
+          "reason": "No field cues found in page text",
+          "decision_source": "absence_check"
+        },
+        "contractor": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "action": "review",
+          "reason": "Verification remains ambiguous",
+          "decision_source": "verification"
+        }
+      },
+      "semantic_verification": {
+        "contractor": {
+          "field_name": "contractor",
+          "claimed_value": "ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+          "verdict": "supported",
+          "supporting_sources": [],
+          "supporting_text_anchors": [
+            {
+              "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+              "start": 909,
+              "end": 926,
+              "context": "χνικού Επιμελητηρίου Θεσσαλονίκης απόφαση Δ.Σ. 3/29-10-2025.\n3. Την µε Αριθ. 4-3 απόφαση Διοικητικής Επιτροπής ανάληψης υποχρέωσης.\n4. Την ανάγκη προμήθειας AOTIZTIKE> ΥΠΗΡΕΣΙΕΣ.\n\nΑΠΟΦΑΣΙΖΟΥΜΕ\n\n1. Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ», Α.Φ.Μ. 105014125, ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣΕ.,\nέδρα ΜΗΤΡΟΠΟΛΕΩΣ 6 54625 ΘΕΣΣΑΛΟΝΙΚΗ, τηλ 2310270001 και φαξ της προμήθειας ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ.\n\nH δαπάνη θα βαρύνει την πίστωση του Προὐπολογισμού Εξόδων 2026 του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσ",
+              "context_start": 659,
+              "context_end": 1176
+            }
+          ],
+          "considered_text_anchors": [
+            {
+              "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+              "start": 909,
+              "end": 926,
+              "context": "χνικού Επιμελητηρίου Θεσσαλονίκης απόφαση Δ.Σ. 3/29-10-2025.\n3. Την µε Αριθ. 4-3 απόφαση Διοικητικής Επιτροπής ανάληψης υποχρέωσης.\n4. Την ανάγκη προμήθειας AOTIZTIKE> ΥΠΗΡΕΣΙΕΣ.\n\nΑΠΟΦΑΣΙΖΟΥΜΕ\n\n1. Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ», Α.Φ.Μ. 105014125, ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣΕ.,\nέδρα ΜΗΤΡΟΠΟΛΕΩΣ 6 54625 ΘΕΣΣΑΛΟΝΙΚΗ, τηλ 2310270001 και φαξ της προμήθειας ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ.\n\nH δαπάνη θα βαρύνει την πίστωση του Προὐπολογισμού Εξόδων 2026 του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσ",
+              "context_start": 659,
+              "context_end": 1176
+            }
+          ],
+          "explanation": "Η απόφαση εγκρίνει ρητά την ανάθεση της προμήθειας ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ στην επιχείρηση με επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ», καθιστώντας τον ως τον αναθέτη/αποδέκτη της σύμβασης.",
+          "verification_method": "llm_evidence_verification"
+        },
+        "contractor_tax_id": {
+          "field_name": "contractor_tax_id",
+          "claimed_value": "105014125",
+          "verdict": "supported",
+          "supporting_sources": [],
+          "supporting_text_anchors": [
+            {
+              "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "105014125",
+              "start": 936,
+              "end": 945,
+              "context": "ονίκης απόφαση Δ.Σ. 3/29-10-2025.\n3. Την µε Αριθ. 4-3 απόφαση Διοικητικής Επιτροπής ανάληψης υποχρέωσης.\n4. Την ανάγκη προμήθειας AOTIZTIKE> ΥΠΗΡΕΣΙΕΣ.\n\nΑΠΟΦΑΣΙΖΟΥΜΕ\n\n1. Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ», Α.Φ.Μ. 105014125, ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣΕ.,\nέδρα ΜΗΤΡΟΠΟΛΕΩΣ 6 54625 ΘΕΣΣΑΛΟΝΙΚΗ, τηλ 2310270001 και φαξ της προμήθειας ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ.\n\nH δαπάνη θα βαρύνει την πίστωση του Προὐπολογισμού Εξόδων 2026 του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσσαλονίκης µε\nK.A.E.",
+              "context_start": 686,
+              "context_end": 1195
+            }
+          ],
+          "considered_text_anchors": [
+            {
+              "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "105014125",
+              "start": 936,
+              "end": 945,
+              "context": "ονίκης απόφαση Δ.Σ. 3/29-10-2025.\n3. Την µε Αριθ. 4-3 απόφαση Διοικητικής Επιτροπής ανάληψης υποχρέωσης.\n4. Την ανάγκη προμήθειας AOTIZTIKE> ΥΠΗΡΕΣΙΕΣ.\n\nΑΠΟΦΑΣΙΖΟΥΜΕ\n\n1. Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ», Α.Φ.Μ. 105014125, ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣΕ.,\nέδρα ΜΗΤΡΟΠΟΛΕΩΣ 6 54625 ΘΕΣΣΑΛΟΝΙΚΗ, τηλ 2310270001 και φαξ της προμήθειας ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ.\n\nH δαπάνη θα βαρύνει την πίστωση του Προὐπολογισμού Εξόδων 2026 του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσσαλονίκης µε\nK.A.E.",
+              "context_start": 686,
+              "context_end": 1195
+            }
+          ],
+          "explanation": "Η απόφαση εγκρίνει την ανάθεση της προμήθειας στην επιχείρηση «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ» με Α.Φ.Μ. 105014125, establishing both the contractor role and the explicit link of the tax ID to that contractor.",
+          "verification_method": "llm_evidence_verification"
+        }
+      },
+      "final_decisions": {
+        "document_type": {
+          "initial_action": "review",
+          "final_action": "review",
+          "reason": "Verification remains ambiguous",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "issuing_authority": {
+          "initial_action": "reprocess",
+          "final_action": "reprocess",
+          "reason": "Extracted value not supported by source text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "verification"
+        },
+        "recipient": {
+          "initial_action": "accept",
+          "final_action": "accept",
+          "reason": "No field cues found in page text",
+          "semantic_verdict": null,
+          "supporting_sources": [],
+          "supporting_text_anchors": [],
+          "decision_source": "absence_check"
+        },
+        "contractor": {
+          "initial_action": "review",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [],
+          "supporting_text_anchors": [
+            {
+              "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+              "start": 909,
+              "end": 926,
+              "context": "χνικού Επιμελητηρίου Θεσσαλονίκης απόφαση Δ.Σ. 3/29-10-2025.\n3. Την µε Αριθ. 4-3 απόφαση Διοικητικής Επιτροπής ανάληψης υποχρέωσης.\n4. Την ανάγκη προμήθειας AOTIZTIKE> ΥΠΗΡΕΣΙΕΣ.\n\nΑΠΟΦΑΣΙΖΟΥΜΕ\n\n1. Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ», Α.Φ.Μ. 105014125, ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣΕ.,\nέδρα ΜΗΤΡΟΠΟΛΕΩΣ 6 54625 ΘΕΣΣΑΛΟΝΙΚΗ, τηλ 2310270001 και φαξ της προμήθειας ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ.\n\nH δαπάνη θα βαρύνει την πίστωση του Προὐπολογισμού Εξόδων 2026 του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσ",
+              "context_start": 659,
+              "context_end": 1176
+            }
+          ],
+          "decision_source": "verification"
+        },
+        "contractor_tax_id": {
+          "initial_action": "review",
+          "final_action": "accept_with_evidence",
+          "reason": "Semantic verification supports the claim",
+          "semantic_verdict": "supported",
+          "supporting_sources": [],
+          "supporting_text_anchors": [
+            {
+              "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+              "page_number": 1,
+              "method": "tesseract",
+              "text": "105014125",
+              "start": 936,
+              "end": 945,
+              "context": "ονίκης απόφαση Δ.Σ. 3/29-10-2025.\n3. Την µε Αριθ. 4-3 απόφαση Διοικητικής Επιτροπής ανάληψης υποχρέωσης.\n4. Την ανάγκη προμήθειας AOTIZTIKE> ΥΠΗΡΕΣΙΕΣ.\n\nΑΠΟΦΑΣΙΖΟΥΜΕ\n\n1. Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ», Α.Φ.Μ. 105014125, ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣΕ.,\nέδρα ΜΗΤΡΟΠΟΛΕΩΣ 6 54625 ΘΕΣΣΑΛΟΝΙΚΗ, τηλ 2310270001 και φαξ της προμήθειας ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ.\n\nH δαπάνη θα βαρύνει την πίστωση του Προὐπολογισμού Εξόδων 2026 του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσσαλονίκης µε\nK.A.E.",
+              "context_start": 686,
+              "context_end": 1195
+            }
+          ],
+          "decision_source": "verification"
+        }
+      },
+      "evidence_repairs": {
+        "document_type": {
+          "original_value": "Απόφαση",
+          "original_evidence": "Το κείμενο αναφέρει ρητά «ΑΠΟΦΑΣΗ» και περιγράφει τη διαδικασία λήψης απόφασης από τη Διοικητική Επιτροπή.",
+          "repaired_evidence": ", για να αποφασίσει στο παρακάτω θέµα:\n\nΑπόφαση δαπάνης προμήθειας ΛΟΓΙΣΤΙ«ΕΣ ΥΠΗΡΕΣΙΕΣ",
+          "text_anchor": {
+            "text": "Απόφαση",
+            "start": 353,
+            "end": 360,
+            "context": ", για να αποφασίσει στο παρακάτω θέµα:\n\nΑπόφαση δαπάνης προμήθειας ΛΟΓΙΣΤΙ«ΕΣ ΥΠΗΡΕΣΙΕΣ",
+            "context_start": 313,
+            "context_end": 400
+          },
+          "source_reference": null,
+          "repair_method": "text_evidence_proposal"
+        }
+      },
+      "retry_count": 1,
+      "correction_history": [
+        {
+          "attempt": 1,
+          "action": "reflect",
+          "previous_method": "tesseract",
+          "next_method": "tesseract",
+          "reason": "Re-extract from the same text with verification feedback",
+          "feedback": "Στην προηγούμενη προσπάθεια εντοπίστηκαν τα εξής προβλήματα:\n- issuing_authority: η τιμή «Βιοτεχνικό Επιμελητήριο Θεσσαλονίκης» απορρίφθηκε. Λόγος: Extracted value not supported by source text.\nΞαναέλεγξε προσεκτικά αυτά τα πεδία στο κείμενο. Αν η σωστή τιμή δεν υπάρχει, δήλωσε not_present ή uncertain. Μην επαναλάβεις τιμές που απορρίφθηκαν.",
+          "previous_extraction": {
+            "document_type": {
+              "value": "Απόφαση",
+              "status": "present",
+              "evidence": "Το κείμενο αναφέρει ρητά 'ΑΠΟΦΑΣΗ' και περιγράφει την έγκριση δαπάνης και ανάθεσης."
+            },
+            "issuing_authority": {
+              "value": "Βιοτεχνικό Επιμελητήριο Θεσσαλονίκης",
+              "status": "present",
+              "evidence": "Το κείμενο αναφέρει 'Διοικητική Επιτροπή του Επιμελητηρίου' και 'Προύπολογισμό Εξόδων 2026 του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσσαλονίκης'."
+            },
+            "recipient": {
+              "value": null,
+              "status": "not_present",
+              "evidence": null
+            },
+            "contractor": {
+              "value": "ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+              "status": "present",
+              "evidence": "Το κείμενο αναφέρει 'Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ»'."
+            },
+            "contractor_tax_id": {
+              "value": "105014125",
+              "status": "present",
+              "evidence": "Το κείμενο αναφέρει 'Α.Φ.Μ. 105014125' αμέσως μετά την επωνυμία του αναδόχου."
+            }
+          },
+          "previous_verification": {
+            "document_type": {
+              "value_grounding": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "evidence_matching": {
+                "status": "unsupported",
+                "score": 0.458
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": true
+            },
+            "issuing_authority": {
+              "value_grounding": {
+                "status": "unsupported",
+                "score": 0.861
+              },
+              "evidence_matching": {
+                "status": "unsupported",
+                "score": 0.691
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": true
+            },
+            "recipient": {
+              "value_grounding": null,
+              "evidence_matching": null,
+              "spatial_grounding": null,
+              "source_references": [],
+              "absence_check": {
+                "status": "supported",
+                "cues": [],
+                "reason": "No field cues found in page text"
+              },
+              "verification_status": "absence_checked",
+              "review_required": false,
+              "reason": "No field cues found in page text"
+            },
+            "contractor": {
+              "value_grounding": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "evidence_matching": {
+                "status": "unsupported",
+                "score": 0.83
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": null,
+              "verification_status": "checked",
+              "review_required": true
+            },
+            "contractor_tax_id": {
+              "value_grounding": {
+                "status": "supported",
+                "score": 1.0
+              },
+              "evidence_matching": {
+                "status": "unsupported",
+                "score": 0.455
+              },
+              "spatial_grounding": null,
+              "source_references": [],
+              "deterministic_validation": {
+                "status": "valid",
+                "reason": "Valid Greek AFM format and checksum"
+              },
+              "verification_status": "checked",
+              "review_required": true
+            }
+          },
+          "previous_final_decisions": {
+            "document_type": {
+              "initial_action": "review",
+              "final_action": "review",
+              "reason": "Verification remains ambiguous",
+              "semantic_verdict": null,
+              "supporting_sources": [],
+              "supporting_text_anchors": [],
+              "decision_source": "verification"
+            },
+            "issuing_authority": {
+              "initial_action": "reprocess",
+              "final_action": "reprocess",
+              "reason": "Extracted value not supported by source text",
+              "semantic_verdict": null,
+              "supporting_sources": [],
+              "supporting_text_anchors": [],
+              "decision_source": "verification"
+            },
+            "recipient": {
+              "initial_action": "accept",
+              "final_action": "accept",
+              "reason": "No field cues found in page text",
+              "semantic_verdict": null,
+              "supporting_sources": [],
+              "supporting_text_anchors": [],
+              "decision_source": "absence_check"
+            },
+            "contractor": {
+              "initial_action": "review",
+              "final_action": "accept_with_evidence",
+              "reason": "Semantic verification supports the claim",
+              "semantic_verdict": "supported",
+              "supporting_sources": [],
+              "supporting_text_anchors": [
+                {
+                  "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+                  "page_number": 1,
+                  "method": "tesseract",
+                  "text": "ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ",
+                  "start": 909,
+                  "end": 926,
+                  "context": "χνικού Επιμελητηρίου Θεσσαλονίκης απόφαση Δ.Σ. 3/29-10-2025.\n3. Την µε Αριθ. 4-3 απόφαση Διοικητικής Επιτροπής ανάληψης υποχρέωσης.\n4. Την ανάγκη προμήθειας AOTIZTIKE> ΥΠΗΡΕΣΙΕΣ.\n\nΑΠΟΦΑΣΙΖΟΥΜΕ\n\n1. Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ», Α.Φ.Μ. 105014125, ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣΕ.,\nέδρα ΜΗΤΡΟΠΟΛΕΩΣ 6 54625 ΘΕΣΣΑΛΟΝΙΚΗ, τηλ 2310270001 και φαξ της προμήθειας ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ.\n\nH δαπάνη θα βαρύνει την πίστωση του Προὐπολογισμού Εξόδων 2026 του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσ",
+                  "context_start": 659,
+                  "context_end": 1176
+                }
+              ],
+              "decision_source": "verification"
+            },
+            "contractor_tax_id": {
+              "initial_action": "review",
+              "final_action": "accept_with_evidence",
+              "reason": "Semantic verification supports the claim",
+              "semantic_verdict": "supported",
+              "supporting_sources": [],
+              "supporting_text_anchors": [
+                {
+                  "document_id": "ΨΡ6Ξ469ΗΡΘ-7ΝΗ",
+                  "page_number": 1,
+                  "method": "tesseract",
+                  "text": "105014125",
+                  "start": 936,
+                  "end": 945,
+                  "context": "ονίκης απόφαση Δ.Σ. 3/29-10-2025.\n3. Την µε Αριθ. 4-3 απόφαση Διοικητικής Επιτροπής ανάληψης υποχρέωσης.\n4. Την ανάγκη προμήθειας AOTIZTIKE> ΥΠΗΡΕΣΙΕΣ.\n\nΑΠΟΦΑΣΙΖΟΥΜΕ\n\n1. Εγκρίνουµε την ανάθεση, στην επιχείρηση µε επωνυμία «ΜΙΤΠΝΙΑΣ ΝΙΚΟΛΑΟΣ», Α.Φ.Μ. 105014125, ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣΕ.,\nέδρα ΜΗΤΡΟΠΟΛΕΩΣ 6 54625 ΘΕΣΣΑΛΟΝΙΚΗ, τηλ 2310270001 και φαξ της προμήθειας ΛΟΓΙΣΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ.\n\nH δαπάνη θα βαρύνει την πίστωση του Προὐπολογισμού Εξόδων 2026 του Επιμελητηρίου Βιοτεχνικού Επιμελητηρίου Θεσσαλονίκης µε\nK.A.E.",
+                  "context_start": 686,
+                  "context_end": 1195
+                }
+              ],
+              "decision_source": "verification"
+            }
+          }
+        }
+      ],
+      "metrics": {
+        "load_duration_sec": 0.053,
+        "routing_duration_sec": 0.026,
+        "processing_duration_sec": 6.142,
+        "extraction_duration_sec": 2.327,
+        "reflection_feedback_used": true,
+        "verification_duration_sec": 0.004,
+        "semantic_verification_duration_sec": 11.416
+      },
+      "error": null,
+      "api_rate_limit_retries": 0
+    }
+  ]
+}
