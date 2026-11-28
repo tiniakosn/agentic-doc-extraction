@@ -64,6 +64,20 @@ def decide_field_action(
             reason="Field absence or uncertainty was not verified",
         )
 
+
+    # Classification fields (e.g. document_type) are categories, not quotations:
+    # only the evidence quote can be grounded in the source.
+    if value and value.get("status") == "not_applicable":
+        if evidence and evidence.get("status") == "supported":
+            return FieldDecision(
+                action="accept",
+                reason="Evidence quote supported; value is a classification",
+            )
+        return FieldDecision(
+            action="review",
+            reason="Classification evidence not grounded in source",
+        )
+
     if not value or not evidence:
         return FieldDecision(
             action="review",

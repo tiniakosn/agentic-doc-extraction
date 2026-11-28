@@ -63,3 +63,32 @@ def test_reflect_keeps_page_and_routes_to_extraction():
     assert "processing_method" not in result
     assert "ΒΗΤΑ" in result["correction_feedback"]
     assert route_after_correction({**state, **result}) == "reflect"
+
+
+from src.nodes.verify_extraction import verify_extraction_node
+
+
+def test_document_type_is_not_value_grounded():
+    state = {
+        "extraction": {
+            "document_type": {
+                "status": "present",
+                "value": "Απόφαση απευθείας ανάθεσης",
+                "evidence": "ΘΕΜΑ: Απευθείας ανάθεση της προμήθειας",
+            }
+        },
+        "processed_page": {
+            "page_number": 1,
+            "method": "digital",
+            "text": "ΑΠΟΦΑΣΗ\nΘΕΜΑ: Απευθείας ανάθεση της προμήθειας ειδών.",
+            "regions": [],
+        },
+        "document": {"document_id": "test", "pages": []},
+        "metrics": {},
+    }
+
+    result = verify_extraction_node(state)
+
+    decision = result["field_decisions"]["document_type"]
+    assert decision["action"] == "accept"
+    assert result["verification"]["document_type"]["value_grounding"]["status"] == "not_applicable"

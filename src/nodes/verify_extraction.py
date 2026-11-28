@@ -1,6 +1,6 @@
-
 from time import perf_counter
 
+from src.evaluation.absence_check import check_absence
 from src.evaluation.evidence_verifier import verify_evidence
 from src.evaluation.region_grounding import find_matching_regions
 from src.evaluation.spatial_verifier import compare_boxes
@@ -8,12 +8,14 @@ from src.evaluation.source_anchor import anchor_value
 from src.schemas.workflow_state import WorkflowState
 from src.evaluation.verification_decision import decide_field_action
 from src.evaluation.field_validation import validate_greek_afm
-from src.evaluation.absence_check import check_absence
 
 
 ROLE_LABELS = {
     "recipient": "ΠΡΟΣ:",
 }
+
+# Fields whose value is a category, not a quotation from the source.
+CLASSIFICATION_FIELDS = {"document_type"}
 
 
 def verify_extraction_node(state: WorkflowState) -> dict:
@@ -99,11 +101,15 @@ def verify_extraction_node(state: WorkflowState) -> dict:
             }
             continue
 
-        # 1. Textual value grounding
-        value_result = verify_evidence(
-            field["value"],
-            source_text,
-        )
+        # 1. Textual value grounding (not applicable to classifications)
+        if field_name in CLASSIFICATION_FIELDS:
+            value_grounding = {"status": "not_applicable", "score": None}
+        else:
+            value_result = verify_evidence(field["value"], source_text)
+            value_grounding = {
+                "status": value_result.status,
+                "score": round(value_result.score, 3),
+            }
 
         # 2. LLM-generated evidence matching
         evidence_result = verify_evidence(
@@ -123,6 +129,7 @@ def verify_extraction_node(state: WorkflowState) -> dict:
                 image_height=image_height,
             )
             if regions and document_id
+            and field_name not in CLASSIFICATION_FIELDS
             else []
         )
 
@@ -158,10 +165,7 @@ def verify_extraction_node(state: WorkflowState) -> dict:
                 }
 
         verification[field_name] = {
-            "value_grounding": {
-                "status": value_result.status,
-                "score": round(value_result.score, 3),
-            },
+            "value_grounding": value_grounding,
             "evidence_matching": {
                 "status": evidence_result.status,
                 "score": round(evidence_result.score, 3),
@@ -174,7 +178,7 @@ def verify_extraction_node(state: WorkflowState) -> dict:
             "deterministic_validation": deterministic_validation,
             "verification_status": "checked",
             "review_required": (
-                value_result.status != "supported"
+                value_grounding["status"] not in ("supported", "not_applicable")
                 or evidence_result.status != "supported"
             ),
         }
