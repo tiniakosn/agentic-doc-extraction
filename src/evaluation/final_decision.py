@@ -1,4 +1,3 @@
-
 from typing import Any
 
 
@@ -24,7 +23,13 @@ def resolve_final_decisions(
         if semantic and decision_source != "deterministic_validation":
             verdict = semantic["verdict"]
 
-            if verdict == "supported" and semantic.get("supporting_sources"):
+            # Spatial sources OR text anchors count as supporting evidence.
+            has_support = bool(
+                semantic.get("supporting_sources")
+                or semantic.get("supporting_text_anchors")
+            )
+
+            if verdict == "supported" and has_support:
                 action = "accept_with_evidence"
                 reason = "Semantic verification supports the claim"
 
@@ -45,6 +50,10 @@ def resolve_final_decisions(
             ),
             "supporting_sources": (
                 semantic.get("supporting_sources", [])
+                if semantic else []
+            ),
+            "supporting_text_anchors": (
+                semantic.get("supporting_text_anchors", [])
                 if semantic else []
             ),
             "decision_source": decision_source,

@@ -8,6 +8,7 @@ from src.evaluation.source_anchor import anchor_value
 from src.schemas.workflow_state import WorkflowState
 from src.evaluation.verification_decision import decide_field_action
 from src.evaluation.field_validation import validate_greek_afm
+from src.evaluation.absence_check import check_absence
 
 
 ROLE_LABELS = {
@@ -75,18 +76,26 @@ def verify_extraction_node(state: WorkflowState) -> dict:
 
         # Fields without an asserted value
         if field["status"] != "present":
+            absence = (
+                check_absence(field_name, source_text)
+                if field["status"] == "not_present"
+                else None
+            )
+            checkable = bool(absence) and absence["status"] != "not_checkable"
+
             verification[field_name] = {
                 "value_grounding": None,
                 "evidence_matching": None,
                 "spatial_grounding": None,
                 "source_references": [],
-                "verification_status": "not_checked",
-                "review_required": True,
-                "reason": (
-                    "Absence has not been independently verified"
-                    if field["status"] == "not_present"
-                    else "Field is uncertain"
+                "absence_check": absence,
+                "verification_status": (
+                    "absence_checked" if checkable else "not_checked"
                 ),
+                "review_required": not (
+                    absence and absence["status"] == "supported"
+                ),
+                "reason": absence["reason"] if absence else "Field is uncertain",
             }
             continue
 

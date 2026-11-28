@@ -39,6 +39,24 @@ def decide_field_action(
     evidence = verification.get("evidence_matching")
     references = verification.get("source_references", [])
 
+    # Absence checked against field cues in the page text.
+    if verification.get("verification_status") == "absence_checked":
+        absence = verification.get("absence_check") or {}
+
+        if absence.get("status") == "supported":
+            return FieldDecision(
+                action="accept",
+                reason=absence.get("reason", "Absence supported"),
+                decision_source="absence_check",
+            )
+
+        return FieldDecision(
+            action="review",
+            reason=absence.get("reason", "Possible missed value"),
+            decision_source="absence_check",
+        )
+
+
     # No asserted value or unverified absence.
     if verification.get("verification_status") == "not_checked":
         return FieldDecision(
