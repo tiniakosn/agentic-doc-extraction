@@ -9,9 +9,7 @@ from src.ingestion.ocr_backend import TesseractProcessor
 PDF_PATH = Path("data/discovery/63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf")
 PAGE_NUMBER = 1
 
-OUTPUT_DIR = Path(
-    "text_layer_comparison/63ΤΞ46ΜΦΟΤ-ΑΟΟ"
-)
+OUTPUT_DIR = Path("evaluation_results/diagnostics/text_layer_comparison") / PDF_PATH.stem
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 

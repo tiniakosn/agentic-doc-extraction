@@ -1,12 +1,13 @@
 
 import json
+import time
 from typing import Any
 
 from langchain_core.messages import HumanMessage, SystemMessage
 from pydantic import BaseModel, Field
 from typing import Literal
 
-from src.extraction.llm_client import get_llm
+from src.extraction.llm_client import get_llm, unwrap_structured
 from src.schemas.verification import (
     EvidenceCandidate,
     ClaimVerification,
@@ -192,10 +193,12 @@ def verify_claim(
 
     llm = get_llm(model_name=model_name)
     structured_llm = llm.with_structured_output(
-        ClaimAssessment
+        ClaimAssessment,
+        include_raw=True,
     )
 
-    response = structured_llm.invoke([
+    start = time.perf_counter()
+    raw_response = structured_llm.invoke([
         SystemMessage(content=SYSTEM_PROMPT),
         HumanMessage(content=json.dumps({
             "field_name": field_name,
@@ -204,6 +207,19 @@ def verify_claim(
             "evidence": evidence,
         }, ensure_ascii=False)),
     ])
+
+    # Real calls return {"raw", "parsed"}; test mocks may return the object directly.
+    if isinstance(raw_response, dict) and "parsed" in raw_response:
+        response = unwrap_structured(
+            raw_response,
+            ClaimAssessment,
+            call_type="claim_verification",
+            model=model_name,
+            latency_s=time.perf_counter() - start,
+            extra={"field": field_name},
+        )
+    else:
+        response = raw_response
 
     by_index = {
         c.source.region_index: c.source
