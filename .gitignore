@@ -14,4 +14,6 @@ __pycache__/
 
 *.zip
 
-.DS_Storeevaluation_results/token_usage.jsonl
+.DS_Store
+evaluation_results/
+token_usage.jsonl

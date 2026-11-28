@@ -1,2 +1,0 @@
-{"timestamp": "2026-11-28T08:41:50.164065+00:00", "call_type": "text_extraction", "model": "qwen/qwen3.8-27b", "input_tokens": 189, "output_tokens": 231, "total_tokens": 420, "latency_s": 0.636, "input_chars": 52}
-{"timestamp": "2026-11-28T08:41:53.667383+00:00", "call_type": "vlm_extraction", "model": "qwen/qwen3.8-27b", "input_tokens": 1998, "output_tokens": 397, "total_tokens": 2395, "latency_s": 2.449, "pdf": "63ΤΞ46ΜΦΟΤ-ΑΟΟ.pdf", "page": 1, "dpi": 150}
