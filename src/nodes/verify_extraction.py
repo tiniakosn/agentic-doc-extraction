@@ -1,7 +1,7 @@
 from time import perf_counter
 
 from src.evaluation.absence_check import check_absence
-from src.evaluation.evidence_verifier import verify_evidence
+from src.evaluation.evidence_verifier import verify_evidence, morphological_match
 from src.evaluation.region_grounding import find_matching_regions
 from src.evaluation.spatial_verifier import compare_boxes
 from src.evaluation.source_anchor import anchor_value
@@ -110,6 +110,16 @@ def verify_extraction_node(state: WorkflowState) -> dict:
                 "status": value_result.status,
                 "score": round(value_result.score, 3),
             }
+                        # Greek inflection: the value may appear in another grammatical case.
+            if (
+                value_result.status != "supported"
+                and morphological_match(field["value"], source_text)
+            ):
+                value_grounding = {
+                    "status": "supported",
+                    "score": round(value_result.score, 3),
+                    "method": "morphological",
+                }
 
         # 2. LLM-generated evidence matching
         evidence_result = verify_evidence(

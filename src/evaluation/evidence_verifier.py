@@ -66,3 +66,52 @@ def verify_evidence(
         status="unsupported",
         score=similarity,
     )
+
+
+def _fold_tokens(text: str) -> list[str]:
+    """Casefold, strip accents, split into word tokens."""
+    text = unicodedata.normalize("NFD", text.casefold())
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    return re.findall(r"\w+", text)
+
+
+def morphological_match(
+    value: str | None,
+    source_text: str,
+    *,
+    min_stem: int = 4,
+    suffix: int = 3,
+) -> bool:
+    """True if the value's tokens appear consecutively in the source,
+    allowing inflectional suffix changes (e.g. Greek grammatical case).
+
+    Tokens containing digits must match exactly (tax IDs, numbers).
+    """
+    if not value or not source_text:
+        return False
+
+    value_tokens = _fold_tokens(value)
+    source_tokens = _fold_tokens(source_text)
+
+    if not value_tokens:
+        return False
+
+    stems = [
+        token
+        if any(ch.isdigit() for ch in token)
+        else token[:max(min_stem, len(token) - suffix)]
+        for token in value_tokens
+    ]
+
+    n = len(stems)
+
+    for i in range(len(source_tokens) - n + 1):
+        if all(
+            source_tokens[i + j].startswith(stems[j])
+            if not any(ch.isdigit() for ch in stems[j])
+            else source_tokens[i + j] == stems[j]
+            for j in range(n)
+        ):
+            return True
+
+    return False
