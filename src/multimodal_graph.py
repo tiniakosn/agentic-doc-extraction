@@ -56,6 +56,7 @@ def build_multimodal_graph():
         route_after_correction,
         {
             "retry": "process_page",
+            "reflect": "extract_information",
             "finish": END,
         },
     )

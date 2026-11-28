@@ -15,8 +15,13 @@ MODEL = "qwen/qwen3.8-27b"
 def extract_from_text(
     text: str,
     model: str = MODEL,
+    feedback: str | None = None,
 ) -> PageExtraction:
-    """Structured extraction from OCR or digital text."""
+    """Structured extraction from OCR or digital text.
+
+    If feedback is given (reflection), it describes errors of the previous
+    attempt and is added to the prompt before the document text.
+    """
 
     if not text.strip():
         raise ValueError("Cannot extract from empty text")
@@ -48,8 +53,12 @@ def extract_from_text(
         "Ο παραλήπτης μιας πρόσκλησης δεν είναι απαραίτητα ανάδοχος. "
         "Το OCR μπορεί να έχει λάθη και προβλήματα reading order. "
         "Μη συμπληρώνεις μη τεκμηριωμένα στοιχεία.\n\n"
-        f"DOCUMENT TEXT:\n{text}"
     )
+
+    if feedback:
+        prompt += f"ΔΙΟΡΘΩΣΗ ΠΡΟΗΓΟΥΜΕΝΗΣ ΠΡΟΣΠΑΘΕΙΑΣ:\n{feedback}\n\n"
+
+    prompt += f"DOCUMENT TEXT:\n{text}"
 
     start = time.perf_counter()
     result = llm.invoke([HumanMessage(content=prompt)])
@@ -61,5 +70,5 @@ def extract_from_text(
         call_type="text_extraction",
         model=model,
         latency_s=latency,
-        extra={"input_chars": len(text)},
+        extra={"input_chars": len(text), "reflection": bool(feedback)},
     )

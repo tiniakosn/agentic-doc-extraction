@@ -9,6 +9,7 @@ def extract_information_node(state: WorkflowState) -> dict:
     start = perf_counter()
 
     method = state.get("extraction_method", "text")
+    feedback = state.get("correction_feedback")
 
     if method == "vlm":
         result = extract_from_image(
@@ -17,12 +18,17 @@ def extract_information_node(state: WorkflowState) -> dict:
         )
     else:
         text = state["processed_page"]["text"]
-        result = extract_from_text(text)
+        result = (
+            extract_from_text(text, feedback=feedback)
+            if feedback
+            else extract_from_text(text)
+        )
 
     metrics = dict(state.get("metrics", {}))
     metrics["extraction_duration_sec"] = round(
         perf_counter() - start, 3
     )
+    metrics["reflection_feedback_used"] = bool(feedback)
 
     output = {
         "extraction": result.model_dump(mode="json"),

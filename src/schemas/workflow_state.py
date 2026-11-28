@@ -35,3 +35,6 @@ class WorkflowState(TypedDict, total=False):
     correction_action: str
 
     extraction_method: str
+
+    correction_feedback: str | None
+    reflection_enabled: bool

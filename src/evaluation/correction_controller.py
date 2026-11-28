@@ -1,9 +1,8 @@
-
 from dataclasses import dataclass
 from typing import Any, Literal
 
 
-CorrectionAction = Literal["finish", "retry"]
+CorrectionAction = Literal["finish", "retry", "reflect"]
 
 
 @dataclass(frozen=True)
@@ -15,6 +14,8 @@ class CorrectionDecision:
 
 MAX_RETRIES = 1
 
+TEXT_METHODS = {"digital", "tesseract", "paddleocr"}
+
 
 def decide_correction(
     final_decisions: dict[str, Any],
@@ -22,6 +23,7 @@ def decide_correction(
     current_method: str,
     retry_count: int,
     routing: dict[str, Any] | None = None,
+    allow_reflection: bool = True,
 ) -> CorrectionDecision:
     """Bounded, conservative correction policy."""
 
@@ -48,7 +50,7 @@ def decide_correction(
     routing = routing or {}
     quality = routing.get("quality", {})
 
-    # Retry an invalid VLM extraction using OCR + text LLM.
+    # 1. Retry an invalid VLM extraction using OCR + text LLM.
     if (
         current_method == "vlm"
         and any(
@@ -63,8 +65,8 @@ def decide_correction(
             reason="Deterministic validation failed for VLM extraction",
         )
 
-    # Retry OCR only when digital text is suspiciously limited
-    # relative to visible page content.
+    # 2. Retry OCR only when digital text is suspiciously limited
+    #    relative to visible page content.
     if (
         current_method == "digital"
         and quality.get("visual_ink_ratio", 0) >= 0.05
@@ -74,6 +76,15 @@ def decide_correction(
             action="retry",
             next_method="tesseract",
             reason="Unresolved fields with insufficient digital text",
+        )
+
+    # 3. Reflection: the page text is usable, but the model's answer
+    #    failed verification. Re-extract from the same text with feedback.
+    if allow_reflection and current_method in TEXT_METHODS:
+        return CorrectionDecision(
+            action="reflect",
+            next_method=current_method,
+            reason="Re-extract from the same text with verification feedback",
         )
 
     return CorrectionDecision(

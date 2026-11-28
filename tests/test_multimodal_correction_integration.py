@@ -92,11 +92,12 @@ def test_vlm_to_ocr_correction_loop(tmp_path):
     )
 
     observed_texts = []
+    observed_feedback = []
 
-    def fake_text_extraction(text):
+    def fake_text_extraction(text, feedback=None):
         observed_texts.append(text)
+        observed_feedback.append(feedback)
         return make_extraction("801033798")
-
     with (
 
         patch(
@@ -169,3 +170,8 @@ def test_vlm_to_ocr_correction_loop(tmp_path):
 
     assert result["correction_action"] == "finish"
     assert result["status"] in ("completed", "review_required")
+
+    # Reflection: the retry received feedback about the rejected AFM.
+    assert observed_feedback[0] is not None
+    assert "6983905183" in observed_feedback[0]
+    assert result["correction_history"][0]["action"] == "retry"
