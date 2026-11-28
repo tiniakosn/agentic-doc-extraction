@@ -1,5 +1,0 @@
-document_id,page_count,raw_candidate_count,raw_precision,raw_recall,deduplication_rate,baseline_selected_recall,adaptive_selected_recall,adaptive_page_coverage,adaptive_estimated_tokens,adaptive_budget_utilization
-synthetic_2_pages,2,5,0.6,0.75,0.0,0.75,0.75,1.0,176,0.352
-synthetic_10_pages,10,6,0.6667,0.8,0.0,0.8,0.8,1.0,204,0.408
-synthetic_25_pages,25,6,0.6667,0.8,0.0,0.8,0.8,1.0,204,0.408
-synthetic_50_pages,50,6,0.6667,0.8,0.0,0.8,0.8,1.0,204,0.408

@@ -1,5 +1,0 @@
-document_id,pages,raw_candidates,entity_precision,entity_recall,known_role_precision,known_role_recall,contextual_precision,contextual_recall,unseen_direct_recall,unseen_context_exposure,distractor_retrieval_rate,negative_context_retrieval_rate,deduplication_rate,baseline_known_role_recall,adaptive_known_role_recall,adaptive_budget_utilization,page_coverage_count
-synthetic_v2_2_pages,2,12,0.5,1.0,0.3333,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,0.472,2
-synthetic_v2_10_pages,10,18,0.7143,1.0,0.3333,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,0.76,4
-synthetic_v2_25_pages,25,18,0.7143,1.0,0.3333,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,0.76,4
-synthetic_v2_50_pages,50,18,0.7143,1.0,0.3333,1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0,0.76,4
